@@ -1,1 +1,1 @@
-# otus-css-Spiridonova
+Правила пользования 
