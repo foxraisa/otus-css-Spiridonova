@@ -4,8 +4,37 @@
     font-weight: 300;
   }
   
+  @font-face {
+    font-family: "Butler";
+    src: url(Fonts/butler/Butler_Regular.otf);
+    font-weight: 250;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local("Roboto Regular"),
+      local("Roboto-Regular"),
+      url("Roboto_Peta-webfont.woff2") format("woff2"),
+      url("Roboto_Peta-webfont.woff") format("woff"),
+      url("Roboto_Peta-webfont.svg") format("svg");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local("Roboto Regular"),
+      local("Roboto-Regular"),
+      url("Roboto_Peta-webfont.woff2") format("woff2"),
+      url("Roboto_Peta-webfont.woff") format("woff"),
+      url("Roboto_Peta-webfont.svg") format("svg");
+    font-weight: 500;
+  }
 
 
+  body {
+    font-family: "Butler", sans-serif;
+    font-weight: 300;
+  }
 
 #title-page {
     font-family: 'Butler', serif;
@@ -14,4 +43,5 @@
 
 #subtitle-page {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
