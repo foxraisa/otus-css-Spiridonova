@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Butler";
+    src: url(Fonts/butler/Butler_Regular.otf);
+    font-weight: 300;
+  }
+  
+
+
+
+#title-page {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+}
+
+#subtitle-page {
+    font-family: 'Roboto', sans-serif;
+}
