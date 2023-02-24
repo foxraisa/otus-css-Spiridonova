@@ -39,9 +39,96 @@
 #title-page {
     font-family: 'Butler', serif;
     font-weight: 300;
+    font-size: 87px;
 }
 
 #subtitle-page {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    font-size: 18px;
 }
+
+.katya-mills_header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.katya-mills_name {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 87px;
+}
+
+.katya-mills_skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.katya-mills_text {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.disigners_header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.designer_jess-wonder-heder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_jess-wonder-text-from {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_jess-wonder-text-skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_kameron-clein-heder  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_kameron-clein-text-from  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_kameron-clein-text-skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_louisse-red-heder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_louisse-red-text-from {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer_louisse-red-text-skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
