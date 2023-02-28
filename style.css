@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Butler";
+    src: url(Fonts/butler/Butler_Regular.otf);
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: "Butler";
+    src: url(Fonts/butler/Butler_Regular.otf);
+    font-weight: 250;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local("Roboto Regular"),
+      local("Roboto-Regular"),
+      url("Roboto_Peta-webfont.woff2") format("woff2"),
+      url("Roboto_Peta-webfont.woff") format("woff"),
+      url("Roboto_Peta-webfont.svg") format("svg");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local("Roboto Regular"),
+      local("Roboto-Regular"),
+      url("Roboto_Peta-webfont.woff2") format("woff2"),
+      url("Roboto_Peta-webfont.woff") format("woff"),
+      url("Roboto_Peta-webfont.svg") format("svg");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local("Roboto Regular"),
+      local("Roboto-Regular"),
+      url("Roboto_Peta-webfont.woff2") format("woff2"),
+      url("Roboto_Peta-webfont.woff") format("woff"),
+      url("Roboto_Peta-webfont.svg") format("svg");
+    font-weight: 400;
+  }
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+#title-page {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 87px;
+}
+
+.katya-mills_name {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 87px;
+}
+
+.katya-mills_skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.katya-mills_text {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.designer_jess-wonder-heder {
+    font-size: 16px;
+}
+
+.designer_jess-wonder-text-from {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.designer_jess-wonder-text-skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.designer_kameron-clein-heder  {
+    font-size: 16px;
+}
+
+.designer_kameron-clein-text-from  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.designer_kameron-clein-text-skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.designer_louisse-red-heder {
+    font-size: 16px;
+}
+
+.designer_louisse-red-text-from {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.designer_louisse-red-text-skills {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.testimonials_item-text {
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.testimonials_item-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.testimonials_text {
+    font-family: 'Butler', serif;
+    font-weight: 250;
+    font-size: 32px;
+}
+
+.strong-points_strengths-navbar-header {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 92px; 
+}
+
+.strong-points_strengths-navbar-items {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 34px; 
+    list-style-type: none;
+}
