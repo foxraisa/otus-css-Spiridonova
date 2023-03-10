@@ -41,10 +41,19 @@
   }
 
 
+ * {
+    margin: 0;
+    box-sizing: border-box;
+    
+ }
+ 
   body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
+
+    width: 80%;
+    margin: 0 auto;
   }
 
 #title-page {
@@ -148,3 +157,32 @@
     font-size: 34px; 
     list-style-type: none;
 }
+
+.button-header {
+    display: block;
+    margin: 4% auto;  
+}
+
+
+.title {
+   background-image: url(img/main-box-weather-room.jpg);
+   width: 1065px;
+   height: 630px;
+   margin-bottom: 20px;
+
+   /* display: block;
+   position: relative; */
+  
+}
+
+.title-inner-box {
+    /* display: inline-block;
+    position: static; */
+   
+    background-color: #FFFFFF;
+    width: 52.3%;
+    height: 56.3%;
+
+    
+}
+
