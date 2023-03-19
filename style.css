@@ -52,8 +52,6 @@
     font-weight: 700;
     font-size: 18px;
 
-    width: 80%;
-    margin: 0 auto;
   }
 
 #title-page {
@@ -166,29 +164,30 @@
 
 .title {
    background-image: url(img/main-box-weather-room.jpg);
-   width: 1065px;
-   height: 630px;
+   background-clip: content-box;
+   /* background-color: gray; */
+   width: 74%;
    margin: auto;
-   margin-bottom: 20px;
+   margin-bottom: 4%;
    
-
+   display: block;
    position: relative;
-   z-index: -30;
 
 }
 
 .title-inner-box {
    
+    display: inline-block;
+    transform: translate(55%, -140%);
+    border: solid transparent;
+
     background-color: #FFFFFF;
-    width: 52.3%;
-    height: 56.3%;
+    padding: 10%;
+    
 
     position: absolute;
-    z-index: 20;
-    top: 137px;
-    left: 254px;
+    z-index: 40;
 
     text-align: center;
-    padding-top: 130px;
 }
 
