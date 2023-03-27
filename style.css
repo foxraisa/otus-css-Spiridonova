@@ -165,11 +165,8 @@
 .title {
    background-image: url(img/main-box-weather-room.jpg);
    background-clip: content-box;
-<<<<<<< HEAD
+
    background-color: gray;
-=======
-   /* background-color: gray; */
->>>>>>> 39343a47b3e2c6600d69b50fe3958974dd4b5f20
    width: 74%;
    margin: auto;
    margin-bottom: 4%;
@@ -182,11 +179,8 @@
 .title-inner-box {
    
     display: inline-block;
-<<<<<<< HEAD
+
     transform: translate(30%, -140%);
-=======
-    transform: translate(55%, -140%);
->>>>>>> 39343a47b3e2c6600d69b50fe3958974dd4b5f20
     border: solid transparent;
 
     background-color: #FFFFFF;
