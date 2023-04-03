@@ -195,16 +195,32 @@
 
 .biography {
     display: flex;
-    width: 72%;
-   
+    flex-direction: row;
+    max-height: 840px;
 
+    justify-content: center;
+    align-items:center;
+
+
+    /* flex-basis: 40%; */
+    /* flex-shrink: 1; */
+    gap: 4rem;
+
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+
+    /*  отцентрировать текст, рассчитать гепы, расчитать падинги, проверить 
+    работу третьего (1) элемента  */
 }
+
+
 
 .katya-mills_header {
-    align-self: flex-end;
-    order: 2;
+    align-self: flex-start;
+    order: 1;
     writing-mode: vertical-rl; 
-    
-    
+       
 }
+
 
