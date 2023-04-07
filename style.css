@@ -218,8 +218,25 @@
     order: 2;
     writing-mode: vertical-rl; 
     width: 35%;
+    margin-bottom: 60px;
        
 }
+
+.katya-mills_skills  {
+    max-width: 475px;
+}
+
+.katya-mills_skills::after {
+    content: "—";
+    display: block;
+    padding: 4%;
+}
+
+/* .katya-mills_text {
+    max-width: 415px;
+} */
+
+
 
 
 
