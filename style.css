@@ -185,7 +185,7 @@
    
     display: inline-block;
 
-    transform: translate(30%, -140%);
+    transform: translate(50%, -50%);
 
     border: solid transparent;
 
@@ -207,6 +207,7 @@
 .designers-section {
     display: grid;
     max-height: 660px;
+    max-width: 1440px;
 
     background-color: darkmagenta;
 
@@ -219,18 +220,32 @@
     grid-column: 3/4;
     grid-row: 1/2;
 
-    max-width: 109px;
-    max-height: 32px;
+    max-height: 109px;
+    max-width: 32px;
     writing-mode: vertical-rl;
+    justify-items: start;
+
     background-color: burlywood;
     /* transform: rotate(-90deg); */
 
 }
 
+
+
 .disigners_img-text_jess-wonder {
     grid-column: 1/3;
     grid-row: 1/6;
 }
+
+.designer_jess-wonder_img {
+    margin-bottom: 24px;
+}
+
+.designer_jess-wonder_text {
+    max-width: 327px;
+    
+}
+
 
 .disigners_img-text_kameron-clein {
     grid-row: 2/6;
@@ -238,9 +253,17 @@
     
 }
 
+.disigners_kameron-clein_img {
+    margin-bottom: 24px;
+}
+
 .disigners_img-text_lousse-red{
     grid-row: 2/6;
     grid-column: 4/5;
+}
+
+.disigners_lousse-red_img {
+    margin-bottom: 24px;
 }
 
 /* добавить расстояние между картинками и текстом 
