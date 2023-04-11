@@ -208,9 +208,6 @@
     display: grid;
     max-height: 660px;
     max-width: 1440px;
-
-    background-color: darkmagenta;
-
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr)
 
@@ -219,14 +216,9 @@
 .disigners_header {
     grid-column: 3/4;
     grid-row: 1/2;
-
-    max-height: 109px;
-    max-width: 32px;
+    max-width: 309px;
     writing-mode: vertical-rl;
     justify-items: start;
-
-    background-color: burlywood;
-    /* transform: rotate(-90deg); */
 
 }
 
@@ -242,7 +234,7 @@
 }
 
 .designer_jess-wonder_text {
-    max-width: 327px;
+   padding-left: 178px;
     
 }
 
@@ -265,10 +257,4 @@
 .disigners_lousse-red_img {
     margin-bottom: 24px;
 }
-
-/* добавить расстояние между картинками и текстом 
-позиционировать хедер Дизайнеры в нужное место - возможно через флексы
-проверить по программе, чтобы сличить макет 
-
- */
 
