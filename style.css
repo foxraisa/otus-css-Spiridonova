@@ -177,6 +177,7 @@
    background-clip: content-box;
 
    background-color: gray;
+
    width: 74%;
    margin: auto;
    margin-bottom: 4%;
@@ -191,6 +192,7 @@
     display: inline-block;
 
     transform: translate(30%, -140%);
+
     border: solid transparent;
 
     background-color: #FFFFFF;
