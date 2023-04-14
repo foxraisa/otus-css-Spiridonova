@@ -135,6 +135,10 @@
     font-size: 16px;
 }
 
+.testimonials_header {
+    font-size: 18px;
+}
+
 .testimonials_item-text {
     font-size: 16px;
     list-style-type: none;
@@ -274,9 +278,5 @@
 
 
 
-
-
-
-
-
+/*  секцмя testimonials-section  */
 
