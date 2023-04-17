@@ -87,6 +87,10 @@
     font-size: 32px;
 }
 
+.disigners-section_header {
+    font-size: 18px;
+}
+
 .designer_jess-wonder-heder {
     font-size: 16px;
 }
@@ -274,9 +278,16 @@
 
 
 
+/*  добавить словво Секции к другим хедер - найти горячие клавиши, чтобы автоматом менял название класса по всему документу, чтобы не искать вручную 
+добавить другие классы дизайнерам  */
 
+/*  disigners-section */
 
+.disigners-section {
+    background-color: chartreuse;
 
+    max-width: 1362px;
 
-
-
+    display: grid;   
+    grid-template-columns: 80px 2fr 1fr 1fr;
+}
