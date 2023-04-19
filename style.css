@@ -291,3 +291,7 @@
     display: grid;   
     grid-template-columns: 80px 2fr 1fr 1fr;
 }
+
+.disigners-section_header {
+    background-color: cornflowerblue;
+}
