@@ -317,7 +317,7 @@
 .disigners-section_kameron-clein_box {
     background-color: rgb(127, 33, 96);
     grid-column: 2/3;
-    grid-row: 2/7;
+    /* grid-row: 2/7; */
     order: 2;
     
 }
@@ -325,7 +325,7 @@
 .disigners-section_lousse-red_box {
     background-color: coral;
     grid-column: 3/4;
-    grid-row: 2/7;
+    /* grid-row: 2/7; */
     order: 3;
 }
 
