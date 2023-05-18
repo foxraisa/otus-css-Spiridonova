@@ -283,55 +283,71 @@
 
 /*  disigners-section */
 
-/* добавить фром и скилы как псевдоэлементы к боксам; возможно потребуется добавить так же слеши
-как псевдоэлементы между перечислением скилов + необходимо им добавить размер и стиль текста  */
-
 .disigners-section {
-    background-color: chartreuse;
     margin: 0 auto;
     margin-bottom: 4%;
 
-    max-width: 1363px;
-    max-height: 704px;
+    max-width: 1337px;
+    max-height: 650px;
 
     display: grid;   
     grid-template-columns:  2fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     gap: 10px;
 }
 
 .disigners-section_header {
-    background-color: cornflowerblue;
-    max-width: 642px;
-    max-height: 80px;
+    max-width: 91px;
     order: 1;
-    grid-column: 2 / 4;
+    grid-column: 2/4;
+    grid-row: 1/2;
+
+    transform: rotate(-90deg);
+    margin-left: 18rem;
 
 }
 
-.disigners-section_jess-wonder_box {
-    background-color: chocolate;
-    /* max-width: 650px; */
+.disigners-section_big-box {
     grid-column: 1/2;
+    grid-row: 1/8;
     order: 0;
     
 }
 
-.disigners-section_kameron-clein_box {
-    background-color: rgb(127, 33, 96);
-    grid-column: 2/3;
-    /* grid-row: 2/7; */
-    order: 2;
+.disigners-section_normal-box {
+    grid-row: 2/8;
     
 }
 
-.disigners-section_lousse-red_box {
-    background-color: coral;
-    grid-column: 3/4;
-    /* grid-row: 2/7; */
-    order: 3;
+.disigners-section_desigher-data {
+    padding-top: 6px;
 }
 
+.disigners-section_desigher-data-with-big-img {
+    margin-left: 18rem;
+}
+
+.designer_from::before {
+    content: "From/";
+    font-weight: bold;
+}
+
+.designer_skills::before {
+    content: "Skills/";
+    font-weight: bold;
+}
+
+.disigners-section_big-img {
+    background-color: rgba(171, 177, 177, 0.568);
+    max-width: 600px;
+    max-height: 538px;
+}
+
+.disigners-section_img {
+    background-color: rgba(171, 177, 177, 0.568);
+    max-width: 310px;
+    max-height: 439.40px;
+}
 
 
 
