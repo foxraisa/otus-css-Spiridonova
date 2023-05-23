@@ -107,37 +107,6 @@
     font-size: 16px;
 }
 
-/* .designer_kameron-clein-heder  {
-    font-size: 16px;
-}
-
-.designer_kameron-clein-text-from  {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-} */
-
-/* .designer_kameron-clein-text-skills {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.designer_louisse-red-heder {
-    font-size: 16px;
-} */
-
-/* .designer_louisse-red-text-from {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.designer_louisse-red-text-skills {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-} */
 
 .testimonials_header {
     font-size: 18px;
@@ -248,7 +217,7 @@
 .katya-mills_skills  {
     list-style: none;
     max-width: 475px;
-    padding: 0%; 
+    padding: 0; 
     padding-left: 2em;
 }
 
@@ -348,6 +317,26 @@
     max-width: 310px;
     max-height: 439.40px;
 }
+
+.designer_skills {
+    list-style: none;
+    padding: 0;
+}
+
+.designer_skills-item {
+    display: inline-block;
+}
+
+.designer_skills-item::after {
+    content: "/";
+    margin-left: .3em;
+}
+
+.designer_skills-item:last-child:after {
+    content: "";
+}
+
+
 
 
 
