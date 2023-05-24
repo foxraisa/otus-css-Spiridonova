@@ -149,13 +149,13 @@
 }
 
 
-.title {
-   background-image: url(img/main-box-weather-room.jpg);
+.title-section {
    background-clip: content-box;
 
-   background-color: gray;
+   background-color: rgb(237, 242, 209);
 
-   width: 74%;
+   max-width: 1065px;
+   max-height: 630px;
    margin: auto;
    margin-bottom: 4%;
    
