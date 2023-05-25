@@ -60,28 +60,28 @@
     font-size: 87px;
 }
 
-.katya-mills_name {
+.biography-section_main-disigner-name {
     font-family: 'Butler', serif;
     font-weight: 300;
     font-size: 87px;
 }
 
-.katya-mills_header {
+.biography-section_header {
     font-size: 18px;
 }
 
-.katya-mills_skills_header {
+.biography-section_main-disigner-job-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
 }
 
-.katya-mills_skills {
+.biography-section_main-disigner-skills {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
-.katya-mills_text {
+.biography-section-text {
     font-family: 'Butler', serif;
     font-weight: 300;
     font-size: 32px;
@@ -182,10 +182,11 @@
     text-align: center;
 }
 
-.biography {
+/* biography-section */
+
+.biography-section {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     max-height: 840px;
     max-width: 1303px;
     margin: 0 auto;
@@ -194,14 +195,14 @@
     gap: 8%;
 }
 
-.katya-mills_name {
+.biography-section_main-disigner-name {
     padding-top: 2.3em;
     padding-left: .5em;
     padding-bottom: .4em;
 }
 
 
-.katya-mills_header {
+.biography-section_header {
     align-self: flex-end;
     order: 2;
     writing-mode: vertical-lr; 
@@ -210,41 +211,41 @@
     margin-bottom: 20px;
 }
 
-.katya-mills_skills_header {
+.biography-section_main-disigner-job-title {
     padding-left: 2em;
 }
 
-.katya-mills_skills  {
+.biography-section_main-disigner-skills  {
     list-style: none;
     max-width: 475px;
     padding: 0; 
     padding-left: 2em;
 }
 
-.katya-mills_skills_item {
+.biography-section_main-disigner-skills_item {
     display: inline-block;
 }
 
-.katya-mills_skills_item::after {
+.biography-section_main-disigner-skills_item::after {
     content: "/";
     margin-left: .3em;
 
 }
 
 
-.katya-mills_skills_item:last-child::after {
+.biography-section_main-disigner-skills_item:last-child::after {
     content: "";
     
 }
 
 
-.katya-mills_text::before {
+.biography-section-text::before {
     content: "-";
     display: block;
     padding: 4%;
 }
 
-.katya-mills_text {
+.biography-section-text {
     max-width: 415px;
     padding-left: 1em;
 }
