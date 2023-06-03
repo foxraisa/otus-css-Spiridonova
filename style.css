@@ -1,22 +1,22 @@
-@font-face {
+/* @font-face {
     font-family: "Butler";
     src: url(Fonts/butler/Butler_Regular.otf);
     font-weight: 300;
-  }
+  } */
   
-  @font-face {
+  /* @font-face {
     font-family: "Butler";
     src: url(Fonts/butler/Butler_Regular.otf);
     font-weight: 250;
-  }
+  } */
 
   @font-face {
     font-family: 'Roboto';
     src: local("Roboto Regular"),
       local("Roboto-Regular"),
-      url("Roboto_Peta-webfont.woff2") format("woff2"),
-      url("Roboto_Peta-webfont.woff") format("woff"),
-      url("Roboto_Peta-webfont.svg") format("svg");
+      url("Roboto-Regular.woff2") format("woff2"),
+      url("Roboto-Regular.woff") format("woff"),
+      url("Roboto-Regular.svg") format("svg");
     font-weight: 700;
   }
 
@@ -24,9 +24,9 @@
     font-family: 'Roboto';
     src: local("Roboto Regular"),
       local("Roboto-Regular"),
-      url("Roboto_Peta-webfont.woff2") format("woff2"),
-      url("Roboto_Peta-webfont.woff") format("woff"),
-      url("Roboto_Peta-webfont.svg") format("svg");
+      url("Roboto-Regular.woff2") format("woff2"),
+      url("Roboto-Regular.woff") format("woff"),
+      url("Roboto-Regular.svg") format("svg");
     font-weight: 500;
   }
 
@@ -34,12 +34,45 @@
     font-family: 'Roboto';
     src: local("Roboto Regular"),
       local("Roboto-Regular"),
-      url("Roboto_Peta-webfont.woff2") format("woff2"),
-      url("Roboto_Peta-webfont.woff") format("woff"),
-      url("Roboto_Peta-webfont.svg") format("svg");
+      url("Roboto-Regular.woff2") format("woff2"),
+      url("Roboto-Regular.woff") format("woff"),
+      url("Roboto-Regular.svg") format("svg");
     font-weight: 400;
   }
 
+  @font-face {
+    font-family: 'Playfair Display Regular';
+    src: local("Playfair Display Regular"),
+      local("Playfair-Display Regular"),
+      local("Playfair-Display-Regular"),
+      url("Playfair-Display-Regular.woff2") format("woff2"),
+      url("Playfair-Display-Regular.woff") format("woff"),
+      url("Playfair-Display-Regular.svg") format("svg");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display Regular';
+    src: local("Playfair Display Regular"),
+      local("Playfair-Display Regular"),
+      local("Playfair-Display-Regular"),
+      url("Playfair-Display-Regular.woff2") format("woff2"),
+      url("Playfair-Display-Regular.woff") format("woff"),
+      url("Playfair-Display-Regular.svg") format("svg");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Bitter";
+    src: url(Fonts/butler/Bitter_Regular.otf);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Bitter";
+    src: url(Fonts/butler/Bitter_Regular.otf);
+    font-weight: 300;
+  }
 
  * {
     margin: 0;
@@ -58,6 +91,12 @@
     font-family: 'Butler', serif;
     font-weight: 300;
     font-size: 87px;
+}
+
+.subtitle-page {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .biography-section_main-disigner-name {
@@ -87,7 +126,7 @@
     font-size: 32px;
 }
 
-.disigners-section_header {
+.designers-section_header {
     font-size: 18px;
 }
 
@@ -168,18 +207,21 @@
    
     display: inline-block;
 
-    transform: translate(-160%,20%);
+    transform: translate(-160%,30%);
 
     border: solid transparent;
 
     background-color: #FFFFFF;
-    padding: 10%;
+    padding: 8%;
+    max-width: 625px;
+    max-height: 364px;
     
 
     position: absolute;
-    z-index: 40;
+    z-index: 100;
 
     text-align: center;
+
 }
 
 /* biography-section */
@@ -251,9 +293,9 @@
 }
 
 
-/*  disigners-section */
+/*  designers-section */
 
-.disigners-section {
+.designers-section {
     margin: 0 auto;
     margin-bottom: 4%;
 
@@ -268,7 +310,7 @@
     overflow: auto;
 }
 
-.disigners-section_header {
+.designers-section_header {
     max-width: 91px;
     order: 1;
     grid-column: 2/4;
@@ -279,23 +321,23 @@
 
 }
 
-.disigners-section_big-box {
+.designers-section_big-box {
     grid-column: 1/2;
     grid-row: 1/8;
     order: 0;
     
 }
 
-.disigners-section_normal-box {
+.designers-section_normal-box {
     grid-row: 2/8;
     
 }
 
-.disigners-section_desigher-data {
+.designers-section_desigher-data {
     padding-top: 6px;
 }
 
-.disigners-section_desigher-data-with-big-img {
+.designers-section_desigher-data-with-big-img {
     margin-left: 18rem;
 }
 
@@ -309,13 +351,13 @@
     font-weight: bold;
 }
 
-.disigners-section_big-img {
+.designers-section_big-img {
     background-color: rgba(171, 177, 177, 0.568);
     max-width: 600px;
     max-height: 538px;
 }
 
-.disigners-section_img {
+.designers-section_img {
     background-color: rgba(171, 177, 177, 0.568);
     max-width: 310px;
     max-height: 439.40px;
