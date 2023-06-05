@@ -70,15 +70,15 @@
  
   body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
 
   }
 
 #title-page {
-    font-family: 'Butler', serif;
-    font-weight: 300;
-    font-size: 87px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 86px;
 }
 
 .subtitle-page {
@@ -88,37 +88,43 @@
 }
 
 .biography-section_main-disigner-name {
-    font-family: 'Butler', serif;
-    font-weight: 300;
-    font-size: 87px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 86px;
 }
 
 .biography-section_header {
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.biography-section_main-disigner-job-title {
+/* .biography-section_main-disigner-job-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
-}
+} */
 
-.biography-section_main-disigner-skills {
+/* .biography-section_main-disigner-skills {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-}
+} */
 
 .biography-section-text {
-    font-family: 'Butler', serif;
-    font-weight: 300;
-    font-size: 32px;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    font-size: 26px;
 }
 
 .designers-section_header {
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .designer_name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 16px;
 }
 
@@ -136,10 +142,14 @@
 
 
 .testimonials_header {
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .testimonials_item-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     list-style-type: none;
 }
@@ -152,21 +162,27 @@
 }
 
 .testimonials_text {
-    font-family: 'Butler', serif;
-    font-weight: 250;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
     font-size: 32px;
 }
 
+.strong-points_header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 .strong-points_strengths-navbar-header {
-    font-family: 'Butler', serif;
-    font-weight: 300;
-    font-size: 92px; 
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 86px;
 }
 
 .strong-points_strengths-navbar-items {
-    font-family: 'Butler', serif;
-    font-weight: 300;
-    font-size: 34px; 
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    font-size: 34px;
     list-style-type: none;
 }
 
