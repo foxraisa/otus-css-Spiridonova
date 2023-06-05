@@ -99,17 +99,6 @@
     font-size: 20px;
 }
 
-/* .biography-section_main-disigner-job-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-} */
-
-/* .biography-section_main-disigner-skills {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-} */
-
 .biography-section-text {
     font-family: 'Bitter', serif;
     font-weight: 400;
@@ -197,7 +186,7 @@
 
    background-color: rgb(237, 242, 209);
 
-   max-width: 1065px;
+   width: 73%;
    max-height: 630px;
    margin: auto;
    margin-bottom: 4%;
