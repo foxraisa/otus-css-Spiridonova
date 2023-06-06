@@ -177,7 +177,7 @@
 
 .button-header {
     display: block;
-    margin: 4% auto;  
+    margin: 8% auto;  
 }
 
 
@@ -189,7 +189,7 @@
    width: 73%;
    max-height: 630px;
    margin: auto;
-   margin-bottom: 4%;
+   margin-bottom: 8%;
    
    display: block;
    position: relative;
@@ -200,7 +200,7 @@
    
     display: inline-block;
 
-    transform: translate(-160%,30%);
+    transform: translate(40%,-150%);
 
     border: solid transparent;
 
