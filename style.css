@@ -186,6 +186,8 @@
 
    background-color: rgb(237, 242, 209);
 
+   background-size: 100%;
+
    width: 73%;
    max-height: 630px;
    margin: auto;
@@ -200,7 +202,7 @@
    
     display: inline-block;
 
-    transform: translate(40%,-150%);
+    transform: translate(40%,-160%);
 
     border: solid transparent;
 
