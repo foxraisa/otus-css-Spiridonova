@@ -162,13 +162,13 @@
     font-size: 20px;
 }
 
-.strong-points_group-header {
+.strong-points_strengths-header {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
 }
 
-.strong-points_group-items {
+.strong-points_item {
     font-family: 'Bitter', serif;
     font-weight: 400;
     font-size: 34px;
@@ -439,26 +439,24 @@
  /*  секцмя strong-points  */
 
 .strong-points {
-    background-color: blueviolet;
-
     display: grid;   
     grid-template-columns:  repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
-    max-width: 1686px;
+    width: 110%;
+    margin-bottom: 8%;
 
     overflow: auto;
 }
 
 .strong-points_header {
-    background-color: aquamarine;
-
-    max-width: 140px;
+    max-width: 122px;
 
     grid-column: 2/3;
     grid-row: 1/2;
     order: 0;
     transform: rotate(-90deg);
+    margin-left: 8rem;
 }
 
 .strong-points_img {
@@ -467,17 +465,17 @@
 
 }
 
-.strong-points_group-box {
+.strong-points_strengths-box {
     order: 3;
     grid-column: 3/4;
     grid-row: 1/7;
 }
 
-.strong-points_group-header {
+.strong-points_strengths-header {
     text-align: center;
     margin-bottom: 6%;
 }
 
 .strong-points_item {
-    padding-left: 100px;
+    padding-left: calc(12% + 10px);
 }
