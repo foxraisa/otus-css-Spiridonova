@@ -226,7 +226,7 @@
     max-height: 840px;
     max-width: 1303px;
     margin: 0 auto;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 
     gap: 8%;
 }
@@ -386,7 +386,7 @@
     max-width: 1256px;
     
     margin: 0 auto;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 }
 
 .testimonials_header {
@@ -437,45 +437,81 @@
 
 
  /*  секцмя strong-points  */
+ .strong-points {
+    max-height: 670px;
+    margin-bottom: 6%;
+    overflow: auto;
+ }
+ 
+ .strong-points_box {
+    display: flex; 
+    align-items: flex-end;
+    align-content: space-between;
+    gap: 10px;
+}
 
-.strong-points {
+.strong-points_header {
+    display: inline-block;
+    position: absolute;
+    left: 28%;
+    transform: translate(-50%, 170%) rotate(-90deg);
+}
+
+.strong-points_card {
+    flex-shrink: 0;
+    width: 350px;
+    height: 525px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.strong-points_img {
+    background-size: 100%;
+}
+
+.strong-points_strengths-card {
+    flex-shrink: 0;
+    width: 395px;
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.strong-points_strengths-header {
+    margin-bottom: 8%;
+}
+
+.strong-points_strengths-list {
+    max-width: 229px;
+    max-height: 510px;
+    margin: 5% auto;
+}
+
+ @supports (display: grid) {
+.strong-points_box {
     display: grid;   
     grid-template-columns:  repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
-    width: 110%;
-    margin-bottom: 8%;
-
-    overflow: auto;
 }
 
-.strong-points_header {
-    max-width: 122px;
-
-    grid-column: 2/3;
-    grid-row: 1/2;
-    order: 0;
-    transform: rotate(-90deg);
-    margin-left: 8rem;
-}
-
-.strong-points_img {
+.strong-points_card {
     grid-row: 2/8;
-    background-size: 100%;
-
 }
 
-.strong-points_strengths-box {
+.strong-points_strengths-card {
     order: 3;
     grid-column: 3/4;
     grid-row: 1/7;
 }
 
-.strong-points_strengths-header {
-    text-align: center;
-    margin-bottom: 6%;
-}
-
 .strong-points_item {
     padding-left: calc(12% + 10px);
 }
+ }
+   
+
