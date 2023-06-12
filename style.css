@@ -181,42 +181,46 @@
     margin: 8% auto;  
 }
 
-
+/* title-section */
 .title-section {
-   background-clip: content-box;
+    display: block;
+    position: relative;
+    max-width: 1060px;
+    max-height: 630px;
+    margin: auto;
+    margin-bottom: 8%;
+}
 
-   background-color: rgb(237, 242, 209);
+@supports (display: flex) {
+    .title-section {
+        display: flex;
+        max-width: 1060px;
+        max-height: 630px;
+        margin: auto;
+        margin-bottom: 8%;
+    }
+}
 
-   width: 1060px;
-   max-height: 630px;
-   margin: auto;
-   margin-bottom: 8%;
-   
-   display: block;
-   position: relative;
-
+.title-section_background-img {
+    max-width: 100%;
+    display: block;
 }
 
 .title-inner-box {
-   
     display: inline-block;
-
-    transform: translate(40%,-150%);
-
-    border: solid transparent;
-
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     background-color: #FFFFFF;
-    padding: 8%;
+
     max-width: 625px;
     max-height: 364px;
-    
-
-    position: absolute;
-    z-index: 100;
 
     text-align: center;
-
+    padding: 8%;
 }
+
 
 /* biography-section */
 
@@ -438,7 +442,7 @@
 
  /*  секцмя strong-points  */
  .strong-points {
-    max-height: 670px;
+    max-height: 680px;
     margin-bottom: 6%;
     overflow: auto;
  }
@@ -492,26 +496,26 @@
 }
 
  @supports (display: grid) {
-.strong-points_box {
-    display: grid;   
-    grid-template-columns:  repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 10px;
-}
+    .strong-points_box {
+        display: grid;   
+        grid-template-columns:  repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
+    }
 
-.strong-points_card {
-    grid-row: 2/8;
-}
+    .strong-points_card {
+        grid-row: 2/8;
+    }
 
-.strong-points_strengths-card {
-    order: 3;
-    grid-column: 3/4;
-    grid-row: 1/7;
-}
+    .strong-points_strengths-card {
+        order: 3;
+        grid-column: 3/4;
+        grid-row: 1/7;
+    }
 
-.strong-points_item {
-    padding-left: calc(12% + 10px);
-}
+    .strong-points_item {
+        padding-left: calc(12% + 10px);
+    }
  }
    
 
