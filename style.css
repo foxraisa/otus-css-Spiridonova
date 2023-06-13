@@ -87,7 +87,7 @@
     font-size: 20px;
 }
 
-.biography-section_main-disigner-name {
+.biography-section_name {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
@@ -99,7 +99,7 @@
     font-size: 20px;
 }
 
-.biography-section-text {
+.biography-section_box-text_text {
     font-family: 'Bitter', serif;
     font-weight: 400;
     font-size: 26px;
@@ -227,69 +227,70 @@
 .biography-section {
     display: flex;
     flex-direction: row;
-    max-height: 840px;
     max-width: 1303px;
+    max-height: 840px;
     margin: 0 auto;
     margin-bottom: 8%;
 
-    gap: 8%;
+    gap: 3%;
 }
-
-.biography-section_main-disigner-name {
-    padding-top: 2.3em;
-    padding-left: .5em;
-    padding-bottom: .4em;
-}
-
 
 .biography-section_header {
-    align-self: flex-end;
-    order: 2;
+    align-self: flex-start;
+    order: 1;
     writing-mode: vertical-lr; 
     /* сейчас  writing-mode работает не во всех браузерах корректно*/
     max-width: 475px;
     margin-bottom: 20px;
 }
 
-.biography-section_main-disigner-job-title {
-    padding-left: 2em;
+.biography-section_main-disigner-img {
+    max-width: 100%;
 }
 
-.biography-section_main-disigner-skills  {
-    list-style: none;
-    max-width: 475px;
-    padding: 0; 
-    padding-left: 2em;
+.biography-section_box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 3;
+
+    max-width: 445px;
+    max-height: 475px;
+    margin: auto;
+    padding-bottom: .4em;
+
 }
 
-.biography-section_main-disigner-skills_item {
+.biography-section_name {
+    padding-bottom: .4em;
+}
+
+.biography-section_skills {
+    padding-left: 0%;
+}
+
+
+.biography-section_skills_item {
     display: inline-block;
+    list-style: none;
 }
 
-.biography-section_main-disigner-skills_item::after {
+.biography-section_skills_item::after {
     content: "/";
     margin-left: .3em;
 
 }
 
-
-.biography-section_main-disigner-skills_item:last-child::after {
+.biography-section_skills_item:last-child::after {
     content: "";
     
 }
 
-
-.biography-section-text::before {
+.biography-section_box-text_text::before {
     content: "-";
     display: block;
     padding: 4%;
 }
-
-.biography-section-text {
-    max-width: 415px;
-    padding-left: 1em;
-}
-
 
 /*  designers-section */
 
