@@ -181,6 +181,14 @@
     margin: 8% auto;  
 }
 
+/* @media screen and (max-width: Ypx) {
+    /* верстка мобилþнаā*/
+    
+   /* } */
+    /* */ 
+
+
+
 /* title-section */
 .title-section {
     display: block;
@@ -220,6 +228,45 @@
     text-align: center;
     padding: 8%;
 }
+
+@media screen and (max-width: 900px) {
+    /* верстка мобильная - планшет*/
+    
+    #title-page {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 70px;
+    }
+    
+    .subtitle-page {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    } 
+
+@media screen and (max-width: 450px) {
+    /* верстка мобильная - смартфон*/
+        .title-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-section_background-box-img {
+            order: 2;
+        }
+
+        .title-inner-box {
+            display: block;
+            max-width: 100%;
+            order: 0;
+            max-height: 345px;
+        }
+
+    
+        
+     } 
 
 
 /* biography-section */
