@@ -199,18 +199,9 @@
     margin-bottom: 8%;
 }
 
-@supports (display: flex) {
-    .title-section {
-        display: flex;
-        max-width: 1060px;
-        max-height: 630px;
-        margin: auto;
-        margin-bottom: 8%;
-    }
-}
 
 .title-section_background-img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -250,18 +241,29 @@
     /* верстка мобильная - смартфон*/
         .title-section {
             display: flex;
-            flex-direction: column;
-        }
-
-        .title-section_background-box-img {
-            order: 2;
+            justify-content: center;
+            align-items: center;
+            margin: 0% auto;
+    
         }
 
         .title-inner-box {
-            display: block;
+            width: 100%;
+            text-align: center;
+
+            transform: translate(-50%, -20%);
+            min-height: 345px;
+
+        }
+
+       .cropped-title-section_background-img {
             max-width: 100%;
-            order: 0;
-            max-height: 345px;
+            margin-bottom: 8%;
+            height: auto;
+       }
+
+        #title-page {
+            padding-top: 98px; 
         }
 
     
