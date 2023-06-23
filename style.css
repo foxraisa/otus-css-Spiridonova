@@ -235,6 +235,10 @@
         font-size: 18px;
     }
 
+    .title-section {
+        margin-bottom: 25%;
+    }
+
     } 
 
 @media screen and (max-width: 450px) {
@@ -244,8 +248,10 @@
             justify-content: center;
             align-items: center;
             margin: 0% auto;
-            height: 800px;
+            /* height: 800px; */
             margin-bottom: 25%;
+
+            grid: 4%;
         }
 
         .title-inner-box {
@@ -293,7 +299,7 @@
 }
 
 .biography-section_main-disigner-img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .biography-section_box-text {
@@ -355,6 +361,31 @@
         font-weight: 400;
         font-size: 64px;
     }
+
+    .biography-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: space-between;
+        max-width: 900px;
+        max-height: 945px;
+        margin: 0 auto;
+        margin-bottom: 25%;
+    }
+
+    .biography-section_box-img {
+        max-width: 450px;
+        max-height: 401px;
+        margin: 0 auto;
+
+    }
+
+    .biography-section_header {
+        align-self: flex-end;
+        writing-mode: vertical-lr; 
+        /* сейчас  writing-mode работает не во всех браузерах корректно*/
+        max-width: 475px;
+        margin-bottom: 20px;
+    }
    
     } 
 
@@ -363,8 +394,9 @@
     .biography-section {
         display: flex;
         flex-direction: column-reverse;
-        width: 450px;
-        height: 945px;
+        align-content: space-between;
+        max-width: 450px;
+        max-height: 945px;
         margin: 0 auto;
         margin-bottom: 25%;
     }
@@ -375,10 +407,10 @@
 
     .biography-section_header {
         writing-mode: horizontal-tb;
-        /* display: inline-block;
+        display: inline-block;
         position: absolute;
         left: 80%;
-        transform: translate(-50%, -1900%); */
+        top: 110%;
     }
 
     
@@ -395,12 +427,21 @@
     
     .biography-section_name {
         order: 3;
+        margin-bottom: 50px;
     }
 
     .biography-section_job-title {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 18px;
+    }
+
+    .biography-section_skills {
+        margin-bottom: 50px;
+    }
+
+    .biography-section_box-text_text {
+        margin-bottom: 50px;
     }
 
     .biography-section_skills_item {
