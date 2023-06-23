@@ -251,7 +251,7 @@
             /* height: 800px; */
             margin-bottom: 25%;
 
-            grid: 4%;
+            gap: 4%;
         }
 
         .title-inner-box {
@@ -554,6 +554,46 @@
 .designer_skills-item:last-child:after {
     content: "";
 }
+
+@media screen and (max-width: 900px) {
+    /* верстка мобильная - планшет*/
+
+    .designers-section {
+        margin: 0 auto;
+        margin-bottom: 25%;
+        overflow: auto;
+    }
+
+    .designers-section_header {
+        font-size: 18px;
+
+        transform: none;
+        display: inline-block;
+        position: absolute;
+        text-align: start;
+        margin-left: 5rem;
+    }
+
+    .designers-section_big-box {
+        grid-column: 1/2;
+        grid-row: 2/8;
+        order: 0;
+        
+    }
+
+    .designers-section_desigher-data-with-big-img {
+        margin-left: 0%;
+    }
+    
+
+    } 
+
+@media screen and (max-width: 450px) {
+    /* верстка мобильная - смартфон*/
+        
+
+     } 
+
 
 
 
