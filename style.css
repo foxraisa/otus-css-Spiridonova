@@ -640,15 +640,10 @@
  }
 
  .testimonials_second-box {
-    max-width: 206px;
+    width: 226px;
     margin: 0 auto;
     margin-bottom: 4%;
     text-align: center;
- }
-
- .testimonials_small-img-box {
-    max-width: 221px;
-    max-height: 333px;
  }
 
  .testimonials_img_testimoniail-second-creative {
@@ -724,6 +719,9 @@
     .testimonials_second-box {
         grid-column: 1/3;
         justify-items: center;
+        width: 410px;
+
+        background-color: blueviolet;
     }
 
     
@@ -815,5 +813,21 @@
         padding-left: calc(12% + 10px);
     }
  }
+
+ @media screen and (max-width: 900px) {
+    /* верстка мобильная - планшет*/
+
+   
+
+    } 
+
+@media screen and (max-width: 450px) {
+    /* верстка мобильная - смартфон*/
+
+    
+
+    
+     } 
+
    
 
