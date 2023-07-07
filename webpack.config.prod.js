@@ -1,15 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCss = require("mini-css-extract-plugin");
 
 module.exports = {
 
-    mode: 'development', // Режим сборки
+    mode: 'production', // Режим сборки
     // target: 'web',
 
     entry: path.resolve(__dirname, './src/index.js'),
    
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './prod'),
         filename: '[name].[hash:8].js',
         clean: true
      },
@@ -76,15 +77,19 @@ module.exports = {
         template: path.resolve(__dirname, "./src/index.html"),
         filename: "index.html",
     }),
+
+    new MiniCss ({
+      filename: "style.css"
+    }),
   ],
 
   
   
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'), // Каталог для статики
+      directory: path.join(__dirname, 'prod'), // Каталог для статики
     },
-    compress: false,
+    compress: true,
     port: 5500,
     hot: true,
    
