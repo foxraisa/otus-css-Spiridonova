@@ -15,31 +15,48 @@
 </head>
 
 <body>
-    <header>
-       <button class="button-header" type="button"> 
-            <img src="img/icon-menu.png" alt="Menu-button">
+    <header class="button-menu-header">
+       <button class="button-menu" type="button"> 
+            <img class="button-menu-img" src="img/icon-menu.png" alt="Menu-button">
        </button>
+
+        <div class="button-menu-dropdown">
+            <a class="button-menu-item" href="#">Biography</a> 
+            <a class="button-menu-item" href="#">Designers</a>
+            <a class="button-menu-item" href="#">Testimonials</a>
+            <a class="button-menu-item" href="#">Strong points</a>
+        </div>
+
+        <div class="button-menu-letters">
+            <a class="button-menu-item-letters" href="#">B</a> 
+            <a class="button-menu-item-letters" href="#">D</a>
+            <a class="button-menu-item-letters" href="#">T</a>
+            <a class="button-menu-item-letters" href="#">S</a>
+        </div>
+
     </header>
 
     <section class="title-section">
 
-        <div class="title-section_background-box-img">
+        <picture class="title-section_background-box-img">
+            <source class="cropped-title-section_background-img" srcset="img/main-box-weather-room-mobile.jpg" width="450" height="764"  media="(max-width: 450px)">
             <img class="title-section_background-img" src="img/main-box-weather-room.jpg" width="1065" height="630" alt="Weather room">
-        </div>
+        </picture>
 
         <div class="title-inner-box">
             <h1 id="title-page"> Mod&nbsp;Studio </h1>
             <h2 id="subtitle-page">Modern&nbsp;Web&nbsp;Studio</h2>
         </div>
-    </section>
+    </section> 
 
     <section class="biography-section">
         
         <h2 class="biography-section_header"> Biography </h2>
         
-        <div class="biography-section_box-img">
+        <picture class="biography-section_box-img">
+            <source class="cropped-biography-section_main-disigner-img" srcset="img/katya-mills-mobile.jpg" width="450" height="401"  media="(max-width: 900px)">
             <img class="biography-section_main-disigner-img" src="img/katya-mills.jpg" width="553" height="840" alt="Katya Mills">
-        </div>
+        </picture>
 
         <div class="biography-section_box-text">
             <h3 class="biography-section_name"> Katya <br> Mills </h3>
@@ -56,16 +73,17 @@
             <p class="biography-section_box-text_text">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</p>
         </div>
 
-    </section>
+    </section> 
 
     <section class="designers-section">
         <h2 class="designers-section_header">Designers</h2>
 
         <div class="designers-section_big-box">
 
-            <div class="designers-section_big-img">
-                <img src="img/designer-jess-wonder.jpg" alt="Jess Wonder">
-            </div>    
+            <picture class="designers-section_big-box-img">
+                <source class="cropped-designers-section_big-img" srcset="img/designer-jess-wonder-mobile.jpg" width="319" height="440"  media="(max-width: 900px)">
+                <img class="designers-section_big-img" src="img/designer-jess-wonder.jpg" width="635" height="538" alt="Jess Wonder">
+            </picture>    
 
             <div class="designers-section_desigher-data-with-big-img">
                 <h3 class="designer_name">JESS WONDER</h3> 
@@ -118,35 +136,36 @@
     <section class="testimonials-section">
         <h2 class="testimonials_header">Testimonials</h2>
         
-        <div class="testimonials-items-box">
-            <nav class="testimonials-items-list">
-                <p class="testimonials_item-text">
+        <div class="testimonials-website-items-box">
+            <nav class="testimonials-website-list">
+                <p class="testimonials_item-website">
                     Website 
                     <a href="http://www.whitepapers.com">www.whitepapers.com</a>
                 </p>
 
-                <p class="testimonials_item-text">
+                <p class="testimonials_item-website">
                     Creativity
                     <a href="http://www.whitepapers.com">www.whitepapers.com</a>
                 </p>
 
-                <p class="testimonials_item-text">
+                <p class="testimonials_item-website">
                     Creativity
                     <a href="http://www.whitepapers.com">www.whitepapers.com</a>
                 </p>
 
             </nav>
             
-            <div class="testimonials_img_testimoniail-main-creative">
-                <img src="img/testimoniail-main-creative.jpg" alt="Place for creative">
+            <div class="testimonials_big-img-box">
+                <img class="testimonials_img_testimoniail-main-creative" src="img/testimoniail-main-creative.jpg" width="515" height="757" alt="Place for creative">
             </div>
 
-            <div class="testimonials_second-part">
+            <div class="testimonials_second-box">
                 <p class="testimonials_text">"I just really want to do good work and work with some great people, people who challange me."</p>
                 
-                <div class="testimonials_img_testimoniail-second-creative">
-                    <img src="img/testimoniail-second-creative.jpg" alt="Go to work">
-                </div>
+                <picture class="testimonials_small-img-box">
+                    <source class="cropped-testimonials_img_testimoniail-second-creative" srcset="img/testimoniail-second-creative-mobile.jpg" width="410" height="330"  media="(max-width: 450px)">
+                    <img class="testimonials_img_testimoniail-second-creative" src="img/testimoniail-second-creative.jpg" width="221" height="333" alt="Go to work">
+                </picture>
         
             </div>
 
@@ -158,13 +177,15 @@
         <h2 class="strong-points_header">Strong points</h2>
 
         <div class="strong-points_box">
-            <div class="strong-points_card">
-                <img class="strong-points_img" src="img/strong-points-working-place.jpg" alt="Working place">
-            </div>
+            <picture class="strong-points_card">
+                <source class="cropped-strong-points_img" srcset="img/strong-points-working-place-mobile.jpg" width="300" height="450"  media="(max-width: 900px)">
+                <img class="strong-points_img" src="img/strong-points-working-place.jpg" width="350" height="525" alt="Working place">
+            </picture>
 
-            <div class="strong-points_card">
-                <img class="strong-points_img" src="img/strong-points-relaxing-place.jpg" alt="Relaxing place">
-            </div>
+            <picture class="strong-points_card">
+                <source class="cropped-strong-points_img" srcset="img/strong-points-working-place-mobile.jpg" width="300" height="450"  media="(max-width: 900px)">
+                <img class="strong-points_img" src="img/strong-points-relaxing-place.jpg" width="350" height="525" alt="Relaxing place">
+            </picture>
 
             <div class="strong-points_strengths-card">
                 <h3 class="strong-points_strengths-header">  Strengths</h3>
@@ -185,9 +206,10 @@
                 </ul>
             </div>
 
-        <div class="strong-points_card">
-            <img class="strong-points_img" src="img/strong-points-relaxing-place.jpg" alt="Relaxing place">
-        </div>
+        <picture class="strong-points_card">
+            <source class="cropped-strong-points_img" srcset="img/strong-points-working-place-mobile.jpg" width="300" height="450"  media="(max-width: 900px)">
+            <img class="strong-points_img" src="img/strong-points-relaxing-place.jpg" width="350" height="525" alt="Relaxing place">
+        </picture>
     </div>
      
     </section>
