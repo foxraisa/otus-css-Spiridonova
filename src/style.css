@@ -251,28 +251,8 @@
     padding: 8%;
 }
 
-@media screen and (max-width: 900px) {
-    /* верстка мобильная - планшет*/
-    
-    #title-page {
-        font-family: 'Playfair Display', serif;
-        font-weight: 400;
-        font-size: 70px;
-    }
-    
-    .subtitle-page {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-    }
 
-    .title-section {
-        margin-bottom: 25%;
-    }
-
-    } 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     /* верстка мобильная - смартфон*/
         .title-section {
             display: flex;
@@ -301,7 +281,16 @@
        }
 
         #title-page {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 70px;
             padding-top: 98px; 
+        }
+
+        .subtitle-page {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
         }
 
      } 
@@ -313,7 +302,7 @@
     display: flex;
     flex-direction: row;
     max-width: 1303px;
-    max-height: 840px;
+    max-height: 1000px;
     margin: 0 auto;
     margin-bottom: 25%;
 
@@ -378,37 +367,38 @@
 }
 
 @media screen and (max-width: 900px) {
-    .biography-section_header {
-        font-size: 18px;
-    }
+    /* .biography-section_header { */
+        /* font-size: 18px; */
+    /* } */
 
-    .biography-section_box-text_text {
-        font-family: 'Bitter', serif;
-        font-weight: 300;
-        font-size: 30px;
-    }
-    .biography-section_name {
-        font-family: 'Playfair Display', serif;
-        font-weight: 400;
-        font-size: 64px;
-    }
+    /* .biography-section_box-text_text { */
+        /* font-family: 'Bitter', serif; */
+        /* font-weight: 300; */
+        /* font-size: 30px; */
+    /* } */
 
-    .biography-section {
-        display: flex;
-        flex-direction: column-reverse;
-        align-content: space-between;
-        max-width: 900px;
-        max-height: 945px;
-        margin: 0 auto;
-        margin-bottom: 25%;
-    }
+    /* .biography-section_name { */
+        /* font-family: 'Playfair Display', serif; */
+        /* font-weight: 400; */
+        /* font-size: 64px; */
+    /* } */
 
-    .biography-section_box-img {
-        max-width: 450px;
-        max-height: 401px;
-        margin: 0 auto;
+    /* .biography-section { */
+        /* display: flex; */
+        /* flex-direction: column-reverse; */
+        /* align-content: space-between; */
+        /* max-width: 900px; */
+        /* max-height: 945px; */
+        /* margin: 0 auto; */
+        /* margin-bottom: 25%; */
+    /* } */
 
-    }
+    /* .biography-section_box-img { */
+        /* max-width: 450px; */
+        /* max-height: 401px; */
+        /* margin: 0 auto; */
+
+    /* } */
 
     .biography-section_header {
         align-self: flex-end;
@@ -441,7 +431,7 @@
         display: inline-block;
         position: absolute;
         left: 80%;
-        top: 110%;
+        top: 120%;
 
         font-size: 18px;
     }
@@ -465,6 +455,12 @@
 
         order: 3;
         margin-bottom: 50px;
+    }
+
+    .biography-section_box-img {
+        max-width: 450px;
+        max-height: 401px;
+        margin: 0 auto;
     }
 
     .biography-section_job-title {
@@ -687,7 +683,6 @@
 
 
  @media screen and (max-width: 900px) {
-    /* верстка мобильная - планшет*/
 
     .testimonials-website-items-box {
         display: grid;
