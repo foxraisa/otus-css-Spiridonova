@@ -794,6 +794,9 @@
         padding-left: 0%;
         padding-left: calc(12% + 10px);
     }
+}
+
+
 
 @media screen and (max-width: 768px) {
     /* верстка мобильная - смартфон*/
@@ -844,8 +847,4 @@
             font-size: 24px;
         }
 
-
     } 
-
-   
-
