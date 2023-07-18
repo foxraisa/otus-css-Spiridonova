@@ -318,6 +318,20 @@
     margin-bottom: 20px;
 }
 
+.biography-section_box-img {
+    /* border: 4px double #bd6c46;  */
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.biography-section_box-img:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
 .biography-section_main-disigner-img {
     width: 100%;
 }
@@ -345,20 +359,43 @@
 
 
 .biography-section_skills_item {
-    display: inline-block;
-    list-style: none;
+    color: black; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.biography-section_skills_item_slash {
+    margin-left: .3em;
+    text-decoration: none;
 }
 
 .biography-section_skills_item::after {
-    content: "/";
-    margin-left: .3em;
-
-}
-
-.biography-section_skills_item:last-child::after {
     content: "";
-    
+
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+
 }
+
+.biography-section_skills_item:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
 
 .biography-section_box-text_text::before {
     content: "-";
