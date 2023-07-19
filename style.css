@@ -60,25 +60,25 @@
     font-size: 26px;
 }
 
-.designers-section_header {
+.designers__header {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
 
-.designer_name {
+.designer__name {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
 }
 
-.designer_from {
+.designer__from {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
-.designer_skills {
+.designer__skills {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -473,9 +473,9 @@
 
 
 
-/*  designers-section */
+/*  designers */
 
-.designers-section {
+.designers {
     margin: 0 auto;
     margin-bottom: 8%;
 
@@ -490,7 +490,7 @@
     overflow: auto;
 }
 
-.designers-section_header {
+.designers__header {
     max-width: 91px;
     order: 1;
     grid-column: 2/4;
@@ -501,74 +501,74 @@
 
 }
 
-.designers-section_big-box {
+.designers__big box {
     grid-column: 1/2;
     grid-row: 1/8;
     order: 0;
     
 }
 
-.designers-section_normal-box {
+.designers__normal box {
     grid-row: 2/8;
     
 }
 
-.designers-section_desigher-data {
+.designers__person data {
     padding-top: 6px;
 }
 
-.designers-section_desigher-data-with-big-img {
+.designers__person data-with big img {
     margin-left: 50%;
 }
 
-.designer_from::before {
+.designer__from::before {
     content: "From/";
     font-weight: bold;
 }
 
-.designer_skills::before {
+.designer__skills::before {
     content: "Skills/";
     font-weight: bold;
 }
 
-.designers-section_big-img {
+.designers__big img {
     max-width: 600px;
     max-height: 538px;
 }
 
-.designers-section_img {
+.designers__img {
     max-width: 310px;
     max-height: 439.40px;
 }
 
-.designer_skills {
+.designer__skills {
     list-style: none;
     padding: 0;
 }
 
-.designer_skills-item {
+.designer__skills-item {
     display: inline-block;
 }
 
-.designer_skills-item::after {
+.designer__skills-item::after {
     content: "/";
     margin-left: .3em;
 }
 
-.designer_skills-item:last-child:after {
+.designer__skills-item:last-child:after {
     content: "";
 }
 
 @media screen and (max-width: 768px) {
     /* верстка мобильная - планшет*/
 
-    .designers-section {
+    .designers {
         margin: 0 auto;
         margin-bottom: 25%;
         overflow: auto;
     }
 
-    .designers-section_header {
+    .designers__header {
         font-size: 18px;
 
         transform: none;
@@ -578,14 +578,14 @@
         margin-left: 5rem;
     }
 
-    .designers-section_big-box {
+    .designers__big box {
         grid-column: 1/2;
         grid-row: 2/8;
         order: 0;
         
     }
 
-    .designers-section_desigher-data-with-big-img {
+    .designers__person data-with big img {
         margin-left: 0%;
     }
     
