@@ -1,1 +1,1 @@
-# otus-css-Spiridonova-2
+# otus-css-Spiridonova
