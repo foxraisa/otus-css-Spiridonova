@@ -1,11 +1,105 @@
 @font-face {
-    font-family: "Bitter";
-    src: url(../src/Fonts/bitter/Bitter-Regular.ttf);
-    font-weight: 400; 
-  }
+  font-family: "Bitter";
+  src: url(../src/Fonts/bitter/Bitter-Regular.ttf);
+  font-weight: 400; 
+}
 
-  @font-face {
-    font-family: "Bitter";
-    src: url(../src/Fonts/bitter/Bitter-Thin.woff2);
-    font-weight: 300;
-  }
+@font-face {
+  font-family: "Bitter";
+  src: url(../src/Fonts/bitter/Bitter-Thin.woff2);
+  font-weight: 300;
+}
+
+.menu-text {
+  font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 86px;
+}
+
+.button-menu-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+
+.title-page {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 86px;
+}
+
+.subtitle-page {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+
+/* Секция MOD */
+
+.menu-text {
+  margin-right: 40px;
+}
+
+.menu-header {
+  display: flex;
+  flex-direction: row;
+
+  width: 97%;
+  height: 135px;
+
+  margin: 0 auto;
+}
+
+.button-menu {
+  width: 85%;
+  height: 28px;margin: auto 0;
+
+
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+
+}
+
+.button-menu-item {
+  text-decoration:none;
+  color: #000
+}
+
+.title-section {
+  position: relative;
+  text-align: center;
+
+}
+
+.title-section_background-img {
+  width: 100%;
+  height: 630px;
+
+}
+
+
+
+.title-box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  width: 48%;
+  height: 57%;
+}
+
+.title-page {
+  margin-top: 12%;
+}
