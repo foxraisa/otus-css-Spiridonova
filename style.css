@@ -61,6 +61,18 @@ body {
   font-size: 26px;
 }
 
+.designers-section_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.designers-section_box {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 
 
 * {
@@ -199,4 +211,55 @@ body {
   content: "-";
   display: block;
   padding: 4%;
+}
+
+
+
+/*  designers-section */
+
+.designers-section {
+  width: 98.6%;
+  height: 677px;
+
+  margin: 0 auto 8%;
+
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 3%; */
+}
+
+
+.designers-section_header {
+  width: 98.6%;
+  padding-left: 110px;
+  padding-bottom: 30px;
+}
+
+.designers-section_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  max-width: 98.6%;
+  height: 619px;
+
+  gap: 20px;
+
+  overflow-y: auto;
+
+  /* max-height: 100vh; */
+  /* убрать коммент - прокрутка будет всегда видимой */
+}
+
+.designers-section_big-box-text {
+  padding-left: 240px;
+}
+
+.designer_name {
+  padding-top: 20px;
+}
+
+.designer_skills {
+  padding-bottom: 15px;
 }
