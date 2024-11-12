@@ -149,8 +149,12 @@ body {
   /* gap: 3%; */
 }
 
+.biography-section-box-img {
+  max-width: 571px;
+}
+
 .biography-section_main-disigner-img {
-  width: 571px;
+  width: 100%;
 }
 
 .biography-section_header {
@@ -168,10 +172,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* order: 3;  */
 
-  /* margin: auto; */
-  /* padding-bottom: .4em; */
 }
 
 .biography-section_name {
@@ -199,4 +200,8 @@ body {
   content: "-";
   display: block;
   padding: 4%;
+}
+
+.biography-section_text {
+  line-height: 31px;
 }
