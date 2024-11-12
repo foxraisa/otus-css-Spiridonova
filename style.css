@@ -92,7 +92,8 @@ body {
 
 .button-menu {
   width: 85%;
-  height: 28px;margin: auto 0;
+  height: 28px;
+  margin: auto 0;
 
 
   display: flex;
@@ -199,4 +200,84 @@ body {
   content: "-";
   display: block;
   padding: 4%;
+}
+
+
+
+
+
+
+
+
+
+ /* Секция Testimonials */
+
+.testimonials-section {
+  width: 97%;
+
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 8%;
+
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(8,1fr);
+}
+
+/* .testimonials-website-list { */
+  /* max-height: 760px; */
+/*  */
+  /* padding-top: 10px; */
+  /* padding-bottom: 20px; */
+/*  */
+  /* display: grid; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  /* align-items: end; */
+/* } */
+/*  */
+/* .testimonials_item-website { */
+  /* transform-origin: top left; */
+  /* transform: rotate(-90deg); */
+/* } */
+/*  */
+
+/* .testimonials-website-list { */
+  /* writing-mode: vertical-lr; */
+  /* transform: rotate(-90deg);  */
+/*    */
+/*  */
+  /* grid-column: 2/3; */
+  /* grid-row: 1/9; */
+/*  */
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+  /* align-content: space-around; */
+  /* align-self: flex-start; */
+/*  */
+  /* width: 98px; */
+/*  */
+  /* background-color: brown; */
+/* } */
+/*  */
+/* .testimonials_item-website { */
+  /* display: flex; */
+  /* flex-direction: column; */
+/* } */
+
+.testimonials_img_testimoniail-main-creative {
+  grid-column: 3/8;
+  grid-row: 1/9;
+}
+
+.testimonials_header {
+  grid-column: 8/9;
+  grid-row: 1/9;
+
+  transform: rotate(-90deg); 
+  align-self: flex-start;
+  padding: 30px 0 50px;
+}
+
+.testimonials_second-box {
+  grid-column: 10/14;
+  grid-row: 1/9;
 }
