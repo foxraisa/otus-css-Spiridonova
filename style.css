@@ -61,6 +61,14 @@ body {
   font-size: 26px;
 }
 
+.testimonials_item-website {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 
 
 * {
@@ -210,6 +218,8 @@ body {
 
 
 
+
+
  /* Секция Testimonials */
 
 .testimonials-section {
@@ -220,64 +230,65 @@ body {
   margin-bottom: 8%;
 
   grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(8,1fr);
+  grid-template-rows: repeat(6,1fr);
 }
 
-/* .testimonials-website-list { */
-  /* max-height: 760px; */
-/*  */
-  /* padding-top: 10px; */
-  /* padding-bottom: 20px; */
-/*  */
-  /* display: grid; */
-  /* grid-template-rows: 1fr 1fr 1fr; */
-  /* align-items: end; */
-/* } */
-/*  */
-/* .testimonials_item-website { */
-  /* transform-origin: top left; */
-  /* transform: rotate(-90deg); */
-/* } */
-/*  */
 
-/* .testimonials-website-list { */
-  /* writing-mode: vertical-lr; */
-  /* transform: rotate(-90deg);  */
-/*    */
-/*  */
-  /* grid-column: 2/3; */
-  /* grid-row: 1/9; */
-/*  */
-  /* display: flex; */
-  /* flex-direction: row-reverse; */
-  /* align-content: space-around; */
-  /* align-self: flex-start; */
-/*  */
-  /* width: 98px; */
-/*  */
-  /* background-color: brown; */
-/* } */
-/*  */
+.testimonials-website-list {
+  grid-column: 2/3;
+  grid-row: 1/7;
+
+
+    background-color: brown;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: rotate(-90deg);
+  /* padding: 20px 0px; */
+  /* gap: 70px; */
+}
+
 /* .testimonials_item-website { */
-  /* display: flex; */
-  /* flex-direction: column; */
+  /* transform: rotate(-90deg); */
+/*  */
 /* } */
+
+.testimonials_item-website {
+
+}
+
+
+.testimonials_box-img_testimoniail-main-creative {
+  max-width: 451px;
+  max-height: 760px;
+
+  grid-column: 3/9;
+  grid-row: 1/7;
+
+}
 
 .testimonials_img_testimoniail-main-creative {
-  grid-column: 3/8;
-  grid-row: 1/9;
+  width: 100%; 
 }
+
+
 
 .testimonials_header {
   grid-column: 8/9;
-  grid-row: 1/9;
+  grid-row: 1/7;
 
   transform: rotate(-90deg); 
   align-self: flex-start;
-  padding: 30px 0 50px;
+  padding: 30px 65px 50px 0;
+
+  max-height: 760px;
+
 }
 
 .testimonials_second-box {
-  grid-column: 10/14;
-  grid-row: 1/9;
+  grid-column: 11/14;
+  grid-row: 1/7;
 }
+
+
