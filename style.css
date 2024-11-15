@@ -255,10 +255,6 @@ body {
   max-height: 760px;
 }
 
-/* .testimonials_img_testimoniail-main-creative { */
-  /* width: 100%; */
-/* } */
-
 .testimonials_header {
   align-self: flex-start;
   transform: rotate(-90deg);
@@ -269,9 +265,6 @@ body {
 }
 
 .testimonials_second-box {
-
-  background-color: coral;
-
   max-width: 221px;
   max-height: 760px;
 
