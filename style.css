@@ -61,6 +61,19 @@ body {
   font-size: 26px;
 }
 
+.testimonials_header {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.testimonials_text {
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+
 
 
 * {
@@ -213,71 +226,81 @@ body {
  /* Секция Testimonials */
 
 .testimonials-section {
-  width: 97%;
+  width: 80.6%;
+  max-height: 760px;
+  margin: 0 auto 8%;
 
+
+  display: flex;
+
+}
+
+
+.testimonials-website-list {
   display: grid;
-  margin: 0 auto;
-  margin-bottom: 8%;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  writing-mode: vertical-rl;
 
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(8,1fr);
+  max-height: 760px;
 }
 
-/* .testimonials-website-list { */
-  /* max-height: 760px; */
-/*  */
-  /* padding-top: 10px; */
-  /* padding-bottom: 20px; */
-/*  */
-  /* display: grid; */
-  /* grid-template-rows: 1fr 1fr 1fr; */
-  /* align-items: end; */
-/* } */
-/*  */
-/* .testimonials_item-website { */
-  /* transform-origin: top left; */
-  /* transform: rotate(-90deg); */
-/* } */
-/*  */
-
-/* .testimonials-website-list { */
-  /* writing-mode: vertical-lr; */
-  /* transform: rotate(-90deg);  */
-/*    */
-/*  */
-  /* grid-column: 2/3; */
-  /* grid-row: 1/9; */
-/*  */
-  /* display: flex; */
-  /* flex-direction: row-reverse; */
-  /* align-content: space-around; */
-  /* align-self: flex-start; */
-/*  */
-  /* width: 98px; */
-/*  */
-  /* background-color: brown; */
-/* } */
-/*  */
-/* .testimonials_item-website { */
-  /* display: flex; */
-  /* flex-direction: column; */
-/* } */
-
-.testimonials_img_testimoniail-main-creative {
-  grid-column: 3/8;
-  grid-row: 1/9;
+.testimonials_item-website {
+  transform: rotate(-180deg);
+  margin: 10px 40px 10px 20px;
 }
+
+.testimonials_box-img_testimoniail-main-creative {
+  max-width: 451px;
+  max-height: 760px;
+}
+
+/* .testimonials_img_testimoniail-main-creative { */
+  /* width: 100%; */
+/* } */
 
 .testimonials_header {
-  grid-column: 8/9;
-  grid-row: 1/9;
-
-  transform: rotate(-90deg); 
   align-self: flex-start;
-  padding: 30px 0 50px;
+  transform: rotate(-90deg);
+  align-content: center;
+  margin-top: 10px ;
+  padding-bottom: 8%;
+
 }
 
 .testimonials_second-box {
-  grid-column: 10/14;
-  grid-row: 1/9;
+
+  background-color: coral;
+
+  max-width: 221px;
+  max-height: 760px;
+
+  align-content: center;
+  margin: 0 10%;
+
 }
+
+.testimonials_text {
+
+  display: flex;
+
+  max-width: 221px;
+  max-height: 304px;
+  text-align: center;
+
+  margin: 0 auto 8%;
+}
+
+q {
+  quotes: none;
+}
+
+.testimonials_box-img_testimoniail-second-creative {
+  max-width: 221px;
+  max-height: 333px;
+
+  margin: 0 auto;
+}
+
+
+
