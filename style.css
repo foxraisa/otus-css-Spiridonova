@@ -263,7 +263,7 @@ body {
 /* Strong points */
 
 .strong-points {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 8%;
 }
 
@@ -285,8 +285,8 @@ body {
 }
 
 .strong-points_box-img {
-  max-width: 335px;
-  max-height: 554px;
+  width: 335px;
+  height: 554px;
 
 }
 
