@@ -61,39 +61,48 @@ body {
   font-size: 26px;
 }
 
-.designers-section_box {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  
-}
-
-.designer_from {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.designer_skills {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-
-.testimonials_header {
-  font-family: 'Roboto', sans-serif;
+.strong-points_header {
+  font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 24px;
+
 }
 
-.testimonials_text {
-  font-family: 'Bitter';
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
-}
+.strong-points_strengths-header {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 100%;
+  
+  }
+
+  .strong-points_strengths-list {
+    list-style: none;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+  
+  }
+
+  .footer-text-text {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    
+    }
+
+    .footer-text-address {
+      /* font-style: 0; */
+      font-family: 'Roboto', serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+    }
+    
 
 
 * {
@@ -334,6 +343,7 @@ biography-section
 
 
   display: flex;
+}
 
 .strong-points {
   /* width: 100%; */
@@ -358,7 +368,7 @@ biography-section
 .strong-points_box-img {
   width: 335px;
   height: 554px;
-
+}
 .testimonials_box-img_testimoniail-main-creative {
   max-width: 451px;
   max-height: 760px;
@@ -404,4 +414,45 @@ q {
   margin: 0 auto;
 }
 
+.strong-points_strengths-list {
+  list-style: none;
+
+}
+
+/* Футер с контактами */
+
+.footer {
+  width: 100%;
+  height: 168px;
+
+  background-color: #000;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-text {
+
+position: absolute;
+width: 452px;
+height: 28px;
+left: 20px;
+top: 70px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+text-transform: uppercase;
+
+/* White */
+color: #FFFFFF;
+
+
+}
 
