@@ -335,6 +335,9 @@ biography-section
 
   display: flex;
 
+.strong-points {
+  /* width: 100%; */
+  margin-bottom: 8%;
 }
 
 
@@ -351,6 +354,10 @@ biography-section
   transform: rotate(-180deg);
   margin: 10px 40px 10px 20px;
 }
+
+.strong-points_box-img {
+  width: 335px;
+  height: 554px;
 
 .testimonials_box-img_testimoniail-main-creative {
   max-width: 451px;
