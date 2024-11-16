@@ -182,10 +182,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* order: 3;  */
-
-  /* margin: auto; */
-  /* padding-bottom: .4em; */
 }
 
 .biography-section_name {
@@ -296,4 +292,6 @@ q {
 }
 
 
+
+/* Секция Strong points */
 
