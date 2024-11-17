@@ -71,6 +71,20 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
+  line-height: 19px;
+  
+}
+
+.designer_from {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.designer_skills {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 
@@ -258,4 +272,32 @@ body {
 
 .designer_skills {
   padding-bottom: 15px;
+}
+
+.designer_from::before {
+  content: "From/";
+  font-weight: bold;
+}
+
+.designer_skills::before {
+  content: "Skills/";
+  font-weight: bold;
+}
+
+.designer_skills {
+  list-style: none;
+  padding: 0;
+}
+
+.designer_skills-item {
+  display: inline-block;
+}
+
+.designer_skills-item::after {
+  content: "/";
+  margin-left: .3em;
+}
+
+.designer_skills-item:last-child:after {
+  content: "";
 }
