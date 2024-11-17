@@ -118,67 +118,9 @@ body {
     .footer-text-address_Email {
       text-decoration:none;
       color: #fff;
-    }
-    
-.strong-points_header {
-  font-family: 'Roboto', serif;
-  font-weight: 700;
-  font-size: 24px;
-
-}
-
-.strong-points_strengths-header {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 86px;
-  line-height: 100%;
   
   }
 
-  .strong-points_strengths-list {
-    list-style: none;
-    font-family: 'Bitter', serif;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 41px;
-  
-  }
-
-  .footer-text_text-MOD {
-    font-family: 'Roboto', serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #fff;
-    
-    }
-
-    .footer-text_text-data {
-      font-family: 'Roboto', serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: #fff;
-      
-      }
-
-    .footer-text-address {
-      font-family: 'Roboto', serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: #fff;
-    }
-
-    .footer-text-address_phone {
-      text-decoration:none;
-      color: #fff;
-    }
-    .footer-text-address_Email {
-      text-decoration:none;
-      color: #fff;
-    }
-    
 
 
 * {
@@ -493,7 +435,6 @@ q {
 .strong-points_strengths-list {
   list-style: none;
 
-}
 
 /* Футер с контактами */
 
