@@ -85,7 +85,7 @@ body {
   
   }
 
-  .footer-text-text {
+  .footer-text_text-MOD {
     font-family: 'Roboto', serif;
     font-weight: 400;
     font-size: 16px;
@@ -94,12 +94,29 @@ body {
     
     }
 
-    .footer-text-address {
-      /* font-style: 0; */
+    .footer-text_text-data {
       font-family: 'Roboto', serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
+      color: #fff;
+      
+      }
+
+    .footer-text-address {
+      font-family: 'Roboto', serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+    }
+
+    .footer-text-address_phone {
+      text-decoration:none;
+      color: #fff;
+    }
+    .footer-text-address_Email {
+      text-decoration:none;
       color: #fff;
     }
     
@@ -335,30 +352,21 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
-.footer-text {
+.footer-text-address {
+  padding-left: 20px;
+  justify-self: start;
 
-position: absolute;
-width: 452px;
-height: 28px;
-left: 20px;
-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-/* or 162% */
-display: flex;
-align-items: center;
-text-decoration-line: underline;
-text-transform: uppercase;
-
-/* White */
-color: #FFFFFF;
-
+.footer-text_text-data {
+  justify-self: end;
+  padding-right: 20px;
 
 }
 
