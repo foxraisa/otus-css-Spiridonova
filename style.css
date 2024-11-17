@@ -61,18 +61,38 @@ body {
   font-size: 26px;
 }
 
-.testimonials_header {
+.designers-section_box {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  
+}
 
+.designer_from {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.designer_skills {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+.testimonials_header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
+
 .testimonials_text {
   font-family: 'Bitter';
   font-weight: 400;
   font-size: 32px;
   line-height: 38px;
-}
 
 
 
@@ -160,11 +180,14 @@ body {
   display: flex;
   flex-direction: row;
 
-  /* gap: 3%; */
+}
+
+.biography-section-box-img {
+  max-width: 571px;
 }
 
 .biography-section_main-disigner-img {
-  width: 571px;
+  width: 100%;
 }
 
 .biography-section_header {
@@ -182,7 +205,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+
+  }
 
 .biography-section_name {
   padding-bottom: .4em;
@@ -211,8 +235,90 @@ body {
   padding: 4%;
 }
 
+biography-section
+.biography-section_text {
+  line-height: 31px;
+}
 
 
+
+
+/*  designers-section */
+
+.designers-section {
+  width: 98.6%;
+  height: 677px;
+
+  margin: 0 auto 8%;
+
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 3%; */
+}
+
+
+.designers-section_header {
+  width: 98.6%;
+  padding-left: 110px;
+  padding-bottom: 30px;
+}
+
+.designers-section_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  max-width: 98.6%;
+  height: 619px;
+
+  gap: 20px;
+
+  overflow-y: auto;
+
+  /* max-height: 100vh; */
+  /* убрать коммент - прокрутка будет всегда видимой */
+}
+
+.designers-section_big-box-text {
+  padding-left: 240px;
+}
+
+.designer_name {
+  padding-top: 20px;
+}
+
+.designer_skills {
+  padding-bottom: 15px;
+}
+
+.designer_from::before {
+  content: "From/";
+  font-weight: bold;
+}
+
+.designer_skills::before {
+  content: "Skills/";
+  font-weight: bold;
+}
+
+.designer_skills {
+  list-style: none;
+  padding: 0;
+}
+
+.designer_skills-item {
+  display: inline-block;
+}
+
+.designer_skills-item::after {
+  content: "/";
+  margin-left: .3em;
+}
+
+.designer_skills-item:last-child:after {
+  content: "";
+}
 
 
 
@@ -291,7 +397,4 @@ q {
   margin: 0 auto;
 }
 
-
-
-/* Секция Strong points */
 
