@@ -118,10 +118,9 @@ body {
     .footer-text-address_Email {
       text-decoration:none;
       color: #fff;
-  
+    
   }
-
-
+    
 
 * {
   margin: 0;
@@ -363,12 +362,6 @@ biography-section
   display: flex;
 }
 
-.strong-points {
-  /* width: 100%; */
-  margin-bottom: 8%;
-}
-
-
 .testimonials-website-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -383,10 +376,6 @@ biography-section
   margin: 10px 40px 10px 20px;
 }
 
-.strong-points_box-img {
-  width: 335px;
-  height: 554px;
-}
 .testimonials_box-img_testimoniail-main-creative {
   max-width: 451px;
   max-height: 760px;
@@ -432,8 +421,44 @@ q {
   margin: 0 auto;
 }
 
+/* Секция Strong points */
+
+.strong-points {
+  /* width: 100%; */
+  margin-bottom: 8%;
+}
+
+.strong-points_header {
+  padding-top: 0;
+  padding-left: 17%;
+  margin-bottom: 2%;
+}
+
+.strong-points_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3%;
+  max-height: 555px;
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+.strong-points_box-img {
+  width: 335px;
+  height: 554px;
+}
+.strong-points_strengths-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 451px;
+}
+.strong-points_strengths-header {
+  margin-bottom: 20px;
+}
 .strong-points_strengths-list {
   list-style: none;
+}
 
 
 /* Футер с контактами */
