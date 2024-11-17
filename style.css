@@ -421,6 +421,8 @@ q {
   margin: 0 auto;
 }
 
+
+
 /* Секция Strong points */
 
 .strong-points {
@@ -444,8 +446,8 @@ q {
 }
 
 .strong-points_box-img {
-  width: 335px;
-  height: 554px;
+  max-width: 335px;
+  max-height: 554px;
 }
 .strong-points_strengths-box {
   display: flex;
