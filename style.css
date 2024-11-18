@@ -331,6 +331,7 @@ biography-section
 .designer_skills {
   list-style: none;
   padding: 0;
+  margin-bottom: 5%;
 }
 
 .designer_skills-item {
@@ -440,7 +441,8 @@ q {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3%;
-  max-height: 555px;
+  height: 600px;
+  /* width: 1440px; */
   padding: 10px;
   overflow-x: scroll;
 }
@@ -449,10 +451,12 @@ q {
   max-width: 335px;
   max-height: 554px;
 }
+
 .strong-points_strengths-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
   max-width: 451px;
 }
 .strong-points_strengths-header {
@@ -461,7 +465,6 @@ q {
 .strong-points_strengths-list {
   list-style: none;
 }
-
 
 /* Футер с контактами */
 
