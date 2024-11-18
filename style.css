@@ -61,40 +61,66 @@ body {
   font-size: 26px;
 }
 
-.designers-section_box {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  
-}
-
-.designer_from {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.designer_skills {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-
-.testimonials_header {
-  font-family: 'Roboto', sans-serif;
+.strong-points_header {
+  font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 24px;
+
 }
 
-.testimonials_text {
-  font-family: 'Bitter';
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
+.strong-points_strengths-header {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 100%;
+  
+  }
 
+  .strong-points_strengths-list {
+    list-style: none;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+  
+  }
 
+  .footer-text_text-MOD {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    
+    }
+
+    .footer-text_text-data {
+      font-family: 'Roboto', serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+      
+      }
+
+    .footer-text-address {
+      font-family: 'Roboto', serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+    }
+
+    .footer-text-address_phone {
+      text-decoration:none;
+      color: #fff;
+    }
+    .footer-text-address_Email {
+      text-decoration:none;
+      color: #fff;
+    
+  }
+    
 
 * {
   margin: 0;
@@ -305,6 +331,7 @@ biography-section
 .designer_skills {
   list-style: none;
   padding: 0;
+  margin-bottom: 5%;
 }
 
 .designer_skills-item {
@@ -334,9 +361,7 @@ biography-section
 
 
   display: flex;
-
 }
-
 
 .testimonials-website-list {
   display: grid;
@@ -397,4 +422,75 @@ q {
   margin: 0 auto;
 }
 
+
+
+/* Секция Strong points */
+
+.strong-points {
+  /* width: 100%; */
+  margin-bottom: 8%;
+}
+
+.strong-points_header {
+  padding-top: 0;
+  padding-left: 17%;
+  margin-bottom: 2%;
+}
+
+.strong-points_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3%;
+  height: 600px;
+  /* width: 1440px; */
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+.strong-points_box-img {
+  max-width: 335px;
+  max-height: 554px;
+}
+
+.strong-points_strengths-box {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  max-width: 451px;
+}
+.strong-points_strengths-header {
+  margin-bottom: 20px;
+}
+.strong-points_strengths-list {
+  list-style: none;
+}
+
+/* Футер с контактами */
+
+.footer {
+  width: 100%;
+  height: 168px;
+
+  background-color: #000;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-text-address {
+  padding-left: 20px;
+  justify-self: start;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text_text-data {
+  justify-self: end;
+  padding-right: 20px;
+
+}
 
