@@ -68,6 +68,15 @@ body {
 
 }
 
+
+.testimonials_text {
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+
 .strong-points_strengths-header {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
@@ -121,6 +130,7 @@ body {
     
   }
     
+
 
 * {
   margin: 0;
