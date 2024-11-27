@@ -360,14 +360,7 @@ biography-section
   margin: 0 auto 8%;
 
 
-  display: flex;
-}
 
-.testimonials-website-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: end;
-  writing-mode: vertical-rl;
 
   max-height: 760px;
 }
@@ -377,17 +370,6 @@ biography-section
   margin: 10px 40px 10px 20px;
 }
 
-.testimonials_box-img_testimoniail-main-creative {
-  max-width: 451px;
-  max-height: 760px;
-}
-
-.testimonials_header {
-  align-self: flex-start;
-  transform: rotate(-90deg);
-  align-content: center;
-  margin-top: 3%;
-  padding-bottom: 8%;
 
 }
 
@@ -395,31 +377,12 @@ biography-section
   max-width: 221px;
   max-height: 760px;
 
-  align-content: center;
-  margin: 0 10%;
 
 }
 
-.testimonials_text {
-
-  display: flex;
-
-  max-width: 221px;
-  max-height: 304px;
-  text-align: center;
-
-  margin: 0 auto 8%;
-}
 
 q {
   quotes: none;
-}
-
-.testimonials_box-img_testimoniail-second-creative {
-  max-width: 221px;
-  max-height: 333px;
-
-  margin: 0 auto;
 }
 
 
