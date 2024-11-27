@@ -359,25 +359,51 @@ biography-section
   max-height: 760px;
   margin: 0 auto 8%;
 
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  justify-content: center;
+
+}
+
+.testimonials-website-list {
+  grid-column: 1;
+  grid-row: 1/7;
 
 
 
-  max-height: 760px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  background-color: aqua;
 }
 
 .testimonials_item-website {
-  transform: rotate(-180deg);
-  margin: 10px 40px 10px 20px;
+  
+  transform: rotate(-90deg);
 }
 
+.testimonials_img_testimoniail-main-creative {
+  grid-column: 2/7;
+  grid-row: 1/7;
 
+  max-width: 451px;
+}
+
+.testimonials_header {
+  grid-column: 7/8;
+  grid-row: 1/7;
+
+  max-width: 100px;
+  transform: rotate(-90deg);
 }
 
 .testimonials_second-box {
-  max-width: 221px;
-  max-height: 760px;
+  grid-column: 8/15;
+  grid-row: 1/7;
 
-
+  max-width: 451px;
 }
 
 
