@@ -61,6 +61,13 @@ body {
   font-size: 26px;
 }
 
+.testimonials_text {
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+
 .strong-points_header {
   font-family: 'Roboto', serif;
   font-weight: 700;
@@ -68,13 +75,6 @@ body {
 
 }
 
-
-.testimonials_text {
-  font-family: 'Bitter';
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
-}
 
 
 .strong-points_strengths-header {
@@ -448,14 +448,24 @@ q {
 }
 
 .strong-points_box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 3%;
-  height: 600px;
-  /* width: 1440px; */
   padding: 10px;
   overflow-x: scroll;
 }
+
+@supports (display: grid) {
+  .strong-points_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    height: 600px;
+    padding: 10px;
+    overflow-x: scroll;
+  }
+}
+
 
 .strong-points_box-img {
   max-width: 335px;
