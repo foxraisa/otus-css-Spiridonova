@@ -61,6 +61,40 @@ body {
   font-size: 26px;
 }
 
+.designers-section_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.designers-section_box {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  
+}
+
+.designer_from {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.designer_skills {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+.testimonials_text {
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+
 .strong-points_header {
   font-family: 'Roboto', serif;
   font-weight: 700;
@@ -359,55 +393,51 @@ biography-section
 
 
 
-
-
-
  /* Секция Testimonials */
 
-.testimonials-section {
-  width: 80.6%;
-  max-height: 760px;
-  margin: 0 auto 8%;
+ .testimonials-section {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    margin: 0 auto 8%;
+ }
 
+ .testimonials_header {
+    grid-column: 2/3; 
+    grid-row: 1/2;
+    align-self: start;
+    width: 180px;
+    height: 160px;
+    transform: rotate(-90deg);
+ }
 
-  display: flex;
-}
+ .testimonials-section_box-websits-img {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+ }
+
 
 .testimonials-website-list {
+  width: 80px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-items: end;
-  writing-mode: vertical-rl;
-
-  max-height: 760px;
 }
 
 .testimonials_item-website {
-  transform: rotate(-180deg);
-  margin: 10px 40px 10px 20px;
-}
-
-.testimonials_box-img_testimoniail-main-creative {
-  max-width: 451px;
-  max-height: 760px;
-}
-
-.testimonials_header {
-  align-self: flex-start;
+  transform-origin: top left;
   transform: rotate(-90deg);
-  align-content: center;
-  margin-top: 3%;
-  padding-bottom: 8%;
-
 }
+
 
 .testimonials_second-box {
-  max-width: 221px;
+  grid-column: 3/4;
+  max-width: 221px; 
   max-height: 760px;
-
   align-content: center;
-  margin: 0 10%;
-
+  margin: 0 20%;
 }
 
 .testimonials_text {
@@ -421,15 +451,14 @@ biography-section
   margin: 0 auto 8%;
 }
 
+
 q {
   quotes: none;
 }
 
-.testimonials_box-img_testimoniail-second-creative {
-  max-width: 221px;
-  max-height: 333px;
-
-  margin: 0 auto;
+.testimonials_item-website_link {
+  text-decoration:none;
+  color: #000
 }
 
 

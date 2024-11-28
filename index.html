@@ -139,36 +139,40 @@
 
     <section class="testimonials-section">
 
-    <nav class="testimonials-website-list">
-
-        <div class="testimonials_item-website"> 
-            <p>Creativity</p>
-            <a href="http://www.whitepapers.com">www.whitepapers.com</a>
-        </div>
-
-        <div class="testimonials_item-website"> 
-            <p> Creativity </p>
-            <a href="http://www.whitepapers.com">www.whitepapers.com</a>
-        </div>
-
-        <div class="testimonials_item-website"> 
-            <p>Website</p>
-            <a href="http://www.whitepapers.com">www.whitepapers.com</a>
-        </div>
-    </nav>
-
-    <div class="testimonials_box-img_testimoniail-main-creative"></div>
-        <img class="testimonials_img_testimoniail-main-creative" src="img/testimoniail-main-creative.jpg" alt="Place for creative">
-    </div>
-
     <h2 class="testimonials_header"> Testimonials </h2>
+
+
+    <div class="testimonials-section_box-websits-img">
+        <nav class="testimonials-website-list">
+
+            <div class="testimonials_item-website"> 
+                <p class="testimonials_item-website-text">Creativity</p>
+                <a href="http://www.whitepapers.com" class="testimonials_item-website_link">www.whitepapers.com</a>
+            </div>
+
+            <div class="testimonials_item-website"> 
+                <p class="testimonials_item-website-text"> Creativity </p>
+                <a href="http://www.whitepapers.com" class="testimonials_item-website_link">www.whitepapers.com</a>
+            </div>
+
+            <div class="testimonials_item-website"> 
+                <p class="testimonials_item-website-text">Website</p>
+                <a href="http://www.whitepapers.com" class="testimonials_item-website_link">www.whitepapers.com</a>
+            </div>
+        </nav>
+
+        <div class="testimonials_box-img_testimoniail-main-creative"></div>
+            <img class="testimonials_img_testimoniail-main-creative" src="img/testimoniail-main-creative.jpg" width="451" height="760" alt="Place for creative">
+        </div>
+
+    </div>
 
     <div class="testimonials_second-box">
         <q class="testimonials_text"> I just really want to do good work and work with some great people,
             people who challenge me.</q>
 
         <div class="testimonials_box-img_testimoniail-second-creative">
-            <img class="testimonials_img_testimoniail-second-creative" src="img/testimoniail-second-creative.jpg" alt="Go to work">
+            <img class="testimonials_img_testimoniail-second-creative" src="img/testimoniail-second-creative.jpg"  alt="Go to work">
         </div>
     </div>
 
@@ -230,36 +234,41 @@
 
     <!-- поп-пап в секции Мод -->
 
-    <div class="modal-window">
-        <h2 class="modal-window-header"> Get in touch </h2>
+    <form class="modal-window">
 
-        <p class="modal-window-text"> Do you have any questions? Have something to say?
-            Don't be shy, write to us: </p>
+        <!--  Статья про form fieldset https://developer.mozilla.org/ru/docs/Web/HTML/Element/fieldset -->
+        <fieldset class="modal-window_box">
+            <h2 class="modal-window-header"> Get in touch </h2>
+
+            <p class="modal-window-text"> Do you have any questions? Have something to say?
+                Don't be shy, write to us: </p>
         
-        <div class="input-name">
-            <p class="input-text"> Name:</p>
-            <input type="text">
-            <img src="img/icon-name.svg" alt="icon name">
-        </div>
+            <div class="input-name">
+                <p class="input-text"> Name:</p>
+                <input type="text">
+                <img src="img/icon-name.svg" alt="icon name">
+            </div>
 
-        <div class="input-email">
-            <p class="input-text"> E-mail:</p>
-            <input type="email">
-            <img src="img/icon-email.svg" alt="icon email">
-        </div>
+            <div class="input-email">
+                <p class="input-text"> E-mail:</p>
+                <input type="email">
+                <img src="img/icon-email.svg" alt="icon email">
+            </div>
 
-        <div class="input-comment">
-            <p class="input-text">  Comment:</p>
-            <input type="text">
-            <img src="img/icon-comment.svg" alt="icon comment">
-        </div>
+            <div class="input-comment">
+                <p class="input-text">  Comment:</p>
+                <input type="text">
+                <img src="img/icon-comment.svg" alt="icon comment">
+            </div>
 
-        <footer class="modal-window-footer">
-            <button> Cancel </button>
-            <button> + Send </button>
-        </footer>
+            <footer class="modal-window-footer">
+                <button> Cancel </button>
+                <button> + Send </button>
+            </footer>
 
-    </div>
+        </fieldset>
+
+    </form>
     
 
   </body>
