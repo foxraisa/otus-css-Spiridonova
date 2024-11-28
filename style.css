@@ -446,6 +446,8 @@ q {
   quotes: none;
 }
 
+/* Убрала цвет и подчеркивание у ссылок */
+
 .testimonials_item-website_link {
   text-decoration:none;
   color: #000
