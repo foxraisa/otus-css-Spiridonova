@@ -18,15 +18,15 @@ body {
 }
 
 
-.menu-text {
+.menu__text {
   font-family: 'Playfair Display', serif;
     font-weight: 600;
     font-size: 86px;
 }
 
-.button-menu-item {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+.button__item {
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-weight: 500; */
   font-size: 24px;
 }
 
@@ -173,17 +173,13 @@ body {
 }
   
 
-/* Секция MOD */
+/*  Menu секция */
 
-.mod-studio-section {
-  margin-bottom: 8%;
-}
-
-.menu-text {
+.menu__text {
   margin-right: 40px;
 }
 
-.menu-header {
+.menu__list {
   display: flex;
   flex-direction: row;
 
@@ -193,7 +189,7 @@ body {
   margin: 0 auto;
 }
 
-.button-menu {
+.button {
   width: 85%;
   height: 28px;
   margin: auto 0;
@@ -205,9 +201,17 @@ body {
 
 }
 
-.button-menu-item {
+.button__item {
   text-decoration:none;
   color: #000
+}
+
+
+/* Секция MOD */
+
+
+.mod-studio-section {
+  margin-bottom: 8%;
 }
 
 .title-section {
@@ -221,7 +225,6 @@ body {
   height: 630px;
 
 }
-
 
 
 .title-box-text {
@@ -238,6 +241,8 @@ body {
 .title-page {
   margin-top: 12%;
 }
+
+
 
 /* Секция Biography */
 
