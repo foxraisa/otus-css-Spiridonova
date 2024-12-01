@@ -88,7 +88,7 @@ body {
 }
 
 
-.testimonials_text {
+.quotes__text {
   font-family: 'Bitter';
   font-weight: 400;
   font-size: 32px;
@@ -391,13 +391,13 @@ body {
 
  /* Секция Testimonials */
 
- .testimonials-section {
+ .testimonials-container {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
     margin: 0 auto 8%;
  }
 
- .testimonials_header {
+ .testimonials-container__header {
     grid-column: 2/3; 
     grid-row: 1/2;
     align-self: start;
@@ -406,7 +406,7 @@ body {
     transform: rotate(-90deg);
  }
 
- .testimonials-section_box-websits-img {
+ .websits-box {
     grid-column: 1/2;
     display: flex;
     flex-direction: row;
@@ -415,20 +415,20 @@ body {
  }
 
 
-.testimonials-website-list {
+.websits-list {
   width: 80px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: end;
 }
 
-.testimonials_item-website {
+.websits-item {
   transform-origin: top left;
   transform: rotate(-90deg);
 }
 
 
-.testimonials_second-box {
+.testimonials-container__quotes-box {
   grid-column: 3/4;
   max-width: 221px; 
   max-height: 760px;
@@ -436,7 +436,7 @@ body {
   margin: 0 20%;
 }
 
-.testimonials_text {
+.quotes__text {
 
   display: flex;
 
@@ -452,7 +452,7 @@ q {
   quotes: none;
 }
 
-.testimonials_item-website_link {
+.websits-item__link {
   text-decoration:none;
   color: #000
 }
