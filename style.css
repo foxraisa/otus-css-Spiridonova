@@ -199,6 +199,48 @@ body {
   color: #000
 }
 
+.menu__list-mob {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* верстка мобильная*/
+
+  .menu__list {
+    display: none;
+  }
+
+
+  .menu__list-mob {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    position: fixed; 
+    left: 0%;
+    bottom: 0%; 
+
+    background-color: #FFFFFF;
+    z-index: 50;
+
+    text-align: center;
+
+    border-top: 2px solid black;
+  }
+
+  .list-mob__item {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #000;
+  
+  }
+
+  
+}
+
+
 
 /* Секция MOD */
 
@@ -528,4 +570,10 @@ q {
 
 }
 
+/* Модальное окно для отправки комментария */
+
+.modal-window {
+  display: none;
+
+}
 
