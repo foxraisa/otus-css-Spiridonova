@@ -230,14 +230,14 @@
     <!-- Футер с контактами  -->
 
     <footer class="footer">
-        <address class="footer-text-address">
-            <a href="" class="footer-text-address_phone"> +7 921 123-45-67 </a>
-            <a href="info@modstudio.com" class="footer-text-address_Email"> info@modstudio.com </a>
+        <address class="company-data footer__company-data">
+            <a href="" class="company-data__phone"> +7 921 123-45-67 </a>
+            <a href="info@modstudio.com" class="company-data__Email"> info@modstudio.com </a>
         </address>
 
-        <p class="footer-text_text-MOD"> A product of <b> MOD</b> </p>
+        <p class="footer__name"> A product of <b> MOD</b> </p>
 
-        <p class="footer-text_text-data"> © 2023 Mod Media. All rights reserved </p>
+        <p class="footer__text"> © 2023 Mod Media. All rights reserved </p>
 
     </footer>
 
@@ -246,33 +246,33 @@
     <form class="modal-window">
 
         <!--  Статья про form fieldset https://developer.mozilla.org/ru/docs/Web/HTML/Element/fieldset -->
-        <fieldset class="modal-window_box">
-            <h2 class="modal-window-header"> Get in touch </h2>
+        <fieldset class="modal-window">
+            <h2 class="modal-window__header"> Get in touch </h2>
 
-            <p class="modal-window-text"> Do you have any questions? Have something to say?
+            <p class="modal-window__text"> Do you have any questions? Have something to say?
                 Don't be shy, write to us: </p>
         
-            <div class="input-name">
-                <p class="input-text"> Name:</p>
+            <div class="input-name modal-window__input-name">
+                <p class="input-name__text"> Name:</p>
                 <input type="text">
                 <img src="img/icon-name.svg" alt="icon name">
             </div>
 
-            <div class="input-email">
-                <p class="input-text"> E-mail:</p>
+            <div class="input-email modal-window__input-email">
+                <p class="input-email__text"> E-mail:</p>
                 <input type="email">
                 <img src="img/icon-email.svg" alt="icon email">
             </div>
 
-            <div class="input-comment">
-                <p class="input-text">  Comment:</p>
+            <div class="input-comment modal-window__input-comment">
+                <p class="input-comment__text">  Comment:</p>
                 <input type="text">
                 <img src="img/icon-comment.svg" alt="icon comment">
             </div>
 
-            <footer class="modal-window-footer">
-                <button> Cancel </button>
-                <button> + Send </button>
+            <footer class="button modal-window__button">
+                <button class="button__item"> Cancel </button>
+                <button class="button__item"> + Send </button>
             </footer>
 
         </fieldset>

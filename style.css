@@ -121,7 +121,7 @@ body {
   
   }
 
-  .footer-text_text-MOD {
+  .footer__name {
     font-family: 'Roboto', serif;
     font-weight: 400;
     font-size: 16px;
@@ -130,7 +130,7 @@ body {
     
     }
 
-    .footer-text_text-data {
+    .footer__text {
       font-family: 'Roboto', serif;
       font-weight: 400;
       font-size: 16px;
@@ -139,7 +139,7 @@ body {
       
       }
 
-    .footer-text-address {
+    .company-data {
       font-family: 'Roboto', serif;
       font-weight: 400;
       font-size: 16px;
@@ -147,11 +147,11 @@ body {
       color: #fff;
     }
 
-    .footer-text-address_phone {
+    .company-data__phone {
       text-decoration:none;
       color: #fff;
     }
-    .footer-text-address_Email {
+    .company-data__Email {
       text-decoration:none;
       color: #fff;
     
@@ -514,7 +514,7 @@ q {
   align-items: center;
 }
 
-.footer-text-address {
+.company-data {
   padding-left: 20px;
   justify-self: start;
 
@@ -522,10 +522,10 @@ q {
   flex-direction: column;
 }
 
-.footer-text_text-data {
+.footer__text {
   justify-self: end;
   padding-right: 20px;
 
 }
 
-/*  Добавление комментария */
+
