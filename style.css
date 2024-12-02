@@ -96,7 +96,7 @@ body {
 }
 
 
-.strong-points_header {
+.strong-points-container__header {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 24px;
@@ -104,7 +104,7 @@ body {
 }
 
 
-.strong-points_strengths-header {
+.list-column__header {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
@@ -112,7 +112,7 @@ body {
   
   }
 
-  .strong-points_strengths-list {
+  .list-items {
     list-style: none;
     font-family: 'Bitter', serif;
     font-weight: 400;
@@ -461,18 +461,17 @@ q {
 
 /* Секция Strong points */
 
-.strong-points {
-  /* width: 100%; */
+.strong-points-container {
   margin-bottom: 8%;
 }
 
-.strong-points_header {
+.strong-points-container__header {
   padding-top: 0;
   padding-left: 17%;
   margin-bottom: 2%;
 }
 
-.strong-points_box {
+.box-carousel {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3%;
@@ -482,22 +481,22 @@ q {
   overflow-x: scroll;
 }
 
-.strong-points_box-img {
+.box-carousel__box-img {
   max-width: 335px;
   max-height: 554px;
 }
 
-.strong-points_strengths-box {
+.list-column {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   max-width: 451px;
 }
-.strong-points_strengths-header {
+.list-column__header {
   margin-bottom: 20px;
 }
-.strong-points_strengths-list {
+.list-items {
   list-style: none;
 }
 
