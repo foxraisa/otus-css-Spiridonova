@@ -18,56 +18,56 @@ body {
 }
 
 
-.menu-text {
+.menu__text {
   font-family: 'Playfair Display', serif;
     font-weight: 600;
     font-size: 86px;
 }
 
-.button-menu-item {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+.button__item {
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-weight: 500; */
   font-size: 24px;
 }
 
 
-.title-page {
+.text__heading {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
 }
 
-.subtitle-page {
+.text__subtitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
 
-.biography-section_header {
+.biography-container__header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
-.biography-section_name {
+.text__biography-name {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
 }
 
-.biography-section_text {
+.text__biography-quote {
   font-family: 'Bitter', serif;
   font-weight: 400;
   font-size: 26px;
 }
 
-.designers-section_header {
+.designers-container__header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
-.designers-section_box {
+.text__designer-name {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -75,27 +75,28 @@ body {
   
 }
 
-.designer_from {
+.text__designer-from {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
-.designer_skills {
+.text__designer-skills {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 
-.testimonials_text {
+.quotes__text {
   font-family: 'Bitter';
   font-weight: 400;
   font-size: 32px;
   line-height: 38px;
 }
 
-.strong-points_header {
+
+.strong-points-container__header {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 24px;
@@ -103,15 +104,7 @@ body {
 }
 
 
-.testimonials_text {
-  font-family: 'Bitter';
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-
-.strong-points_strengths-header {
+.list-column__header {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
@@ -119,7 +112,7 @@ body {
   
   }
 
-  .strong-points_strengths-list {
+  .list-items {
     list-style: none;
     font-family: 'Bitter', serif;
     font-weight: 400;
@@ -128,7 +121,7 @@ body {
   
   }
 
-  .footer-text_text-MOD {
+  .footer__name {
     font-family: 'Roboto', serif;
     font-weight: 400;
     font-size: 16px;
@@ -137,7 +130,7 @@ body {
     
     }
 
-    .footer-text_text-data {
+    .footer__text {
       font-family: 'Roboto', serif;
       font-weight: 400;
       font-size: 16px;
@@ -146,7 +139,7 @@ body {
       
       }
 
-    .footer-text-address {
+    .company-data {
       font-family: 'Roboto', serif;
       font-weight: 400;
       font-size: 16px;
@@ -154,11 +147,11 @@ body {
       color: #fff;
     }
 
-    .footer-text-address_phone {
+    .company-data__phone {
       text-decoration:none;
       color: #fff;
     }
-    .footer-text-address_Email {
+    .company-data__Email {
       text-decoration:none;
       color: #fff;
     
@@ -173,17 +166,13 @@ body {
 }
   
 
-/* Секция MOD */
+/*  Menu секция */
 
-.mod-studio-section {
-  margin-bottom: 8%;
-}
-
-.menu-text {
+.menu__text {
   margin-right: 40px;
 }
 
-.menu-header {
+.menu__list {
   display: flex;
   flex-direction: row;
 
@@ -193,7 +182,7 @@ body {
   margin: 0 auto;
 }
 
-.button-menu {
+.button {
   width: 85%;
   height: 28px;
   margin: auto 0;
@@ -205,26 +194,33 @@ body {
 
 }
 
-.button-menu-item {
+.button__item {
   text-decoration:none;
   color: #000
 }
 
-.title-section {
+
+/* Секция MOD */
+
+
+.title {
+  margin-bottom: 8%;
+}
+
+.title__container {
   position: relative;
   text-align: center;
 
 }
 
-.title-section_background-img {
+.title__container-img {
   width: 100%;
   height: 630px;
 
 }
 
 
-
-.title-box-text {
+.title__container-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -235,13 +231,15 @@ body {
   height: 57%;
 }
 
-.title-page {
+.text__heading {
   margin-top: 12%;
 }
 
+
+
 /* Секция Biography */
 
-.biography-section {
+.biography-container {
   max-width: 1165px;
   max-height: 840px;
 
@@ -252,15 +250,15 @@ body {
 
 }
 
-.biography-section-box-img {
+.biography-container__img {
   max-width: 571px;
 }
 
-.biography-section_main-disigner-img {
+.biography-container__img-main {
   width: 100%;
 }
 
-.biography-section_header {
+.biography-container__header {
 
   transform: rotate(-90deg); 
   align-self: flex-start;
@@ -269,7 +267,7 @@ body {
   /* не стала использовать,так как поворачивает только в одну сторону не зависимо от значения  */
 }
 
-.biography-section_box-text {
+.biography-container__text {
   width: 485px;
 
   display: flex;
@@ -278,44 +276,43 @@ body {
 
   }
 
-.biography-section_name {
+.text__biography-name {
   padding-bottom: .4em;
 }
 
 
-.biography-section_skills_item {
+.skills__item {
   display: inline-block;
   list-style: none;
 }
 
-.biography-section_skills_item::after {
+.skills__item::after {
   content: "/";
   margin-left: .3em;
 
 }
 
-.biography-section_skills_item:last-child::after {
+.skills__item:last-child::after {
   content: "";
   
 }
 
-.biography-section_text::before {
+.text__biography-quote::before {
   content: "-";
   display: block;
   padding: 4%;
 }
 
-biography-section
-.biography-section_text {
+.text__biography-quote {
   line-height: 31px;
 }
 
 
 
 
-/*  designers-section */
+/*  designers-container */
 
-.designers-section {
+.designers-container {
   width: 98.6%;
   height: 677px;
 
@@ -324,17 +321,16 @@ biography-section
   display: flex;
   flex-direction: column;
 
-  /* gap: 3%; */
 }
 
 
-.designers-section_header {
+.designers-container__header {
   width: 98.6%;
   padding-left: 110px;
   padding-bottom: 30px;
 }
 
-.designers-section_box {
+.designers-container__box {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -350,44 +346,44 @@ biography-section
   /* убрать коммент - прокрутка будет всегда видимой */
 }
 
-.designers-section_big-box-text {
+.designers-container__text-img-big {
   padding-left: 240px;
 }
 
-.designer_name {
+.text__designer-name {
   padding-top: 20px;
 }
 
-.designer_skills {
+.designer-skills {
   padding-bottom: 15px;
 }
 
-.designer_from::before {
+.text__designer-from::before {
   content: "From/";
   font-weight: bold;
 }
 
-.designer_skills::before {
+.text__designer-skills::before {
   content: "Skills/";
   font-weight: bold;
 }
 
-.designer_skills {
+.text__designer-skills {
   list-style: none;
   padding: 0;
   margin-bottom: 5%;
 }
 
-.designer_skills-item {
+.designer-skills__item {
   display: inline-block;
 }
 
-.designer_skills-item::after {
+.designer-skills__item::after {
   content: "/";
   margin-left: .3em;
 }
 
-.designer_skills-item:last-child:after {
+.designer-skills__item:last-child:after {
   content: "";
 }
 
@@ -395,13 +391,13 @@ biography-section
 
  /* Секция Testimonials */
 
- .testimonials-section {
+ .testimonials-container {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
     margin: 0 auto 8%;
  }
 
- .testimonials_header {
+ .testimonials-container__header {
     grid-column: 2/3; 
     grid-row: 1/2;
     align-self: start;
@@ -410,7 +406,7 @@ biography-section
     transform: rotate(-90deg);
  }
 
- .testimonials-section_box-websits-img {
+ .websits-box {
     grid-column: 1/2;
     display: flex;
     flex-direction: row;
@@ -419,20 +415,20 @@ biography-section
  }
 
 
-.testimonials-website-list {
+.websits-list {
   width: 80px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: end;
 }
 
-.testimonials_item-website {
+.websits-item {
   transform-origin: top left;
   transform: rotate(-90deg);
 }
 
 
-.testimonials_second-box {
+.testimonials-container__quotes-box {
   grid-column: 3/4;
   max-width: 221px; 
   max-height: 760px;
@@ -440,7 +436,7 @@ biography-section
   margin: 0 20%;
 }
 
-.testimonials_text {
+.quotes__text {
 
   display: flex;
 
@@ -456,7 +452,7 @@ q {
   quotes: none;
 }
 
-.testimonials_item-website_link {
+.websits-item__link {
   text-decoration:none;
   color: #000
 }
@@ -465,18 +461,17 @@ q {
 
 /* Секция Strong points */
 
-.strong-points {
-  /* width: 100%; */
+.strong-points-container {
   margin-bottom: 8%;
 }
 
-.strong-points_header {
+.strong-points-container__header {
   padding-top: 0;
   padding-left: 17%;
   margin-bottom: 2%;
 }
 
-.strong-points_box {
+.box-carousel {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3%;
@@ -486,22 +481,22 @@ q {
   overflow-x: scroll;
 }
 
-.strong-points_box-img {
+.box-carousel__box-img {
   max-width: 335px;
   max-height: 554px;
 }
 
-.strong-points_strengths-box {
+.list-column {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   max-width: 451px;
 }
-.strong-points_strengths-header {
+.list-column__header {
   margin-bottom: 20px;
 }
-.strong-points_strengths-list {
+.list-items {
   list-style: none;
 }
 
@@ -519,7 +514,7 @@ q {
   align-items: center;
 }
 
-.footer-text-address {
+.company-data {
   padding-left: 20px;
   justify-self: start;
 
@@ -527,10 +522,10 @@ q {
   flex-direction: column;
 }
 
-.footer-text_text-data {
+.footer__text {
   justify-self: end;
   padding-right: 20px;
 
 }
 
-/*  Добавление комментария */
+
