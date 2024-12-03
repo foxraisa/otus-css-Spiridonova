@@ -39,7 +39,7 @@
     <section class="title">
         <div class="title__container">
             <picture class="img-box-main title__container-img-box">
-                <source media="(max-width: 768px)" class="img-box-main__mob" src="img/main-box-weather-room-mobile.jpg" width="450" height="764"> 
+                <source media="(max-width: 768px)" class="img-box-main__mob" srcset="img/main-box-weather-room-mobile.jpg" width="450" height="764"> 
                 <img class="img-box-main__tablet"  src="img/main-box-weather-room.jpg" alt="Weather room" width="1440" height="630">
             </picture>
 
@@ -55,9 +55,10 @@
     <!-- Секция Biography -->
     <section class="biography-container">
 
-        <div class="biography-container__img">
-            <img class="biography-container__img-main"  src="img/katya-mills.jpg" alt="Katya Mills">
-        </div>
+        <picture class="biography-container__img">
+            <source media="(max-width: 768px)" class="biography-container__img-mob" srcset="img/katya-mills-mobile.jpg" width="450" height="764">
+            <img class="biography-container__img-main"  src="img/katya-mills.jpg" alt="Katya Mills" width="571" height="840">
+        </picture>
         
         <h2 class="biography-container__header"> Biography </h2>
 

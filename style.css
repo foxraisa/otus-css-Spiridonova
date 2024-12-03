@@ -397,6 +397,66 @@ body {
   line-height: 31px;
 }
 
+@media screen and (max-width: 768px) {
+  /* верстка мобильная - смартфон*/
+
+  .biography-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 952px;
+
+    margin-bottom: 8%;
+
+  }
+
+  .biography-container__img {
+    order: 3;
+  }
+
+  .biography-container__text {
+    order: 2;
+  }
+
+  .biography-container__header {
+    font-size: 18px;
+    line-height: 21px;
+
+    transform: none;
+  }
+  br {
+    display: none;
+  }
+
+  .text__biography-name {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+
+  }
+
+  .text__biography-position {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .text__biography-skills {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  
+  
+
+
+}
+
 
 
 
@@ -602,6 +662,8 @@ q {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+
+  margin-bottom: 2%;
 }
 
 .company-data {
