@@ -437,7 +437,6 @@ body {
 
   .text__biography-position {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -445,7 +444,6 @@ body {
 
   .text__biography-skills {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
