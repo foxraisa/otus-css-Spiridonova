@@ -900,6 +900,53 @@ q {
 
 }
 
+@media screen and (max-width: 768px) {
+  /* верстка мобильная - смартфон*/
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    gap: 3%;
+
+    width: 100%;
+    max-height: 200px;
+    align-items: start;
+
+    margin-bottom: 15%;
+
+  }
+
+  /* проверить данные, которые лишние 
+  выравнить по макету 
+  выравнить по верхнему краю 
+  средний элимент расположить первой и справа  */
+
+  .footer__name {
+    order: 1;
+    align-items: end;
+  }
+
+  .company-data {
+    padding-left: 10px;
+    justify-self: start;
+  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__text {
+    justify-self: start;
+    padding-right: 0;
+  
+  }
+
+
+
+
+
+}
+
 
 
 /* Модальное окно для отправки комментария */
