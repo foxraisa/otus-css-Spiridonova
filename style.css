@@ -405,6 +405,7 @@ body {
   .biography-container {
     display: flex;
     flex-direction: column;
+    max-height: 960px;
     margin-bottom: 8%;
 
     padding: 0 10px;
@@ -413,6 +414,10 @@ body {
 
   .biography-container__img {
     order: 3;
+    margin-bottom: 8%;
+  }
+
+  .biography-container__img-mob {
     margin-bottom: 8%;
   }
 
@@ -463,7 +468,7 @@ body {
     font-size: 30px;
     line-height: 36px;
 
-    max-width: 417px;
+    max-width: 350px;
     margin-bottom: 5%;
   }
 
@@ -542,7 +547,7 @@ body {
   /* убрать коммент - прокрутка будет всегда видимой */
 }
 
-.designers-container__text-img-big {
+.inner-box-big__text-img-big {
   padding-left: 240px;
 }
 
@@ -581,6 +586,32 @@ body {
 
 .designer-skills__item:last-child:after {
   content: "";
+}
+
+@media screen and (max-width: 768px) {
+  /* верстка мобильная - смартфон*/
+
+  .designers-container {
+    height: 580px;
+    padding: 0 10px;
+
+    margin: 0 auto 8%;
+    
+  }
+
+  .designers-container__header {
+    font-size: 18px;
+    line-height: 21px;
+
+    padding-left: 0;
+    padding-bottom: 10px;
+
+  }
+
+  .inner-box-big__text-img-big {
+    padding-left: 0;
+  }
+
 }
 
 
