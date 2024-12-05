@@ -196,7 +196,7 @@
             </div>
         </nav>
 
-        <div class="websits-box__img"></div>
+        <div class="websits-box__img">
             <img class="websits-box__img-main" src="img/testimoniail-main-creative.jpg" width="451" height="760" alt="Place for creative">
         </div>
 
@@ -206,9 +206,10 @@
         <q class="quotes__text"> I just really want to do good work and work with some great people,
             people who challenge me.</q>
 
-        <div class="box-img quotes__box-img">
-            <img class="box-img__tablet-quotes" src="img/testimoniail-second-creative.jpg"  alt="Go to work">
-        </div>
+        <picture class="box-img quotes__box-img">
+            <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/testimoniail-second-creative-mobile.jpg" width="414" height="330">
+            <img class="box-img__tablet-quotes" src="img/testimoniail-second-creative.jpg"  alt="Go to work" width="221" height="333">
+        </picture>
     </div>
 
     </section>
