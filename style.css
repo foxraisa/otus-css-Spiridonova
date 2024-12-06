@@ -706,6 +706,8 @@ q {
     line-height: 29px;
   }
 }
+
+
 /* Футер с контактами */
 .footer {
   width: 100%;
@@ -755,6 +757,7 @@ q {
   .footer__text {
     padding-left: 10px;
   }
+
 }
 /* Модальное окно для отправки комментария */
 .modal-window {
