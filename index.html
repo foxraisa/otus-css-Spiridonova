@@ -25,14 +25,24 @@
 
         </header>
 
+        <div class="list-mob menu__list-mob">
+            <a class="list-mob__item" href="#">B</a> 
+            <a class="list-mob__item" href="#">D</a>
+            <a class="list-mob__item" href="#">T</a>
+            <a class="list-mob__item" href="#">S</a>
+        </div>
+
     </section>
 
         <!-- Секция MOD -->
 
     <section class="title">
         <div class="title__container">
-            <img class="title__container-img"  src="img/main-box-weather-room.jpg" alt="Weather room">
-            
+            <picture class="img-box-main title__container-img-box">
+                <source media="(max-width: 768px)" class="img-box-main__mob" srcset="img/main-box-weather-room-mobile.jpg" width="600" height="764"> 
+                <img class="img-box-main__tablet"  src="img/main-box-weather-room.jpg" alt="Weather room" width="1440" height="630">
+            </picture>
+
             <div class="text title__container-text">
                 <h1 class="text__heading"> Mod Studio</h1>
                 <h2 class="text__subtitle">Modern Web Studio</h2>
@@ -45,14 +55,16 @@
     <!-- Секция Biography -->
     <section class="biography-container">
 
-        <div class="biography-container__img">
-            <img class="biography-container__img-main"  src="img/katya-mills.jpg" alt="Katya Mills">
-        </div>
+        <picture class="biography-container__img">
+            <source media="(max-width: 768px)" class="biography-container__img-mob" srcset="img/katya-mills-mobile.jpg" width="450" height="401">
+            <img class="biography-container__img-main"  src="img/katya-mills.jpg" alt="Katya Mills" width="571" height="840">
+        </picture>
         
         <h2 class="biography-container__header"> Biography </h2>
 
         <div class="text biography-container__text">
-            <h3 class="text__biography-name"> Katya <br> Mills </h3>
+            <h3 class="text__biography-name"> Katya Mills </h3>
+        
             
             <p class="text__biography-position"> Art Director </p>
 
@@ -64,8 +76,8 @@
             </ul>
 
             <blockquote class="text__biography-quote">
-                 “The more I deal with the work <br> as something that is my own, <br>
-                as something that is personal, <br>
+                 “The more I deal with the work as something that is my own, <br>
+                as something that is personal, 
                 the more successful it is.” 
             </blockquote>
 
@@ -80,11 +92,14 @@
     <section class="designers-container">
         <h2 class="designers-container__header"> Designers </h2>
 
-        <div class="designers-container__box">
-            <div class="designers-container__img-big">
-                <img class="designers-container__img-big" src="img/designer-jess-wonder.jpg" alt="Photo Jess Wonder">
-                
-                <div class="text designers-container__text-img-big">
+        <div class="container-img designers-container__box">
+            <div class="inner-box-big container-img__inner-box-big">
+                <picture class="inner-box-big__img">
+                    <source media="(max-width: 768px)" class="inner-box-big__img-mob" srcset="img/designer-jess-wonder-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-big__img-big" src="img/designer-jess-wonder.jpg" alt="Photo Jess Wonder" width="572" height="538">
+                </picture>
+
+                <div class="text inner-box-big__text-img-big">
                     <h3 class="text__designer-name"> JESS WONDER </h3>
                     <p class="text__designer-from"> Be more flower</p> 
                     <ul class="designer-skills text__designer-skills">
@@ -94,10 +109,15 @@
                 </div>
             </div>
 
-            <div class="designers-container__img-normal">
-                <img class="designers-container__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein">
-                
-                <div class="text designers-container__text">
+            <div class="inner-box-normal container-img__inner-box-normal">
+
+                <picture class="inner-box-normal__img">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                </picture>
+
+
+                <div class="text inner-box-normal__text">
                     <h3 class="text__designer-name" > KAMERON CLEIN </h3>
                     <p class="text__designer-from"> Be more flower</p> 
                     <ul class="designer-skills text__designer-skills">
@@ -107,10 +127,13 @@
                 </div>
             </div>
 
-            <div class="designers-container__img-normal">
-                <img class="designers-container__img-normal" src="img/designer-lousse-red.jpg" alt="Photo LOUISSE RED">
+            <div class="inner-box-normal container-img__inner-box-normal">
+                <picture class="inner-box-normal__img">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-lousse-red-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img-normal" src="img/designer-lousse-red.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                </picture>
                 
-                <div class="text designers-container__text">
+                <div class="text inner-box-normal__text">
                     <h3 class="text__designer-name" > LOUISSE RED </h3>
                 
                     <p class="text__designer-from"> Be more flower</p>
@@ -123,10 +146,13 @@
 
             </div>
 
-            <div class="designers-container__img-normal">
-                <img class="designers-container__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein">
-                
-                <div class="text designers-container__text">
+            <div class="inner-box-normal container-img__inner-box-normal">
+                <picture class="inner-box-normal__img">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                </picture>
+
+                <div class="text inner-box-normal__text">
                     <h3 class="text__designer-name" > KAMERON CLEIN  </h3>
 
                     <p class="text__designer-from"> Be more flower</p> 
@@ -170,7 +196,7 @@
             </div>
         </nav>
 
-        <div class="websits-box__img"></div>
+        <div class="websits-box__img">
             <img class="websits-box__img-main" src="img/testimoniail-main-creative.jpg" width="451" height="760" alt="Place for creative">
         </div>
 
@@ -180,9 +206,10 @@
         <q class="quotes__text"> I just really want to do good work and work with some great people,
             people who challenge me.</q>
 
-        <div class="box-img quotes__box-img">
-            <img class="box-img__tablet-quotes" src="img/testimoniail-second-creative.jpg"  alt="Go to work">
-        </div>
+        <picture class="box-img quotes__box-img">
+            <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/testimoniail-second-creative-mobile.jpg" width="414" height="330">
+            <img class="box-img__tablet-quotes" src="img/testimoniail-second-creative.jpg"  alt="Go to work" width="221" height="333">
+        </picture>
     </div>
 
     </section>
@@ -193,13 +220,15 @@
         <h2 class="strong-points-container__header"> Strong points </h2>
         
         <div class="box-carousel strong-points-container__box-carousel">
-            <div class="box-carousel__box-img">
+            <picture class="box-carousel__box-img">
+                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/strong-points-working-place-mobile.jpg" width="310" height="450">
                 <img class="box-carousel__img-tablet" src="img/strong-points-working-place.jpg" width="335" height="554" alt="Working place">
-            </div>
+            </picture>
 
-            <div class="box-carousel__box-img">
+            <picture class="box-carousel__box-img">
+                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/strong-points-relaxing-place.jpg" width="310" height="450">
                 <img class="box-carousel__img-tablet" src="img/strong-points-relaxing-place.jpg" width="335" height="554" alt="Relaxing place">
-            </div>
+            </picture>
 
             <div class="list-column box-carousel__list-column"> 
                 <h3 class="list-column__header"> Strengths </h3>
@@ -219,9 +248,10 @@
 
             </div>
 
-            <div class="box-carousel__box-img">
+            <picture class="box-carousel__box-img">
+                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/place-cafe-creative.jpg" width="310" height="450">
                 <img class="box-carousel__img-tablet" src="img/place-cafe-creative.jpg" width="335" height="554" alt="Cafe creative">
-            </div>
+            </picture>
         </div>
 
     </section>
@@ -240,6 +270,8 @@
         <p class="footer__text"> © 2023 Mod Media. All rights reserved </p>
 
     </footer>
+
+    
 
     <!-- поп-пап в секции Мод -->
 
@@ -270,9 +302,9 @@
                 <img src="img/icon-comment.svg" alt="icon comment">
             </div>
 
-            <footer class="button modal-window__button">
-                <button class="button__item"> Cancel </button>
-                <button class="button__item"> + Send </button>
+            <footer class="modal-window__button">
+                <button class="modal-window__button-item"> Cancel </button>
+                <button class="modal-window__button-item"> + Send </button>
             </footer>
 
         </fieldset>
