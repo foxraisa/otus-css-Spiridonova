@@ -205,7 +205,7 @@ body {
   .menu__list-mob {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 95%;
+    width: 100vw;
     position: fixed;
     left: 0%;
     bottom: 0%;
@@ -706,8 +706,6 @@ q {
     line-height: 29px;
   }
 }
-
-
 /* Футер с контактами */
 .footer {
   width: 100%;
@@ -757,7 +755,6 @@ q {
   .footer__text {
     padding-left: 10px;
   }
-
 }
 /* Модальное окно для отправки комментария */
 .modal-window {
