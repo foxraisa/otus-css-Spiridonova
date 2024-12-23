@@ -14,7 +14,12 @@
 
 
 <body>
-    <!-- Menu секция -->
+    <!-- Menu секция 
+    По бэм menu - это блок, list,text и buttons - это элементы 
+    меню далее выделяем блок button, item  являютя элементами блока button.
+    menu - это блок,  list - элемент блока меню, mob - являетс модификатором. 
+    list-mob название нового блока, где  item явялется элементом -->
+    
     <section class="menu">
         <header class="menu__list">
             <p class="menu__text"> Mod</p>
@@ -27,7 +32,8 @@
 
         </header>
 
-        <div class="list-mob menu__list-mob">
+
+        <div class="list-mob menu__list_mob">
             <a class="list-mob__item" href="#">B</a> 
             <a class="list-mob__item" href="#">D</a>
             <a class="list-mob__item" href="#">T</a>
@@ -38,14 +44,18 @@
 
         <!-- Секция MOD -->
 
+        <!-- title является блоком,  main-box - является элементом.
+        Далее main-box  это название блока, где img и text являются элементами блока   main-box,
+        img-main является блокомЮ, где mob и tablet являются модификаторами, так как отвечают на вопрос Какой -->
+
     <section class="title">
-        <div class="title__container">
-            <picture class="img-box-main title__container-img-box">
-                <source media="(max-width: 768px)" class="img-box-main__mob" srcset="img/main-box-weather-room-mobile.jpg" width="600" height="764"> 
-                <img class="img-box-main__tablet"  src="img/main-box-weather-room.jpg" alt="Weather room" width="1440" height="630">
+        <div class="main-box title__main-box">
+            <picture class="img-main main-box__img">
+                <source media="(max-width: 768px)" class="img-main_mob" srcset="img/main-box-weather-room-mobile.jpg" width="600" height="764"> 
+                <img class="img-main_tablet"  src="img/main-box-weather-room.jpg" alt="Weather room" width="1440" height="630">
             </picture>
 
-            <div class="text title__container-text">
+            <div class="text main-box__text">
                 <h1 class="text__heading"> Mod Studio</h1>
                 <h2 class="text__subtitle">Modern Web Studio</h2>
             </div>
@@ -315,5 +325,6 @@
     
 
   </body>
+
 </html>
 

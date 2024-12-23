@@ -47,7 +47,7 @@
     color: #000
   }
   
-  .menu__list-mob {
+  .list-mob {
     display: none;
   }
   
@@ -59,7 +59,7 @@
     }
   
   
-    .menu__list-mob {
+    .list-mob {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       width: 95%;
