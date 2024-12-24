@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/* Проверить html - переписать медификаторы - отвечает на вопрос какой? - переправить и по стилям
+Вынести шрифты в отдельный файл 
+миксин - вынести шрифты для мобильной верстки 
+распредилить блоки по препроцессорным файлам и импортировать в основной файл */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* импорт шрифтов */
 @font-face {
   font-family: "Bitter";
   src: url(../src/Fonts/bitter/Bitter-Regular.ttf);
@@ -45,13 +56,13 @@ body {
   font-size: 24px;
 }
 
-.text__biography-name {
+.biography-text__name {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 86px;
 }
 
-.text__biography-quote {
+.biography-text__quote {
   font-family: "Bitter", serif;
   font-weight: 400;
   font-size: 26px;
@@ -160,12 +171,7 @@ body {
   color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/*  импорт меню или по другому можно назвать навигация по лендингу  */
 /*  Menu секция */
 .menu__text {
   margin-right: 40px;
@@ -193,7 +199,7 @@ body {
   color: #000;
 }
 
-.menu__list-mob {
+.list-mob {
   display: none;
 }
 
@@ -202,7 +208,7 @@ body {
   .menu__list {
     display: none;
   }
-  .menu__list-mob {
+  .list-mob {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 95%;
@@ -224,22 +230,23 @@ body {
     color: #000;
   }
 }
-/* Секция MOD */
-.title {
+/* импорт cover-container или иначе можно назвать обложки лендинга  */
+/* Секция MOD  */
+.cover-container {
   margin-bottom: 8%;
 }
 
-.title__container {
+.main-box {
   position: relative;
   text-align: center;
 }
 
-.img-box-main {
+.img-main {
   width: 100%;
   height: 630px;
 }
 
-.title__container-text {
+.main-box__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -255,12 +262,12 @@ body {
 
 @media screen and (max-width: 768px) {
   /* верстка мобильная - смартфон*/
-  .title__container {
+  .cover-container {
     width: 100%;
     max-height: 764px;
     margin-bottom: 15%;
   }
-  .title__container-text {
+  .main-box__text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -269,7 +276,7 @@ body {
     width: 100%;
     height: 50%;
   }
-  .img-box-main__mob {
+  .img-main_mob {
     width: 100%;
     padding: 0%;
     height: auto;
@@ -290,6 +297,7 @@ body {
     /* text-align: center; */
   }
 }
+/*  импорт стилей biography-container */
 /* Секция Biography */
 .biography-container {
   max-width: 1165px;
@@ -303,7 +311,7 @@ body {
   max-width: 571px;
 }
 
-.biography-container__img-main {
+.biography-container__img_tablet {
   width: 100%;
 }
 
@@ -322,7 +330,7 @@ body {
   justify-content: center;
 }
 
-.text__biography-name {
+.biography-text__name {
   padding-bottom: 0.4em;
   max-width: 300px;
 }
@@ -341,13 +349,13 @@ body {
   content: "";
 }
 
-.text__biography-quote::before {
+.biography-text__quote::before {
   content: "-";
   display: block;
   padding: 4%;
 }
 
-.text__biography-quote {
+.biography-text__quote {
   line-height: 31px;
   max-width: 350px;
 }
@@ -365,7 +373,7 @@ body {
     order: 3;
     margin-bottom: 8%;
   }
-  .biography-container__img-mob {
+  .biography-container__img_mob {
     margin-bottom: 8%;
   }
   .biography-container__text {
@@ -381,26 +389,26 @@ body {
     left: 80%;
     /* top: 120%; */
   }
-  .text__biography-name {
+  .biography-text__name {
     font-family: "Playfair Display";
     font-weight: 400;
     font-size: 64px;
     line-height: 85px;
   }
-  .text__biography-position {
+  .biography-text__position {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
   }
-  .text__biography-skills {
+  .biography-text__skills {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 5%;
   }
-  .text__biography-quote {
+  .biography-text__quote {
     font-family: "Bitter";
     font-weight: 300;
     font-size: 30px;
@@ -408,7 +416,7 @@ body {
     max-width: 350px;
     margin-bottom: 5%;
   }
-  .text__biography-name {
+  .biography-text__name {
     order: 4;
     max-width: 450px;
     margin-bottom: 5%;
@@ -420,10 +428,10 @@ body {
   .skills__item::after {
     content: "";
   }
-  .text__biography-quote::before {
+  .biography-text__quote::before {
     content: "";
   }
-  .text__biography-name::before {
+  .biography-text__name::before {
     content: "-";
   }
   .skills__item::before {
@@ -759,5 +767,4 @@ q {
 /* Модальное окно для отправки комментария */
 .modal-window {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

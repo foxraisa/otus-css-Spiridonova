@@ -12,20 +12,20 @@
   }
 
   /* импорт шрифтов */
-  @import "base/typography.scss";
+  @import "sass/base/typography";
 
   /*  импорт меню или по другому можно назвать навигация по лендингу  */
 
-  @import "layout/navigation.scss";
+  @import "sass/layout/navigation.scss";
   
-  // импорт cover-container или иначе можно назвать обложки лендинга 
+   /* импорт cover-container или иначе можно назвать обложки лендинга  */
 
-  @import "base/cover.scss";
+  @import "sass/base/cover.scss";
   
   
-  // импорт стилей biography-container
+  /*  импорт стилей biography-container */
 
-  @import "base/biography.scss";
+  @import "sass/base/biography.scss";
   
   
   /*  designers-container */
