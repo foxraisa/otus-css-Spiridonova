@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -44,12 +45,12 @@
 
         <!-- Секция MOD -->
 
-        <!-- title является блоком,  main-box - является элементом.
+        <!-- cover-container является блоком,  box - является элементом, main - является модификатором.
         Далее main-box  это название блока, где img и text являются элементами блока   main-box,
-        img-main является блокомЮ, где mob и tablet являются модификаторами, так как отвечают на вопрос Какой -->
+        img-main является блоком, где mob и tablet являются модификаторами, так как отвечают на вопрос Какой -->
 
-    <section class="title">
-        <div class="main-box title__main-box">
+    <section class="cover-container">
+        <div class="main-box cover-container__box_main">
             <picture class="img-main main-box__img">
                 <source media="(max-width: 768px)" class="img-main_mob" srcset="img/main-box-weather-room-mobile.jpg" width="600" height="764"> 
                 <img class="img-main_tablet"  src="img/main-box-weather-room.jpg" alt="Weather room" width="1440" height="630">
@@ -65,29 +66,35 @@
 
 
     <!-- Секция Biography -->
+
+    <!-- biography-container название блока, img, header,  text являются элементами блока biography-container
+     biography-container__img блок + элемент, далее mob и  tablet являются модификаторами 
+     biography-text является блоком, где name, position, skills, quote являются элементами
+     skills является блоком, где item является элементом -->
+     
     <section class="biography-container">
 
         <picture class="biography-container__img">
-            <source media="(max-width: 768px)" class="biography-container__img-mob" srcset="img/katya-mills-mobile.jpg" width="450" height="401">
-            <img class="biography-container__img-main"  src="img/katya-mills.jpg" alt="Katya Mills" width="571" height="840">
+            <source media="(max-width: 768px)" class="biography-container__img_mob" srcset="img/katya-mills-mobile.jpg" width="450" height="401">
+            <img class="biography-container__img_tablet"  src="img/katya-mills.jpg" alt="Katya Mills" width="571" height="840">
         </picture>
         
         <h2 class="biography-container__header"> Biography </h2>
 
-        <div class="text biography-container__text">
-            <h3 class="text__biography-name"> Katya Mills </h3>
+        <div class="biography-text biography-container__text">
+            <h3 class="biography-text__name"> Katya Mills </h3>
         
             
-            <p class="text__biography-position"> Art Director </p>
+            <p class="biography-text__position"> Art Director </p>
 
-            <ul class="skills text__biography-skills">
+            <ul class="skills biography-text__skills">
                 <li class="skills__item">Scenography </li>
                 <li class="skills__item"> Styling </li>
                 <li class="skills__item"> Creative Photography </li>
                 <li class="skills__item"> Design </li>
             </ul>
 
-            <blockquote class="text__biography-quote">
+            <blockquote class="biography-text__quote">
                  “The more I deal with the work as something that is my own, <br>
                 as something that is personal, 
                 the more successful it is.” 
@@ -100,6 +107,7 @@
 
 
     <!-- Секция Designers -->
+     <!-- Скилы и фром дизайнеров можно вынести в переменную  -->
 
     <section class="designers-container">
         <h2 class="designers-container__header"> Designers </h2>
