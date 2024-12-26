@@ -94,7 +94,7 @@ body {
   font-size: 16px;
 }
 
-.websites-item__text {
+.list-url__item_text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -102,7 +102,7 @@ body {
   line-height: 19px;
 }
 
-.websites-item__link {
+.list-url__item_link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -525,6 +525,7 @@ body {
     padding-left: 0;
   }
 }
+/*  импорт стилей testimonials-container */
 /* Секция Testimonials */
 .testimonials-container {
   display: grid;
@@ -541,26 +542,26 @@ body {
   transform: rotate(-90deg);
 }
 
-.websites-box {
+.testimonials-container__box {
   grid-column: 1/2;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.websites-list {
+.box__list_url {
   width: 80px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: end;
 }
 
-.websites-item {
+.list-url__item {
   transform-origin: top left;
   transform: rotate(-90deg);
 }
 
-.testimonials-container__quotes-box {
+.testimonials-container__quotes {
   grid-column: 3/4;
   max-width: 221px;
   max-height: 760px;
@@ -580,7 +581,7 @@ q {
   quotes: none;
 }
 
-.websites-item__link {
+.list-url__item_link {
   text-decoration: none;
   color: #000;
 }
@@ -606,10 +607,10 @@ q {
     line-height: 21px;
     text-align: end;
   }
-  .websites-box__img-main {
+  .box__img {
     display: none;
   }
-  .testimonials-container__quotes-box {
+  .testimonials-container__quotes {
     max-width: 450px;
     margin: 0 auto 8%;
   }
@@ -624,14 +625,14 @@ q {
     font-size: 30px;
     line-height: 36px;
   }
-  .quotes__box-img {
+  .quotes__img {
     margin: 0 auto;
   }
-  .websites-item {
+  .list-url__item {
     transform: none;
     margin-bottom: 5%;
   }
-  .websites-list {
+  .box__list_url {
     width: 98%;
     margin: 0 auto 8%;
     display: flex;
