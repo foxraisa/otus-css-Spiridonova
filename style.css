@@ -3,6 +3,7 @@
 Вынести шрифты в отдельный файл 
 миксин - вынести шрифты для мобильной верстки 
 распредилить блоки по препроцессорным файлам и импортировать в основной файл */
+/* Скпировать сюда код, который был исправлен в ветке мобильных стилей */
 * {
   margin: 0;
   padding: 0;
@@ -74,20 +75,20 @@ body {
   font-size: 24px;
 }
 
-.text__designer-name {
+.inner-text__name_designer {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
-.text__designer-from {
+.inner-text__from_designer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
-.text__designer-skills {
+.inner-text__skills_designer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -438,6 +439,7 @@ body {
     content: "-";
   }
 }
+/*  импорт стилей designers-container */
 /*  designers-container */
 .designers-container {
   width: 98.6%;
@@ -453,7 +455,7 @@ body {
   padding-bottom: 30px;
 }
 
-.designers-container__box {
+.designers-container__list {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -465,29 +467,29 @@ body {
   /* убрать коммент - прокрутка будет всегда видимой */
 }
 
-.inner-box-big__text-img-big {
+.inner-box-big__text_img-big {
   padding-left: 240px;
 }
 
-.text__designer-name {
+.inner-text__name_designer {
   padding-top: 20px;
 }
 
-.designer-skills {
+.inner-text__skills_designer {
   padding-bottom: 15px;
 }
 
-.text__designer-from::before {
+.inner-text__from_designer::before {
   content: "From/";
   font-weight: bold;
 }
 
-.text__designer-skills::before {
+.inner-text__skills_designer::before {
   content: "Skills/";
   font-weight: bold;
 }
 
-.text__designer-skills {
+.inner-text__skills_designer {
   list-style: none;
   padding: 0;
   margin-bottom: 5%;
@@ -519,7 +521,7 @@ body {
     padding-left: 0;
     padding-bottom: 10px;
   }
-  .inner-box-big__text-img-big {
+  .inner-box-big__text_img-big {
     padding-left: 0;
   }
 }

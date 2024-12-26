@@ -107,58 +107,61 @@
 
 
     <!-- Секция Designers -->
-     <!--   -->
+     <!-- designers-container - это блок, header и  list являются элементами этого блока , 
+       Далее list уже является блоком, inner-box - элементом блока  list, big и normal  являются модификаторами
+        inner-box-big   - это блок с большой картинкой, img и text являются элементами этого блока, mob, tablet и  img-big бдут модификаторами элементов img и  text соответственно,
+        inner-text является блоком, где name,from и skills будут элементами, а  designer является модификатором 
+        designer-skills является блоком, где item является элементом -->
 
     <section class="designers-container">
         <h2 class="designers-container__header"> Designers </h2>
 
-        <div class="container-img designers-container__box">
-            <div class="inner-box-big container-img__inner-box-big">
+        <div class="list designers-container__list">
+
+            <div class="inner-box-big list__inner-box_big">
                 <picture class="inner-box-big__img">
-                    <source media="(max-width: 768px)" class="inner-box-big__img-mob" srcset="img/designer-jess-wonder-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-big__img-big" src="img/designer-jess-wonder.jpg" alt="Photo Jess Wonder" width="572" height="538">
-                </picture>
+                    <source media="(max-width: 768px)" class="inner-box-big__img_mob" srcset="img/designer-jess-wonder-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-big__img_tablet" src="img/designer-jess-wonder.jpg" alt="Photo Jess Wonder" width="572" height="538">
+                </picture> 
 
-                <div class="text inner-box-big__text-img-big">
-                    <h3 class="text__designer-name"> JESS WONDER </h3>
-                    <p class="text__designer-from"> Be more flower</p> 
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-big__text_img-big">
+                    <h3 class="inner-text__name_designer"> JESS WONDER </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p> 
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
                 </div>
             </div>
 
-            <div class="inner-box-normal container-img__inner-box-normal">
 
+            <div class="inner-box-normal list__inner-box_normal">
                 <picture class="inner-box-normal__img">
-                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-normal__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img_mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img_tablet" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
                 </picture>
 
-
-                <div class="text inner-box-normal__text">
-                    <h3 class="text__designer-name" > KAMERON CLEIN </h3>
-                    <p class="text__designer-from"> Be more flower</p> 
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-normal__text">
+                    <h3 class="inner-text__name_designer" > KAMERON CLEIN </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p> 
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
                 </div>
             </div>
 
-            <div class="inner-box-normal container-img__inner-box-normal">
+
+            <div class="inner-box-normal list__inner-box_normal">
                 <picture class="inner-box-normal__img">
-                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-lousse-red-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-normal__img-normal" src="img/designer-lousse-red.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img_mob" srcset="img/designer-lousse-red-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img_tablet" src="img/designer-lousse-red.jpg" alt="Photo Kameron Clein" width="336" height="440">
                 </picture>
                 
-                <div class="text inner-box-normal__text">
-                    <h3 class="text__designer-name" > LOUISSE RED </h3>
-                
-                    <p class="text__designer-from"> Be more flower</p>
-
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-normal__text">
+                    <h3 class="inner-text__name_designer" > LOUISSE RED </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p>
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
@@ -166,18 +169,17 @@
 
             </div>
 
-            <div class="inner-box-normal container-img__inner-box-normal">
+
+            <div class="inner-box-normal list__inner-box_normal">
                 <picture class="inner-box-normal__img">
-                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-normal__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img_mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img_tablet" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
                 </picture>
 
-                <div class="text inner-box-normal__text">
-                    <h3 class="text__designer-name" > KAMERON CLEIN  </h3>
-
-                    <p class="text__designer-from"> Be more flower</p> 
-                
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-normal__text">
+                    <h3 class="inner-text__name_designer" > KAMERON CLEIN </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p> 
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
