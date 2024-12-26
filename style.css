@@ -4,6 +4,8 @@
 миксин - вынести шрифты для мобильной верстки 
 распредилить блоки по препроцессорным файлам и импортировать в основной файл */
 /* Скпировать сюда код, который был исправлен в ветке мобильных стилей */
+/* Переправить секцию  strong-points - выправить текст - навигации по макету */
+/* Проверит все ли правила шрифтов находятся в файле по типографике  */
 * {
   margin: 0;
   padding: 0;
@@ -130,7 +132,7 @@ body {
   line-height: 100%;
 }
 
-.list-items {
+.navigation__item {
   list-style: none;
   font-family: "Bitter", serif;
   font-weight: 400;
@@ -642,6 +644,7 @@ q {
     justify-content: flex-start;
   }
 }
+/*  импорт стилей strong-points-container */
 /* Секция Strong points */
 .strong-points-container {
   margin-bottom: 8%;
@@ -653,7 +656,7 @@ q {
   margin-bottom: 2%;
 }
 
-.box-carousel {
+.strong-points-container__carousel {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3%;
@@ -663,7 +666,7 @@ q {
   overflow-x: scroll;
 }
 
-.list-column {
+.navigation {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -675,7 +678,7 @@ q {
   margin-bottom: 20px;
 }
 
-.list-items {
+.list-column__navigation {
   list-style: none;
 }
 
@@ -689,7 +692,7 @@ q {
     line-height: 21px;
     padding-left: 10px;
   }
-  .box-carousel {
+  .strong-points-container__carousel {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
@@ -697,7 +700,7 @@ q {
     margin-bottom: 8%;
     overflow-x: scroll;
   }
-  .list-column {
+  .carousel__list_column {
     order: 1;
     max-width: 201px;
     align-items: center;
@@ -709,7 +712,7 @@ q {
     font-size: 46px;
     line-height: 100%;
   }
-  .list-items__item {
+  .navigation__item {
     font-family: "Bitter";
     font-style: normal;
     font-weight: 400;

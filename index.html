@@ -245,41 +245,47 @@
 
     <!-- Секция Strong points -->
 
+    <!-- В блоке strong-points-container если элементы  header и carousel
+     В блоке carousel есть элементы img и list, где column является модификатором list
+     mob и tablet являются модификаторами элемента img
+     В блоке list-column элементы header и navigation
+     В блоке navigation есть элементы item-->
+
     <section class="strong-points-container">
         <h2 class="strong-points-container__header"> Strong points </h2>
         
-        <div class="box-carousel strong-points-container__box-carousel">
-            <picture class="box-carousel__box-img">
-                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/strong-points-working-place-mobile.jpg" width="310" height="450">
-                <img class="box-carousel__img-tablet" src="img/strong-points-working-place.jpg" width="335" height="554" alt="Working place">
+        <div class="carousel strong-points-container__carousel">
+            <picture class="carousel__img">
+                <source media="(max-width: 768px)" class="carousel__img_mob" srcset="img/strong-points-working-place-mobile.jpg" width="310" height="450">
+                <img class="carousel__img_tablet" src="img/strong-points-working-place.jpg" width="335" height="554" alt="Working place">
             </picture>
 
-            <picture class="box-carousel__box-img">
-                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/strong-points-relaxing-place.jpg" width="310" height="450">
-                <img class="box-carousel__img-tablet" src="img/strong-points-relaxing-place.jpg" width="335" height="554" alt="Relaxing place">
+            <picture class="carousel__img">
+                <source media="(max-width: 768px)" class="carousel__img_mob" srcset="img/strong-points-relaxing-place.jpg" width="310" height="450">
+                <img class="carousel__img_tablet" src="img/strong-points-relaxing-place.jpg" width="335" height="554" alt="Relaxing place">
             </picture>
 
-            <div class="list-column box-carousel__list-column"> 
+            <div class="list-column carousel__list_column"> 
                 <h3 class="list-column__header"> Strengths </h3>
             
-                <ul class="list-items list-column__list-items">
-                    <li class="list-items__item"> Interiors</li>
-                    <li class="list-items__item">Outdoors</li>
-                    <li class="list-items__item">Portraits</li>
-                    <li class="list-items__item">Styling</li>
-                    <li class="list-items__item">Events</li>
-                    <li class="list-items__item">Architecture</li>
-                    <li class="list-items__item">Design</li>
-                    <li class="list-items__item">Celebrations</li>
-                    <li class="list-items__item">Fashion</li>
-                    <li class="list-items__item">Nature</li>
+                <ul class="navigation list-column__navigation">
+                    <li class="navigation__item"> Interiors</li>
+                    <li class="navigation__item">Outdoors</li>
+                    <li class="navigation__item">Portraits</li>
+                    <li class="navigation__item">Styling</li>
+                    <li class="navigation__item">Events</li>
+                    <li class="navigation__item">Architecture</li>
+                    <li class="navigation__item">Design</li>
+                    <li class="navigation__item">Celebrations</li>
+                    <li class="navigation__item">Fashion</li>
+                    <li class="navigation__item">Nature</li>
                 </ul>
 
             </div>
 
-            <picture class="box-carousel__box-img">
-                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/place-cafe-creative.jpg" width="310" height="450">
-                <img class="box-carousel__img-tablet" src="img/place-cafe-creative.jpg" width="335" height="554" alt="Cafe creative">
+            <picture class="carousel__img">
+                <source media="(max-width: 768px)" class="carousel__img_mob" srcset="img/place-cafe-creative.jpg" width="310" height="450">
+                <img class="carousel__img_tablet" src="img/place-cafe-creative.jpg" width="335" height="554" alt="Cafe creative">
             </picture>
         </div>
 

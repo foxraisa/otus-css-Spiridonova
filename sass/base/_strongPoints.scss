@@ -1,0 +1,91 @@
+/* Секция Strong points */
+  
+.strong-points-container {
+    margin-bottom: 8%;
+  }
+  
+  .strong-points-container__header {
+    padding-top: 0;
+    padding-left: 17%;
+    margin-bottom: 2%;
+  }
+  
+  .strong-points-container__carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    height: 600px;
+    /* width: 1440px; */
+    padding: 10px;
+    overflow-x: scroll;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 451px;
+  }
+  
+  .list-column__header {
+    margin-bottom: 20px;
+  }
+  .list-column__navigation {
+    list-style: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* верстка мобильная - смартфон*/
+  
+    .strong-points-container__header {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+  
+      padding-left: 10px;
+  
+    }
+  
+    .strong-points-container__carousel {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+  
+      height: 470px;
+  
+      margin-bottom: 8%;
+      overflow-x: scroll;
+  
+    }
+  
+    .carousel__list_column {
+      order: 1;
+      max-width: 201px;
+      align-items: center;
+  
+    }
+  
+    .list-column__header {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 46px;
+      line-height: 100%;
+  
+    }
+  
+    .navigation__item {
+      font-family: 'Bitter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+  
+    }
+  
+  }
+  
+  
