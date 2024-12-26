@@ -156,7 +156,7 @@ body {
   color: #fff;
 }
 
-.company-data {
+.footer__data {
   font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 16px;
@@ -164,12 +164,12 @@ body {
   color: #fff;
 }
 
-.company-data__phone {
+.footer__data_phone {
   text-decoration: none;
   color: #fff;
 }
 
-.company-data__Email {
+.footer__data_Email {
   text-decoration: none;
   color: #fff;
 }
@@ -720,6 +720,7 @@ q {
     line-height: 29px;
   }
 }
+/*  импорт стилей footer */
 /* Футер с контактами */
 .footer {
   width: 100%;
@@ -732,7 +733,7 @@ q {
   margin-bottom: 2%;
 }
 
-.company-data {
+.footer__data {
   padding-left: 20px;
   justify-self: start;
   display: flex;
@@ -761,7 +762,7 @@ q {
     text-align: end;
     padding-top: 20px;
   }
-  .company-data {
+  .footer__data {
     padding-left: 10px;
     display: flex;
     flex-direction: column;
@@ -770,6 +771,7 @@ q {
     padding-left: 10px;
   }
 }
+/*  импорт стилей modal-window */
 /* Модальное окно для отправки комментария */
 .modal-window {
   display: none;
