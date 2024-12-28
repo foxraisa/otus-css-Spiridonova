@@ -1,1 +1,10 @@
-//  сюда вынестит мексины по шрифтам в мобильной верстке 
+// Для примера создала миксин для шрифтов, чтобы использовать в мобильной верстке
+
+@mixin font-mob ($fw, $ff, $fs, $lh) {
+
+    font-weight: $fw;
+    font-family: $ff;
+    font-size: $fs;
+    line-height: $lh;
+    font-style: normal;
+};

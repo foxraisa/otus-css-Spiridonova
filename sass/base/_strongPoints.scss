@@ -39,11 +39,14 @@
     /* верстка мобильная - смартфон*/
   
     .strong-points-container__header {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
+
+      @include font-mob (700,  'Roboto', 18px, 21px); 
+
+      // font-family: 'Roboto';
+      // font-style: normal;
+      // font-weight: 700;
+      // font-size: 18px;
+      // line-height: 21px;
   
       padding-left: 10px;
   
@@ -69,20 +72,26 @@
     }
   
     .list-column__header {
-      font-family: 'Playfair Display';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 46px;
-      line-height: 100%;
+
+      @include font-mob (400,  'Playfair Display', 46px, 100%); 
+
+      // font-family: 'Playfair Display';
+      // font-style: normal;
+      // font-weight: 400;
+      // font-size: 46px;
+      // line-height: 100%;
   
     }
   
     .navigation__item {
-      font-family: 'Bitter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 29px;
+
+      @include font-mob (400,  'Bitter', 24px, 29px);
+
+      // font-family: 'Bitter';
+      // font-style: normal;
+      // font-weight: 400;
+      // font-size: 24px;
+      // line-height: 29px;
   
     }
   

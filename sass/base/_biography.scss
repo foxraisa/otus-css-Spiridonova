@@ -110,34 +110,46 @@
     }
   
     .biography-text__name {
-      font-family: 'Playfair Display';
-      font-weight: 400;
-      font-size: 64px;
-      line-height: 85px;
+
+      @include font-mob (400,  'Playfair Display', 64px, 85px);
+
+      // font-family: 'Playfair Display';
+      // font-weight: 400;
+      // font-size: 64px;
+      // line-height: 85px;
   
     }
   
     .biography-text__position {
-      font-family: 'Roboto';
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
+
+      @include font-mob (500,  'Roboto', 18px, 21px);
+
+      // font-family: 'Roboto';
+      // font-weight: 500;
+      // font-size: 18px;
+      // line-height: 21px;
     }
   
     .biography-text__skills {
-      font-family: 'Roboto';
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
+
+      @include font-mob (500,  'Roboto', 18px, 21px);
+
+      // font-family: 'Roboto';
+      // font-weight: 500;
+      // font-size: 18px;
+      // line-height: 21px;
   
       margin-bottom: 5%;
     }
   
     .biography-text__quote {
-      font-family: 'Bitter';
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 36px;
+
+      @include font-mob (300,  'Bitter', 30px, 36px);
+
+      // font-family: 'Bitter';
+      // font-weight: 300;
+      // font-size: 30px;
+      // line-height: 36px;
   
       max-width: 350px;
       margin-bottom: 5%;
