@@ -167,12 +167,16 @@
       }
   
       .footer__data_phone {
-        text-decoration:none;
-        color: #fff;
+        @extend .none-decoration-white;
+        
+        // text-decoration:none;
+        // color: #fff;
       }
       .footer__data_Email {
-        text-decoration:none;
-        color: #fff;
+        @extend .none-decoration-white;
+
+        // text-decoration:none;
+        // color: #fff;
       
     }
       
