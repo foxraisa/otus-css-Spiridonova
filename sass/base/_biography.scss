@@ -1,0 +1,192 @@
+ /* Секция Biography */
+  
+ .biography-container {
+    max-width: 1165px;
+    max-height: 840px;
+  
+    margin: 0 auto 8%;
+  
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .biography-container__img {
+    max-width: 571px;
+  }
+  
+  .biography-container__img_tablet {
+    width: 100%;
+  }
+  
+  .biography-container__header {
+  
+    transform: rotate(-90deg); 
+    align-self: flex-start;
+    padding: 30px 0 50px;
+    /* writing-mode: vertical-lr; */
+    /* не стала использовать,так как поворачивает только в одну сторону не зависимо от значения  */
+  }
+  
+  .biography-container__text {
+    width: 485px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    }
+  
+  .biography-text__name {
+    padding-bottom: .4em;
+    max-width: 300px;
+  }
+  
+  
+  .skills__item {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .skills__item::after {
+    content: "/";
+    margin-left: .3em;
+  
+  }
+  
+  .skills__item:last-child::after {
+    content: "";
+    
+  }
+  
+  .biography-text__quote::before {
+    content: "-";
+    display: block;
+    padding: 4%;
+  }
+  
+  .biography-text__quote {
+    line-height: 31px;
+    max-width: 350px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* верстка мобильная - смартфон*/
+  
+    .biography-container {
+      display: flex;
+      flex-direction: column;
+      max-height: 960px;
+      margin-bottom: 15%;
+  
+      padding: 0 10px;
+  
+    }
+  
+    .biography-container__img {
+      order: 3;
+      margin-bottom: 8%;
+    }
+  
+    .biography-container__img_mob {
+      margin-bottom: 8%;
+    }
+  
+    .biography-container__text {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .biography-container__header {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 0;
+      transform: none;
+  
+      position: absolute;
+      left: 80%;
+      /* top: 120%; */
+  
+    }
+  
+    .biography-text__name {
+
+      @include font-mob (400,  'Playfair Display', 64px, 85px);
+
+      // font-family: 'Playfair Display';
+      // font-weight: 400;
+      // font-size: 64px;
+      // line-height: 85px;
+  
+    }
+  
+    .biography-text__position {
+
+      @include font-mob (500,  'Roboto', 18px, 21px);
+
+      // font-family: 'Roboto';
+      // font-weight: 500;
+      // font-size: 18px;
+      // line-height: 21px;
+    }
+  
+    .biography-text__skills {
+
+      @include font-mob (500,  'Roboto', 18px, 21px);
+
+      // font-family: 'Roboto';
+      // font-weight: 500;
+      // font-size: 18px;
+      // line-height: 21px;
+  
+      margin-bottom: 5%;
+    }
+  
+    .biography-text__quote {
+
+      @include font-mob (300,  'Bitter', 30px, 36px);
+
+      // font-family: 'Bitter';
+      // font-weight: 300;
+      // font-size: 30px;
+      // line-height: 36px;
+  
+      max-width: 350px;
+      margin-bottom: 5%;
+    }
+  
+    .biography-text__name {
+      order: 4;
+      max-width: 450px;
+      margin-bottom: 5%;
+  
+    }
+  
+    .skills__item {
+      display: block;
+      list-style: none;
+    }
+  
+    .skills__item::after {
+      content: "";
+    
+    }
+  
+    .biography-text__quote::before {
+      content: "";
+    }
+  
+    .biography-text__name::before {
+      content: "-";
+  
+    }
+  
+    .skills__item::before {
+      content: "-";
+      
+    }
+    
+  
+  }
+  
+  

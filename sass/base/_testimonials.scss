@@ -1,0 +1,149 @@
+/* Секция Testimonials */
+  
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    margin: 0 auto 8%;
+ }
+
+ .testimonials-container__header {
+    grid-column: 2/3; 
+    grid-row: 1/2;
+    align-self: start;
+    width: 180px;
+    height: 160px;
+    transform: rotate(-90deg);
+ }
+
+ .testimonials-container__box {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+ }
+
+
+.box__list_url {
+  width: 80px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: end;
+}
+
+.list-url__item {
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+
+
+.testimonials-container__quotes {
+  grid-column: 3/4;
+  max-width: 221px; 
+  max-height: 760px;
+  align-content: center;
+  margin: 0 20%;
+}
+
+.quotes__text {
+
+  display: flex;
+
+  max-width: 221px;
+  max-height: 304px;
+  text-align: center;
+
+  margin: 0 auto 8%;
+}
+
+
+q {
+  quotes: none;
+}
+
+.list-url__item_link {
+  @extend .none-decoration-black;
+  
+  // text-decoration:none;
+  // color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  /* верстка мобильная - смартфон*/
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 98%;
+    padding: 0 10px;
+
+    margin: 0 auto 15%;
+  }
+
+  .testimonials-container__header {
+    order: 4;
+    transform: none;
+
+    width: 100%;
+    height: 50px;
+
+    @include font-mob (700,  'Roboto', 18px, 21px);
+
+    // font-family: 'Roboto';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 18px;
+    // line-height: 21px;
+
+    text-align: end;
+  }
+
+  .box__img {
+    display: none;
+  }
+
+  .testimonials-container__quotes {
+    max-width: 450px;
+    margin: 0 auto 8%;
+  }
+
+  .quotes__text {
+    display: flex;
+    max-width: 342px;
+    max-height: 200px;
+    text-align: center;
+
+    @include font-mob (300,  'Bitter', 30px, 36px);
+
+    // font-family: 'Bitter';
+    // font-style: normal;
+    // font-weight: 300;
+    // font-size: 30px;
+    // line-height: 36px;
+
+  }
+
+  .quotes__img {
+    margin: 0 auto;
+  }
+
+  .list-url__item {
+    transform: none;
+    margin-bottom: 5%;
+
+  }
+
+  .box__list_url {
+    width: 98%;
+    margin: 0 auto 8%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15%;
+    justify-content: flex-start;
+
+  }
+
+}

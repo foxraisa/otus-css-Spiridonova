@@ -1,0 +1,103 @@
+ /*  designers-container */
+  
+ .designers-container {
+    width: 98.6%;
+    height: 677px;
+  
+    margin: 0 auto 8%;
+  
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  
+  .designers-container__header {
+    width: 98.6%;
+    padding-left: 110px;
+    padding-bottom: 30px;
+  }
+  
+  .designers-container__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  
+    max-width: 98.6%;
+    height: 619px;
+  
+    gap: 20px;
+  
+    overflow-y: auto;
+  
+    /* max-height: 100vh; */
+    /* убрать коммент - прокрутка будет всегда видимой */
+  }
+  
+  .inner-box-big__text_img-big {
+    padding-left: 240px;
+  }
+  
+  .inner-text__name_designer {
+    padding-top: 20px;
+  }
+  
+  .inner-text__skills_designer {
+    padding-bottom: 15px;
+  }
+  
+  .inner-text__from_designer::before {
+    content: "From/";
+    font-weight: bold;
+  }
+  
+  .inner-text__skills_designer::before {
+    content: "Skills/";
+    font-weight: bold;
+  }
+  
+  .inner-text__skills_designer {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5%;
+  }
+  
+  .designer-skills__item {
+    display: inline-block;
+  }
+  
+  .designer-skills__item::after {
+    content: "/";
+    margin-left: .3em;
+  }
+  
+  .designer-skills__item:last-child:after {
+    content: "";
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* верстка мобильная - смартфон*/
+  
+    .designers-container {
+      height: 580px;
+      padding: 0 10px;
+  
+      margin: 0 auto 15%;
+      
+    }
+  
+    .designers-container__header {
+      font-size: 18px;
+      line-height: 21px;
+  
+      padding-left: 0;
+      padding-bottom: 10px;
+  
+    }
+  
+    .inner-box-big__text_img-big {
+      padding-left: 0;
+    }
+  
+  }
+  

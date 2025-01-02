@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -9,13 +10,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-  /* <link rel="stylesheet" href="sass/style.css"> */
   <title> Mod studio </title>
 </head>
 
 
 <body>
-    <!-- Menu секция -->
+    
+    <!-- Menu секция 
+    По бэм menu - это блок, list,text и buttons - это элементы 
+    меню далее выделяем блок button, item  являютя элементами блока button.
+    menu - это блок,  list - элемент блока меню, mob - являетс модификатором. 
+    list-mob название нового блока, где  item явялется элементом -->
+    
     <section class="menu">
         <header class="menu__list">
             <p class="menu__text"> Mod</p>
@@ -28,7 +34,8 @@
 
         </header>
 
-        <div class="list-mob menu__list-mob">
+
+        <div class="list-mob menu__list_mob">
             <a class="list-mob__item" href="#">B</a> 
             <a class="list-mob__item" href="#">D</a>
             <a class="list-mob__item" href="#">T</a>
@@ -39,14 +46,18 @@
 
         <!-- Секция MOD -->
 
-    <section class="title">
-        <div class="title__container">
-            <picture class="img-box-main title__container-img-box">
-                <source media="(max-width: 768px)" class="img-box-main__mob" srcset="img/main-box-weather-room-mobile.jpg" width="600" height="764"> 
-                <img class="img-box-main__tablet"  src="img/main-box-weather-room.jpg" alt="Weather room" width="1440" height="630">
+        <!-- cover-container является блоком,  box - является элементом, main - является модификатором.
+        Далее main-box  это название блока, где img и text являются элементами блока   main-box,
+        img-main является блоком, где mob и tablet являются модификаторами, так как отвечают на вопрос Какой -->
+
+    <section class="cover-container">
+        <div class="main-box cover-container__box_main">
+            <picture class="img-main main-box__img">
+                <source media="(max-width: 768px)" class="img-main_mob" srcset="img/main-box-weather-room-mobile.jpg" width="600" height="764"> 
+                <img class="img-main_tablet"  src="img/main-box-weather-room.jpg" alt="Weather room" width="1440" height="630">
             </picture>
 
-            <div class="text title__container-text">
+            <div class="text main-box__text">
                 <h1 class="text__heading"> Mod Studio</h1>
                 <h2 class="text__subtitle">Modern Web Studio</h2>
             </div>
@@ -56,29 +67,35 @@
 
 
     <!-- Секция Biography -->
+
+    <!-- biography-container название блока, img, header,  text являются элементами блока biography-container
+     biography-container__img блок + элемент, далее mob и  tablet являются модификаторами 
+     biography-text является блоком, где name, position, skills, quote являются элементами
+     skills является блоком, где item является элементом -->
+
     <section class="biography-container">
 
         <picture class="biography-container__img">
-            <source media="(max-width: 768px)" class="biography-container__img-mob" srcset="img/katya-mills-mobile.jpg" width="450" height="401">
-            <img class="biography-container__img-main"  src="img/katya-mills.jpg" alt="Katya Mills" width="571" height="840">
+            <source media="(max-width: 768px)" class="biography-container__img_mob" srcset="img/katya-mills-mobile.jpg" width="450" height="401">
+            <img class="biography-container__img_tablet"  src="img/katya-mills.jpg" alt="Katya Mills" width="571" height="840">
         </picture>
         
         <h2 class="biography-container__header"> Biography </h2>
 
-        <div class="text biography-container__text">
-            <h3 class="text__biography-name"> Katya Mills </h3>
+        <div class="biography-text biography-container__text">
+            <h3 class="biography-text__name"> Katya Mills </h3>
         
             
-            <p class="text__biography-position"> Art Director </p>
+            <p class="biography-text__position"> Art Director </p>
 
-            <ul class="skills text__biography-skills">
+            <ul class="skills biography-text__skills">
                 <li class="skills__item">Scenography </li>
                 <li class="skills__item"> Styling </li>
                 <li class="skills__item"> Creative Photography </li>
                 <li class="skills__item"> Design </li>
             </ul>
 
-            <blockquote class="text__biography-quote">
+            <blockquote class="biography-text__quote">
                  “The more I deal with the work as something that is my own, <br>
                 as something that is personal, 
                 the more successful it is.” 
@@ -91,57 +108,61 @@
 
 
     <!-- Секция Designers -->
+     <!-- designers-container - это блок, header и  list являются элементами этого блока , 
+       Далее list уже является блоком, inner-box - элементом блока  list, big и normal  являются модификаторами
+        inner-box-big   - это блок с большой картинкой, img и text являются элементами этого блока, mob, tablet и  img-big бдут модификаторами элементов img и  text соответственно,
+        inner-text является блоком, где name,from и skills будут элементами, а  designer является модификатором 
+        designer-skills является блоком, где item является элементом -->
 
     <section class="designers-container">
         <h2 class="designers-container__header"> Designers </h2>
 
-        <div class="container-img designers-container__box">
-            <div class="inner-box-big container-img__inner-box-big">
+        <div class="list designers-container__list">
+
+            <div class="inner-box-big list__inner-box_big">
                 <picture class="inner-box-big__img">
-                    <source media="(max-width: 768px)" class="inner-box-big__img-mob" srcset="img/designer-jess-wonder-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-big__img-big" src="img/designer-jess-wonder.jpg" alt="Photo Jess Wonder" width="572" height="538">
-                </picture>
+                    <source media="(max-width: 768px)" class="inner-box-big__img_mob" srcset="img/designer-jess-wonder-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-big__img_tablet" src="img/designer-jess-wonder.jpg" alt="Photo Jess Wonder" width="572" height="538">
+                </picture> 
 
-                <div class="text inner-box-big__text-img-big">
-                    <h3 class="text__designer-name"> JESS WONDER </h3>
-                    <p class="text__designer-from"> Be more flower</p> 
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-big__text_img-big">
+                    <h3 class="inner-text__name_designer"> JESS WONDER </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p> 
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
                 </div>
             </div>
 
-            <div class="inner-box-normal container-img__inner-box-normal">
 
+            <div class="inner-box-normal list__inner-box_normal">
                 <picture class="inner-box-normal__img">
-                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-normal__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img_mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img_tablet" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
                 </picture>
 
-
-                <div class="text inner-box-normal__text">
-                    <h3 class="text__designer-name" > KAMERON CLEIN </h3>
-                    <p class="text__designer-from"> Be more flower</p> 
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-normal__text">
+                    <h3 class="inner-text__name_designer" > KAMERON CLEIN </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p> 
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
                 </div>
             </div>
 
-            <div class="inner-box-normal container-img__inner-box-normal">
+
+            <div class="inner-box-normal list__inner-box_normal">
                 <picture class="inner-box-normal__img">
-                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-lousse-red-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-normal__img-normal" src="img/designer-lousse-red.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img_mob" srcset="img/designer-lousse-red-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img_tablet" src="img/designer-lousse-red.jpg" alt="Photo Kameron Clein" width="336" height="440">
                 </picture>
                 
-                <div class="text inner-box-normal__text">
-                    <h3 class="text__designer-name" > LOUISSE RED </h3>
-                
-                    <p class="text__designer-from"> Be more flower</p>
-
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-normal__text">
+                    <h3 class="inner-text__name_designer" > LOUISSE RED </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p>
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
@@ -149,18 +170,17 @@
 
             </div>
 
-            <div class="inner-box-normal container-img__inner-box-normal">
+
+            <div class="inner-box-normal list__inner-box_normal">
                 <picture class="inner-box-normal__img">
-                    <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
-                    <img class="inner-box-normal__img-normal" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
+                    <source media="(max-width: 768px)" class="inner-box-normal__img_mob" srcset="img/designer-kameron-clein-mobile.jpg" width="310" height="440">
+                    <img class="inner-box-normal__img_tablet" src="img/designer-kameron-clein.jpg" alt="Photo Kameron Clein" width="336" height="440">
                 </picture>
 
-                <div class="text inner-box-normal__text">
-                    <h3 class="text__designer-name" > KAMERON CLEIN  </h3>
-
-                    <p class="text__designer-from"> Be more flower</p> 
-                
-                    <ul class="designer-skills text__designer-skills">
+                <div class="inner-text inner-box-normal__text">
+                    <h3 class="inner-text__name_designer" > KAMERON CLEIN </h3>
+                    <p class="inner-text__from_designer"> Be more flower</p> 
+                    <ul class="designer-skills inner-text__skills_designer">
                         <li class="designer-skills__item"> Design Strategy </li>
                         <li class="designer-skills__item"> Marketing </li>
                     </ul> 
@@ -175,85 +195,98 @@
 
     <!-- Секция Testimonials -->
 
+    <!-- testimonials-container - блок, где  header, box и quotes  являются элементами
+     следующий блок box, где list и img являются элементами, а url явялется модификатором элемента list
+     следующий блок list-url, где элемент - item, модификаторами являются text и  link
+    testimoniail будет модификатором элеменат img блока box
+     блок quotes имеет элементы text и img, модификаторами элемента img являются mob и tablet-->
+
     <section class="testimonials-container">
 
     <h2 class="testimonials-container__header"> Testimonials </h2>
 
 
-    <div class="websites-box testimonials-container__websites-box">
-        <nav class="websites-list websites-box__list">
+    <div class="box testimonials-container__box">
+        <nav class="list-url  box__list_url">
 
-            <div class="websites-item websites-list__item"> 
-                <p class="websites-item__text">Creativity</p>
-                <a href="http://www.whitepapers.com" class="websites-item__link">www.whitepapers.com</a>
+            <div class="list-url__item"> 
+                <p class="list-url__item_text">Creativity</p>
+                <a href="http://www.whitepapers.com" class="list-url__item_link">www.whitepapers.com</a>
             </div>
 
-            <div class="websites-item websites-list__item"> 
-                <p class="websites-item__text"> Creativity </p>
-                <a href="http://www.whitepapers.com" class="websites-item__link">www.whitepapers.com</a>
+            <div class="list-url__item"> 
+                <p class="list-url__item_text"> Creativity </p>
+                <a href="http://www.whitepapers.com" class="list-url__item_link">www.whitepapers.com</a>
             </div>
 
-            <div class="websites-item websites-list__item"> 
-                <p class="websites-item__text">Website</p>
-                <a href="http://www.whitepapers.com" class="websites-item__link">www.whitepapers.com</a>
+            <div class="list-url__item"> 
+                <p class="list-url__item_text">Website</p>
+                <a href="http://www.whitepapers.com" class="list-url__item_link">www.whitepapers.com</a>
             </div>
         </nav>
 
-        <div class="websites-box__img">
-            <img class="websites-box__img-main" src="img/testimoniail-main-creative.jpg" width="451" height="760" alt="Place for creative">
+        <div class="box__img">
+            <img class="box__img_testimoniail" src="img/testimoniail-main-creative.jpg" width="451" height="760" alt="Place for creative">
         </div>
 
     </div>
 
-    <div class="quotes testimonials-container__quotes-box">
+    <div class="quotes testimonials-container__quotes">
         <q class="quotes__text"> I just really want to do good work and work with some great people,
             people who challenge me.</q>
 
-        <picture class="box-img quotes__box-img">
-            <source media="(max-width: 768px)" class="inner-box-normal__img-mob" srcset="img/testimoniail-second-creative-mobile.jpg" width="414" height="330">
-            <img class="box-img__tablet-quotes" src="img/testimoniail-second-creative.jpg"  alt="Go to work" width="221" height="333">
+        <picture class="quotes__img">
+            <source media="(max-width: 768px)" class="quotes__img_mob" srcset="img/testimoniail-second-creative-mobile.jpg" width="414" height="330">
+            <img class="quotes__img_tablet" src="img/testimoniail-second-creative.jpg"  alt="Go to work" width="221" height="333">
         </picture>
     </div>
 
     </section>
 
+
     <!-- Секция Strong points -->
+
+    <!-- В блоке strong-points-container если элементы  header и carousel
+     В блоке carousel есть элементы img и list, где column является модификатором list
+     mob и tablet являются модификаторами элемента img
+     В блоке list-column элементы header и navigation
+     В блоке navigation есть элементы item-->
 
     <section class="strong-points-container">
         <h2 class="strong-points-container__header"> Strong points </h2>
         
-        <div class="box-carousel strong-points-container__box-carousel">
-            <picture class="box-carousel__box-img">
-                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/strong-points-working-place-mobile.jpg" width="310" height="450">
-                <img class="box-carousel__img-tablet" src="img/strong-points-working-place.jpg" width="335" height="554" alt="Working place">
+        <div class="carousel strong-points-container__carousel">
+            <picture class="carousel__img">
+                <source media="(max-width: 768px)" class="carousel__img_mob" srcset="img/strong-points-working-place-mobile.jpg" width="310" height="450">
+                <img class="carousel__img_tablet" src="img/strong-points-working-place.jpg" width="335" height="554" alt="Working place">
             </picture>
 
-            <picture class="box-carousel__box-img">
-                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/strong-points-relaxing-place.jpg" width="310" height="450">
-                <img class="box-carousel__img-tablet" src="img/strong-points-relaxing-place.jpg" width="335" height="554" alt="Relaxing place">
+            <picture class="carousel__img">
+                <source media="(max-width: 768px)" class="carousel__img_mob" srcset="img/strong-points-relaxing-place.jpg" width="310" height="450">
+                <img class="carousel__img_tablet" src="img/strong-points-relaxing-place.jpg" width="335" height="554" alt="Relaxing place">
             </picture>
 
-            <div class="list-column box-carousel__list-column"> 
+            <div class="list-column carousel__list_column"> 
                 <h3 class="list-column__header"> Strengths </h3>
             
-                <ul class="list-items list-column__list-items">
-                    <li class="list-items__item"> Interiors</li>
-                    <li class="list-items__item">Outdoors</li>
-                    <li class="list-items__item">Portraits</li>
-                    <li class="list-items__item">Styling</li>
-                    <li class="list-items__item">Events</li>
-                    <li class="list-items__item">Architecture</li>
-                    <li class="list-items__item">Design</li>
-                    <li class="list-items__item">Celebrations</li>
-                    <li class="list-items__item">Fashion</li>
-                    <li class="list-items__item">Nature</li>
+                <ul class="navigation list-column__navigation">
+                    <li class="navigation__item"> Interiors</li>
+                    <li class="navigation__item">Outdoors</li>
+                    <li class="navigation__item">Portraits</li>
+                    <li class="navigation__item">Styling</li>
+                    <li class="navigation__item">Events</li>
+                    <li class="navigation__item">Architecture</li>
+                    <li class="navigation__item">Design</li>
+                    <li class="navigation__item">Celebrations</li>
+                    <li class="navigation__item">Fashion</li>
+                    <li class="navigation__item">Nature</li>
                 </ul>
 
             </div>
 
-            <picture class="box-carousel__box-img">
-                <source media="(max-width: 768px)" class="box-carousel__img-mob" srcset="img/place-cafe-creative.jpg" width="310" height="450">
-                <img class="box-carousel__img-tablet" src="img/place-cafe-creative.jpg" width="335" height="554" alt="Cafe creative">
+            <picture class="carousel__img">
+                <source media="(max-width: 768px)" class="carousel__img_mob" srcset="img/place-cafe-creative.jpg" width="310" height="450">
+                <img class="carousel__img_tablet" src="img/place-cafe-creative.jpg" width="335" height="554" alt="Cafe creative">
             </picture>
         </div>
 
@@ -262,10 +295,13 @@
 
     <!-- Футер с контактами  -->
 
+    <!--footer - блок, где data, name и  text элементы 
+     phone и Email явялется модификатором элемента data-->
+
     <footer class="footer">
-        <address class="company-data footer__company-data">
-            <a href="" class="company-data__phone"> +7 921 123-45-67 </a>
-            <a href="info@modstudio.com" class="company-data__Email"> info@modstudio.com </a>
+        <address class="footer__data">
+            <a href="" class="footer__data_phone"> +7 921 123-45-67 </a>
+            <a href="info@modstudio.com" class="footer__data_Email"> info@modstudio.com </a>
         </address>
 
         <p class="footer__name"> A product of <b> MOD</b> </p>
@@ -276,7 +312,7 @@
 
     
 
-    <!-- поп-пап в секции Мод -->
+    <!-- Модальное окно для отправки комментария  -->
 
     <form class="modal-window">
 
@@ -316,5 +352,6 @@
     
 
   </body>
+
 </html>
 
