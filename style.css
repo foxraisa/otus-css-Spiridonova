@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Переправить секцию  strong-points - выправить текст - навигации по макету */
 /* Проверит все ли правила шрифтов находятся в файле по типографике  */
 * {
   margin: 0;
@@ -28,28 +27,28 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 86px;
+  line-height: 103.2px;
 }
 
 .button__item {
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-weight: 500; */
   font-size: 24px;
+  line-height: 28.13px;
 }
 
 .text__heading {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 86px;
+  line-height: 103.2px;
 }
 
 .text__subtitle {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
+  line-height: 23.44px;
 }
 
 .biography-container__header {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
@@ -67,32 +66,27 @@ body {
 }
 
 .designers-container__header {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
 .inner-text__name_designer {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
 .inner-text__from_designer {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .inner-text__skills_designer {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .list-url__item_text {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -100,7 +94,6 @@ body {
 }
 
 .list-url__item_link {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -115,7 +108,6 @@ body {
 }
 
 .strong-points-container__header {
-  font-family: "Roboto", serif;
   font-weight: 700;
   font-size: 24px;
 }
@@ -136,7 +128,6 @@ body {
 }
 
 .footer__name {
-  font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -144,7 +135,6 @@ body {
 }
 
 .footer__text {
-  font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -152,7 +142,6 @@ body {
 }
 
 .footer__data {
-  font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -301,7 +290,7 @@ body {
 /*  импорт стилей biography-container */
 /* Секция Biography */
 .biography-container {
-  width: 81%;
+  width: 82%;
   max-height: 840px;
   margin: 0 auto 8%;
   display: flex;
@@ -325,7 +314,6 @@ body {
 }
 
 .biography-container__text {
-  width: 34%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,7 +346,7 @@ body {
 
 .biography-text__quote {
   line-height: 31px;
-  width: 24.5%;
+  max-width: 350px;
 }
 
 @media screen and (max-width: 768px) {
@@ -366,7 +354,7 @@ body {
   .biography-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     max-height: 960px;
     margin-bottom: 15%;
     padding: 0 10px;
@@ -376,6 +364,7 @@ body {
     margin-bottom: 8%;
   }
   .biography-container__img_mob {
+    width: 100%;
     margin-bottom: 8%;
   }
   .biography-container__text {
@@ -424,7 +413,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-style: normal;
-    width: 93%;
+    max-width: 417px;
     margin-bottom: 5%;
   }
   .skills__item {

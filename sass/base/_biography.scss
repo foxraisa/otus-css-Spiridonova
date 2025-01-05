@@ -1,7 +1,7 @@
  /* Секция Biography */
   
  .biography-container {
-    width: 81%;
+    width: 82%;
     max-height: 840px;
   
     margin: 0 auto 8%;
@@ -29,7 +29,7 @@
   }
   
   .biography-container__text {
-    width: 34%;
+    // width: 34%;
   
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@
   
   .biography-text__quote {
     line-height: 31px;
-    width: 24.5%;
+    max-width: 350px;
   }
   
   @media screen and (max-width: 768px) {
@@ -76,7 +76,7 @@
     .biography-container {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 95%;
       max-height: 960px;
       margin-bottom: 15%;
   
@@ -90,6 +90,7 @@
     }
   
     .biography-container__img_mob {
+      width: 100%;
       margin-bottom: 8%;
     }
   
@@ -158,7 +159,7 @@
       // font-size: 30px;
       // line-height: 36px;
   
-      width: 93%;
+      max-width: 417px;
       margin-bottom: 5%;
     }
   
