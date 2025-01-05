@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Проверит все ли правила шрифтов находятся в файле по типографике  */
 * {
   margin: 0;
   padding: 0;
@@ -51,18 +50,21 @@ body {
 .biography-container__header {
   font-weight: 700;
   font-size: 24px;
+  line-height: 28.13px;
 }
 
 .biography-text__name {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 86px;
+  line-height: 114.64px;
 }
 
 .biography-text__quote {
   font-family: "Bitter", serif;
   font-weight: 400;
   font-size: 26px;
+  line-height: 31.02px;
 }
 
 .designers-container__header {
