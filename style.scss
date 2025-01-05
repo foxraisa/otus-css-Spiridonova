@@ -12,6 +12,12 @@
   /* импорт шрифтов */
   @import "sass/base/typography";
 
+  // импорт миксинов 
+  @import "sass/abstracts/mixins.scss";
+
+  //  импорт переменных 
+  @import "sass/abstracts/variables.scss";
+
   /*  импорт меню или по другому можно назвать навигация по лендингу  */
   @import "sass/layout/navigation.scss";
   

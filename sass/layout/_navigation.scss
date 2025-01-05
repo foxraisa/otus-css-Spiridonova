@@ -62,12 +62,13 @@
   
     .list-mob__item {
 
-      @include font-mob (400,  'Bitter', 40px, 48px);
+      @include font_mob (400,  'Bitter', 40px, 48px);
 
       // font-family: 'Bitter', serif;
       // font-weight: 400;
       // font-size: 40px;
       // line-height: 48px;
+      
       text-decoration: none;
       color: #000;
     

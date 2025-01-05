@@ -88,7 +88,7 @@ q {
     width: 100%;
     height: 50px;
 
-    @include font-mob (700,  'Roboto', 18px, 21px);
+    @include font_mob (700,  'Roboto', 18px, 21px);
 
     // font-family: 'Roboto';
     // font-style: normal;
@@ -114,7 +114,7 @@ q {
     max-height: 200px;
     text-align: center;
 
-    @include font-mob (300,  'Bitter', 30px, 36px);
+    @include font_mob (300,  'Bitter', 30px, 36px);
 
     // font-family: 'Bitter';
     // font-style: normal;

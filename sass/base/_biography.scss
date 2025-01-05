@@ -29,7 +29,7 @@
   }
   
   .biography-container__text {
-    width: 485px;
+    width: 34%;
   
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@
   
   .biography-text__quote {
     line-height: 31px;
-    max-width: 350px;
+    width: 24.5%;
   }
   
   @media screen and (max-width: 768px) {
@@ -96,6 +96,7 @@
     .biography-container__text {
       display: flex;
       flex-direction: column;
+      width: 98%;
     }
   
     .biography-container__header {
@@ -105,14 +106,19 @@
       transform: none;
   
       position: absolute;
-      left: 80%;
+      left: 75%;
       /* top: 120%; */
   
     }
   
     .biography-text__name {
 
-      @include font-mob (400,  'Playfair Display', 64px, 85px);
+      @include font_mob (400,  'Playfair Display', 64px, 85px);
+     
+      padding-left: 5px;
+      order: 4;
+      margin-bottom: 5%;
+      max-width: 450px;
 
       // font-family: 'Playfair Display';
       // font-weight: 400;
@@ -123,7 +129,7 @@
   
     .biography-text__position {
 
-      @include font-mob (500,  'Roboto', 18px, 21px);
+      @include font_mob (500,  'Roboto', 18px, 21px);
 
       // font-family: 'Roboto';
       // font-weight: 500;
@@ -133,7 +139,7 @@
   
     .biography-text__skills {
 
-      @include font-mob (500,  'Roboto', 18px, 21px);
+      @include font_mob (500,  'Roboto', 18px, 21px);
 
       // font-family: 'Roboto';
       // font-weight: 500;
@@ -145,18 +151,18 @@
   
     .biography-text__quote {
 
-      @include font-mob (300,  'Bitter', 30px, 36px);
+      @include font_mob (300,  'Bitter', 30px, 36px);
 
       // font-family: 'Bitter';
       // font-weight: 300;
       // font-size: 30px;
       // line-height: 36px;
   
-      max-width: 350px;
+      width: 93%;
       margin-bottom: 5%;
     }
   
-  
+
     .skills__item {
       display: block;
       list-style: none;
