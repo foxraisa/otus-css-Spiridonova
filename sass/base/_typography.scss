@@ -24,12 +24,12 @@
     font-family: 'Playfair Display', serif;
       font-weight: 600;
       font-size: 86px;
+      line-height: 103.2px;
   }
   
   .button__item {
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-weight: 500; */
     font-size: 24px;
+    line-height: 28.13px;
   }
   
   
@@ -37,40 +37,44 @@
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
+    line-height: 103.2px;
   }
   
   .text__subtitle {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 20px;
+    line-height: 23.44px;
   }
   
   .biography-container__header {
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
+    line-height: 28.13px;
   }
   
   .biography-text__name {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 86px;
+    line-height: 114.64px;
   }
   
   .biography-text__quote {
     font-family: 'Bitter', serif;
     font-weight: 400;
     font-size: 26px;
+    line-height: 31.02px;
   }
   
   .designers-container__header {
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
   }
   
   .inner-text__name_designer {
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -78,19 +82,19 @@
   }
   
   .inner-text__from_designer {
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
   }
   
   .inner-text__skills_designer {
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
   }
   
   .list-url__item_text {
-    font-family: 'Roboto';
+    // font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -98,7 +102,7 @@
   }
   
   .list-url__item_link {
-    font-family: 'Roboto';
+    // font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -116,7 +120,7 @@
   
   
   .strong-points-container__header {
-    font-family: 'Roboto', serif;
+    // font-family: 'Roboto', serif;
     font-weight: 700;
     font-size: 24px;
   
@@ -133,6 +137,7 @@
   
     .navigation__item {
       list-style: none;
+
       font-family: 'Bitter', serif;
       font-weight: 400;
       font-size: 34px;
@@ -141,7 +146,7 @@
     }
   
     .footer__name {
-      font-family: 'Roboto', serif;
+      // font-family: 'Roboto', serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
@@ -150,7 +155,7 @@
       }
   
       .footer__text {
-        font-family: 'Roboto', serif;
+        // font-family: 'Roboto', serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
@@ -159,7 +164,7 @@
         }
   
       .footer__data {
-        font-family: 'Roboto', serif;
+        // font-family: 'Roboto', serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;

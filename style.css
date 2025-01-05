@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/* Проверить html - переписать медификаторы - отвечает на вопрос какой? - переправить и по стилям
-Вынести шрифты в отдельный файл 
-миксин - вынести шрифты для мобильной верстки 
-распредилить блоки по препроцессорным файлам и импортировать в основной файл */
-/* Скпировать сюда код, который был исправлен в ветке мобильных стилей */
-/* Переправить секцию  strong-points - выправить текст - навигации по макету */
-/* Проверит все ли правила шрифтов находятся в файле по типографике  */
 * {
   margin: 0;
   padding: 0;
@@ -33,71 +26,69 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 86px;
+  line-height: 103.2px;
 }
 
 .button__item {
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-weight: 500; */
   font-size: 24px;
+  line-height: 28.13px;
 }
 
 .text__heading {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 86px;
+  line-height: 103.2px;
 }
 
 .text__subtitle {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
+  line-height: 23.44px;
 }
 
 .biography-container__header {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
+  line-height: 28.13px;
 }
 
 .biography-text__name {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 86px;
+  line-height: 114.64px;
 }
 
 .biography-text__quote {
   font-family: "Bitter", serif;
   font-weight: 400;
   font-size: 26px;
+  line-height: 31.02px;
 }
 
 .designers-container__header {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
 .inner-text__name_designer {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
 .inner-text__from_designer {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .inner-text__skills_designer {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .list-url__item_text {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -105,7 +96,6 @@ body {
 }
 
 .list-url__item_link {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -120,7 +110,6 @@ body {
 }
 
 .strong-points-container__header {
-  font-family: "Roboto", serif;
   font-weight: 700;
   font-size: 24px;
 }
@@ -141,7 +130,6 @@ body {
 }
 
 .footer__name {
-  font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -149,7 +137,6 @@ body {
 }
 
 .footer__text {
-  font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -157,21 +144,20 @@ body {
 }
 
 .footer__data {
-  font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #fff;
 }
 
-.footer__data_phone {
+.none-decoration-white, .footer__data_phone, .footer__data_Email {
   text-decoration: none;
   color: #fff;
 }
 
-.footer__data_Email {
+.none-decoration-black, .list-url__item_link {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 /*  импорт меню или по другому можно назвать навигация по лендингу  */
@@ -214,7 +200,7 @@ body {
   .list-mob {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 95%;
+    width: 100%;
     position: fixed;
     left: 0%;
     bottom: 0%;
@@ -225,10 +211,11 @@ body {
     border-top: 2px solid black;
   }
   .list-mob__item {
-    font-family: "Bitter", serif;
     font-weight: 400;
+    font-family: "Bitter";
     font-size: 40px;
     line-height: 48px;
+    font-style: normal;
     text-decoration: none;
     color: #000;
   }
@@ -283,27 +270,29 @@ body {
     width: 100%;
     padding: 0%;
     height: auto;
-    margin-bottom: 25%;
+    margin-bottom: 30%;
   }
   .text__heading {
-    font-family: "Playfair Display";
     font-weight: 400;
+    font-family: "Playfair Display";
     font-size: 70px;
     line-height: 93px;
+    font-style: normal;
+    margin-top: 25%;
   }
   .text__subtitle {
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 500;
+    font-family: "Roboto";
     font-size: 18px;
     line-height: 21px;
+    font-style: normal;
     /* text-align: center; */
   }
 }
 /*  импорт стилей biography-container */
 /* Секция Biography */
 .biography-container {
-  max-width: 1165px;
+  width: 82%;
   max-height: 840px;
   margin: 0 auto 8%;
   display: flex;
@@ -327,7 +316,6 @@ body {
 }
 
 .biography-container__text {
-  width: 485px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -368,6 +356,7 @@ body {
   .biography-container {
     display: flex;
     flex-direction: column;
+    width: 95%;
     max-height: 960px;
     margin-bottom: 15%;
     padding: 0 10px;
@@ -377,11 +366,13 @@ body {
     margin-bottom: 8%;
   }
   .biography-container__img_mob {
+    width: 100%;
     margin-bottom: 8%;
   }
   .biography-container__text {
     display: flex;
     flex-direction: column;
+    width: 98%;
   }
   .biography-container__header {
     font-size: 18px;
@@ -389,39 +380,42 @@ body {
     padding: 0;
     transform: none;
     position: absolute;
-    left: 80%;
+    left: 75%;
     /* top: 120%; */
   }
   .biography-text__name {
-    font-family: "Playfair Display";
     font-weight: 400;
+    font-family: "Playfair Display";
     font-size: 64px;
     line-height: 85px;
+    font-style: normal;
+    padding-left: 5px;
+    order: 4;
+    margin-bottom: 5%;
+    max-width: 450px;
   }
   .biography-text__position {
-    font-family: "Roboto";
     font-weight: 500;
+    font-family: "Roboto";
     font-size: 18px;
     line-height: 21px;
+    font-style: normal;
   }
   .biography-text__skills {
-    font-family: "Roboto";
     font-weight: 500;
+    font-family: "Roboto";
     font-size: 18px;
     line-height: 21px;
+    font-style: normal;
     margin-bottom: 5%;
   }
   .biography-text__quote {
-    font-family: "Bitter";
     font-weight: 300;
+    font-family: "Bitter";
     font-size: 30px;
     line-height: 36px;
-    max-width: 350px;
-    margin-bottom: 5%;
-  }
-  .biography-text__name {
-    order: 4;
-    max-width: 450px;
+    font-style: normal;
+    max-width: 417px;
     margin-bottom: 5%;
   }
   .skills__item {
@@ -583,11 +577,6 @@ q {
   quotes: none;
 }
 
-.list-url__item_link {
-  text-decoration: none;
-  color: #000;
-}
-
 @media screen and (max-width: 768px) {
   /* верстка мобильная - смартфон*/
   .testimonials-container {
@@ -602,11 +591,11 @@ q {
     transform: none;
     width: 100%;
     height: 50px;
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 700;
+    font-family: "Roboto";
     font-size: 18px;
     line-height: 21px;
+    font-style: normal;
     text-align: end;
   }
   .box__img {
@@ -621,11 +610,11 @@ q {
     max-width: 342px;
     max-height: 200px;
     text-align: center;
-    font-family: "Bitter";
-    font-style: normal;
     font-weight: 300;
+    font-family: "Bitter";
     font-size: 30px;
     line-height: 36px;
+    font-style: normal;
   }
   .quotes__img {
     margin: 0 auto;
@@ -670,8 +659,9 @@ q {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
-  max-width: 451px;
+  align-items: start;
+  max-width: 218px;
+  margin: 0 auto;
 }
 
 .list-column__header {
@@ -685,11 +675,11 @@ q {
 @media screen and (max-width: 768px) {
   /* верстка мобильная - смартфон*/
   .strong-points-container__header {
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 700;
+    font-family: "Roboto";
     font-size: 18px;
     line-height: 21px;
+    font-style: normal;
     padding-left: 10px;
   }
   .strong-points-container__carousel {
@@ -705,19 +695,22 @@ q {
     max-width: 201px;
     align-items: center;
   }
+  .navigation {
+    padding-left: 15px;
+  }
   .list-column__header {
-    font-family: "Playfair Display";
-    font-style: normal;
     font-weight: 400;
+    font-family: "Playfair Display";
     font-size: 46px;
     line-height: 100%;
+    font-style: normal;
   }
   .navigation__item {
-    font-family: "Bitter";
-    font-style: normal;
     font-weight: 400;
+    font-family: "Bitter";
     font-size: 24px;
     line-height: 29px;
+    font-style: normal;
   }
 }
 /*  импорт стилей footer */
@@ -751,7 +744,7 @@ q {
     display: flex;
     flex-direction: column;
     gap: 3%;
-    width: 98%;
+    width: 100%;
     /* max-height: 200px; */
     align-items: start;
     margin-bottom: 15%;

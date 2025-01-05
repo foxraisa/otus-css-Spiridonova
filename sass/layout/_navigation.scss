@@ -46,7 +46,7 @@
     .list-mob {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      width: 95%;
+      width: 100%;
       position: fixed; 
       left: 0%;
       bottom: 0%; 
@@ -62,12 +62,13 @@
   
     .list-mob__item {
 
-      @include font-mob (400,  'Bitter', 40px, 48px);
+      @include font_mob (400,  'Bitter', 40px, 48px);
 
       // font-family: 'Bitter', serif;
       // font-weight: 400;
       // font-size: 40px;
       // line-height: 48px;
+      
       text-decoration: none;
       color: #000;
     

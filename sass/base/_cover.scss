@@ -58,14 +58,15 @@
       width: 100%;
       padding: 0%;
       height: auto;
-      margin-bottom: 25%;
+      margin-bottom: 30%;
       
     }
   
     .text__heading {
 
-      @include font-mob (400,  'Playfair Display', 70px, 93px);
+      @include font_mob (400,  'Playfair Display', 70px, 93px);
 
+      margin-top: 25%;
       // font-family: 'Playfair Display';
       // font-weight: 400;
       // font-size: 70px;
@@ -75,7 +76,7 @@
   
     .text__subtitle {
 
-      @include font-mob (500,  'Roboto', 18px, 21px);
+      @include font_mob (500,  'Roboto', 18px, 21px);
 
       // font-family: 'Roboto';
       // font-style: normal;
