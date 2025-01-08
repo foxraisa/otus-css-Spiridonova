@@ -5,12 +5,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.97">
-  <script src="modal.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <script src="modal.js"></script>
   <title> Mod studio </title>
 </head>
 
@@ -48,9 +48,9 @@
             <a class="list-mob__item" href="#">D</a>
             <a class="list-mob__item" href="#">T</a>
             <a class="list-mob__item" href="#">S</a>
-            <div class="button__item">
+            <button class="button__item" id="modal-1-trigger" type="button"> 
                 <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
-            </div>
+            </button>
         </div>
 
     </section>
@@ -327,14 +327,7 @@
 
     <div class="modal modal--closed" id="modal-1">
         <!--   modal--closed   -->
-
-        <!-- <input type="checkbox" id="trigger" checked> -->
-        
-        <!-- Разобраться с бургером, навесить его в меню на иконку 
-         добавить ховер в css
-         использовать тег "кнопкаЙ" для иконки  -->
     
- 
          <div class="modal__box">
             <h2 class="modal-window__header"> Get in touch </h2>
 
@@ -362,13 +355,22 @@
             <footer class="modal-window__button">
                 <button class="modal__close-btn" id="modal-1-close">Cancel</button>
                 <button class="modal__close-btn" id="modal-1-close">+ Send</button>
-                <!-- <button class="modal-window__button-item"> Cancel </button> -->
-                <!-- <button class="modal-window__button-item"> + Send </button> -->
             </footer>
 
         </div>
 
     </div>
+
+
+    <script>
+        const body = document.querySelector('body.page');
+        const modal = document.querySelector('#modal-1');
+        const btnOpenModal = document.querySelector('#modal-1-trigger');
+        const btnCloseModal = document.querySelector('#modal-1-close');
+
+        btnOpenModal.addEventListener('click', handleModalSwitch);
+        btnCloseModal.addEventListener('click', handleModalSwitch);
+    </script>
     
 
   </body>

@@ -8,12 +8,12 @@
 /* импорт шрифтов */
 @font-face {
   font-family: "Bitter";
-  src: url(../src/Fonts/bitter/Bitter-Regular.ttf);
+  src: url(../src/fonts/bitter/Bitter-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Bitter";
-  src: url(../src/Fonts/bitter/Bitter-Thin.woff2);
+  src: url(../src/fonts/bitter/Bitter-Thin.woff2);
   font-weight: 300;
 }
 body {
