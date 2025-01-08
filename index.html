@@ -35,9 +35,6 @@
                     <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
                 </button>
                 
-                <!-- <div class="button__item">
-                    <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
-                </div> -->
             </nav>
 
         </header>
@@ -48,7 +45,7 @@
             <a class="list-mob__item" href="#">D</a>
             <a class="list-mob__item" href="#">T</a>
             <a class="list-mob__item" href="#">S</a>
-            <button class="button__item" id="modal-1-trigger" type="button"> 
+            <button class="button__item" id="modal-1-trigger-mobile" type="button"> 
                 <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
             </button>
         </div>
@@ -363,13 +360,15 @@
 
 
     <script>
-        const body = document.querySelector('body.page');
-        const modal = document.querySelector('#modal-1');
         const btnOpenModal = document.querySelector('#modal-1-trigger');
         const btnCloseModal = document.querySelector('#modal-1-close');
 
         btnOpenModal.addEventListener('click', handleModalSwitch);
         btnCloseModal.addEventListener('click', handleModalSwitch);
+
+        const btnOpenModalMobile = document.querySelector('#modal-1-trigger-mobile');
+        btnOpenModalMobile.addEventListener('click', handleModalSwitch);
+        btnCloseModalMobile.addEventListener('click', handleModalSwitch);
     </script>
     
 
