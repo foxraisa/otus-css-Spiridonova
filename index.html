@@ -322,39 +322,48 @@
 
     <!-- Модальное окно для отправки сообщения  -->
 
-    <div class="modal modal--closed" id="modal-1">
+    <div class="modal modal--closed" id="modal-1" action="mailto:drakorsha@mail.ru" enctype="text/plain">
         <!--   modal--closed   -->
     
-         <div class="modal__box">
+         <form class="modal__box">
             <h2 class="modal-box__header"> Get in touch </h2>
 
             <p class="modal-box__text"> Do you have any questions? Have something to say?
                 Don't be shy, write to us: </p>
         
-            <div class="input-name modal-box__input-name">
+            <label class="input-name modal-box__input-name">
                 <p class="input-name__text"> Name:</p>
-                <input type="text">
+                <input 
+                    type="text" 
+                    name="3+ Characters" 
+                    placeholder="3+ Characters">
                 <img src="img/icon-name.svg" alt="icon name">
-            </div>
+            </label>
 
-            <div class="input-email modal-box__input-email">
+            <label class="input-email modal-box__input-email">
                 <p class="input-email__text"> E-mail:</p>
-                <input type="email">
+                <input 
+                    type="email" 
+                    name="name@email.com"
+                    placeholder="name@email.com">
                 <img src="img/icon-email.svg" alt="icon email">
-            </div>
+            </label>
 
-            <div class="input-comment modal-box__input-comment">
+            <label class="input-comment modal-box__input-comment">
                 <p class="input-comment__text">  Comment:</p>
-                <input type="text">
+                <input 
+                    type="text" 
+                    name="Some text..."
+                    placeholder="Some text...">
                 <img src="img/icon-comment.svg" alt="icon comment">
-            </div>
+            </label>
 
             <footer class="modal-box__button">
                 <button class="modal__close-btn" id="modal-1-close">Cancel</button>
                 <button class="modal__close-btn" id="modal-1-send">+ Send</button>
             </footer>
 
-        </div>
+         </form>
 
     </div>
 
