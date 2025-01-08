@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <script src="modal.js"></script>
   <title> Mod studio </title>
 </head>
 
 
-<body>
+<body class="page ">
     
     <!-- Menu секция 
     По бэм menu - это блок, list,text и buttons - это элементы 
@@ -30,6 +31,10 @@
                 <a class="button__item" href="#"> Designers</a>
                 <a class="button__item" href="#"> Testimonials</a>
                 <a class="button__item" href="#"> Strong points</a>
+                <button class="button__item" id="modal-1-trigger" type="button"> 
+                    <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
+                </button>
+                
             </nav>
 
         </header>
@@ -40,6 +45,9 @@
             <a class="list-mob__item" href="#">D</a>
             <a class="list-mob__item" href="#">T</a>
             <a class="list-mob__item" href="#">S</a>
+            <button class="button__item" id="modal-1-trigger-mobile" type="button"> 
+                <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
+            </button>
         </div>
 
     </section>
@@ -314,10 +322,10 @@
 
     <!-- Модальное окно для отправки комментария  -->
 
-    <form class="modal-window">
-
-        <!--  Статья про form fieldset https://developer.mozilla.org/ru/docs/Web/HTML/Element/fieldset -->
-        <fieldset class="modal-window">
+    <div class="modal modal--closed" id="modal-1">
+        <!--   modal--closed   -->
+    
+         <div class="modal__box">
             <h2 class="modal-window__header"> Get in touch </h2>
 
             <p class="modal-window__text"> Do you have any questions? Have something to say?
@@ -342,13 +350,26 @@
             </div>
 
             <footer class="modal-window__button">
-                <button class="modal-window__button-item"> Cancel </button>
-                <button class="modal-window__button-item"> + Send </button>
+                <button class="modal__close-btn" id="modal-1-close">Cancel</button>
+                <button class="modal__close-btn" id="modal-1-close">+ Send</button>
             </footer>
 
-        </fieldset>
+        </div>
 
-    </form>
+    </div>
+
+
+    <script>
+        const btnOpenModal = document.querySelector('#modal-1-trigger');
+        const btnCloseModal = document.querySelector('#modal-1-close');
+
+        btnOpenModal.addEventListener('click', handleModalSwitch);
+        btnCloseModal.addEventListener('click', handleModalSwitch);
+
+        const btnOpenModalMobile = document.querySelector('#modal-1-trigger-mobile');
+        btnOpenModalMobile.addEventListener('click', handleModalSwitch);
+        btnCloseModalMobile.addEventListener('click', handleModalSwitch);
+    </script>
     
 
   </body>

@@ -8,12 +8,12 @@
 /* импорт шрифтов */
 @font-face {
   font-family: "Bitter";
-  src: url(../src/Fonts/bitter/Bitter-Regular.ttf);
+  src: url(../fonts/bitter/Bitter-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Bitter";
-  src: url(../src/Fonts/bitter/Bitter-Thin.woff2);
+  src: url(../fonts/bitter/Bitter-Thin.woff2);
   font-weight: 300;
 }
 body {
@@ -199,7 +199,7 @@ body {
   }
   .list-mob {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     position: fixed;
     left: 0%;
@@ -218,6 +218,9 @@ body {
     font-style: normal;
     text-decoration: none;
     color: #000;
+  }
+  .button__item_comment {
+    padding-top: 10px;
   }
 }
 /* импорт cover-container или иначе можно назвать обложки лендинга  */
@@ -278,7 +281,7 @@ body {
     font-size: 70px;
     line-height: 93px;
     font-style: normal;
-    margin-top: 25%;
+    margin-top: 20%;
   }
   .text__subtitle {
     font-weight: 500;
@@ -766,6 +769,32 @@ q {
 }
 /*  импорт стилей modal-window */
 /* Модальное окно для отправки комментария */
-.modal-window {
+.page {
+  scrollbar-gutter: stable;
+}
+.page--scroll-locked {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(69, 90, 100, 0.5882352941);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal--closed {
   display: none;
+}
+
+.modal__box {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
