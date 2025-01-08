@@ -45,7 +45,7 @@
   
     .list-mob {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       width: 100%;
       position: fixed; 
       left: 0%;
@@ -72,6 +72,10 @@
       text-decoration: none;
       color: #000;
     
+    }
+
+    .button__item_comment {
+      padding-top: 10px;
     }
   
     

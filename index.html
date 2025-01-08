@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.97">
+  <script src="modal.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
 </head>
 
 
-<body>
+<body class="page ">
     
     <!-- Menu секция 
     По бэм menu - это блок, list,text и buttons - это элементы 
@@ -30,6 +31,13 @@
                 <a class="button__item" href="#"> Designers</a>
                 <a class="button__item" href="#"> Testimonials</a>
                 <a class="button__item" href="#"> Strong points</a>
+                <button class="button__item" id="modal-1-trigger" type="button"> 
+                    <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
+                </button>
+                
+                <!-- <div class="button__item">
+                    <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
+                </div> -->
             </nav>
 
         </header>
@@ -40,6 +48,9 @@
             <a class="list-mob__item" href="#">D</a>
             <a class="list-mob__item" href="#">T</a>
             <a class="list-mob__item" href="#">S</a>
+            <div class="button__item">
+                <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
+            </div>
         </div>
 
     </section>
@@ -314,10 +325,17 @@
 
     <!-- Модальное окно для отправки комментария  -->
 
-    <form class="modal-window">
+    <div class="modal modal--closed" id="modal-1">
+        <!--   modal--closed   -->
 
-        <!--  Статья про form fieldset https://developer.mozilla.org/ru/docs/Web/HTML/Element/fieldset -->
-        <fieldset class="modal-window">
+        <!-- <input type="checkbox" id="trigger" checked> -->
+        
+        <!-- Разобраться с бургером, навесить его в меню на иконку 
+         добавить ховер в css
+         использовать тег "кнопкаЙ" для иконки  -->
+    
+ 
+         <div class="modal__box">
             <h2 class="modal-window__header"> Get in touch </h2>
 
             <p class="modal-window__text"> Do you have any questions? Have something to say?
@@ -342,13 +360,15 @@
             </div>
 
             <footer class="modal-window__button">
-                <button class="modal-window__button-item"> Cancel </button>
-                <button class="modal-window__button-item"> + Send </button>
+                <button class="modal__close-btn" id="modal-1-close">Cancel</button>
+                <button class="modal__close-btn" id="modal-1-close">+ Send</button>
+                <!-- <button class="modal-window__button-item"> Cancel </button> -->
+                <!-- <button class="modal-window__button-item"> + Send </button> -->
             </footer>
 
-        </fieldset>
+        </div>
 
-    </form>
+    </div>
     
 
   </body>
