@@ -186,10 +186,28 @@ body {
 .button__item {
   text-decoration: none;
   color: #000;
+  background: none;
+  border: none;
 }
 
 .list-mob {
   display: none;
+}
+
+.button__item_comment {
+  text-decoration: none;
+  border: none;
+}
+
+#modal-1-trigger {
+  max-width: 60px;
+  max-height: 60px;
+  background-color: none;
+}
+
+.button__item:hover {
+  text-decoration: underline;
+  background-color: grey;
 }
 
 @media screen and (max-width: 768px) {
@@ -221,6 +239,10 @@ body {
   }
   .button__item_comment {
     padding-top: 10px;
+  }
+  .list-mob__item:hover {
+    text-decoration: underline;
+    background-color: grey;
   }
 }
 /* импорт cover-container или иначе можно назвать обложки лендинга  */
@@ -795,7 +817,7 @@ q {
   background-color: #fff;
   padding: 16px;
   border-radius: 8px;
-  max-width: 600px;
-  max-height: 800px;
+  max-width: 480px;
+  max-height: 600px;
   width: 100%;
 }/*# sourceMappingURL=style.css.map */

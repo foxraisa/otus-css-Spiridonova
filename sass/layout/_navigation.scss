@@ -28,11 +28,30 @@
   
   .button__item {
     text-decoration:none;
-    color: #000
+    color: #000;
+    background: none;
+    border: none;
   }
   
   .list-mob {
     display: none;
+  }
+
+  .button__item_comment {
+    text-decoration:none;
+    // background: none;
+    border: none;
+  }
+
+  #modal-1-trigger {
+    max-width: 60px;
+    max-height: 60px;
+    background-color: none;
+  }
+
+  .button__item:hover {
+    text-decoration: underline;
+    background-color: grey;
   }
   
   @media screen and (max-width: 768px) {
@@ -76,6 +95,11 @@
 
     .button__item_comment {
       padding-top: 10px;
+    }
+
+    .list-mob__item:hover {
+      text-decoration: underline;
+      background-color: grey;
     }
   
     
