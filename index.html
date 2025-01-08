@@ -320,38 +320,38 @@
 
     
 
-    <!-- Модальное окно для отправки комментария  -->
+    <!-- Модальное окно для отправки сообщения  -->
 
     <div class="modal modal--closed" id="modal-1">
         <!--   modal--closed   -->
     
          <div class="modal__box">
-            <h2 class="modal-window__header"> Get in touch </h2>
+            <h2 class="modal-box__header"> Get in touch </h2>
 
-            <p class="modal-window__text"> Do you have any questions? Have something to say?
+            <p class="modal-box__text"> Do you have any questions? Have something to say?
                 Don't be shy, write to us: </p>
         
-            <div class="input-name modal-window__input-name">
+            <div class="input-name modal-box__input-name">
                 <p class="input-name__text"> Name:</p>
                 <input type="text">
                 <img src="img/icon-name.svg" alt="icon name">
             </div>
 
-            <div class="input-email modal-window__input-email">
+            <div class="input-email modal-box__input-email">
                 <p class="input-email__text"> E-mail:</p>
                 <input type="email">
                 <img src="img/icon-email.svg" alt="icon email">
             </div>
 
-            <div class="input-comment modal-window__input-comment">
+            <div class="input-comment modal-box__input-comment">
                 <p class="input-comment__text">  Comment:</p>
                 <input type="text">
                 <img src="img/icon-comment.svg" alt="icon comment">
             </div>
 
-            <footer class="modal-window__button">
+            <footer class="modal-box__button">
                 <button class="modal__close-btn" id="modal-1-close">Cancel</button>
-                <button class="modal__close-btn" id="modal-1-close">+ Send</button>
+                <button class="modal__close-btn" id="modal-1-send">+ Send</button>
             </footer>
 
         </div>
@@ -366,9 +366,18 @@
         btnOpenModal.addEventListener('click', handleModalSwitch);
         btnCloseModal.addEventListener('click', handleModalSwitch);
 
+
+        // Для открытия модального окна из мобильной верстки. Переменная на закрытие закомментирована, так как по факту открывается одно и тоже окно и такая запись не нужна.
         const btnOpenModalMobile = document.querySelector('#modal-1-trigger-mobile');
+        // const btnCloseModalMobile = document.querySelector('#modal-1-close');
         btnOpenModalMobile.addEventListener('click', handleModalSwitch);
-        btnCloseModalMobile.addEventListener('click', handleModalSwitch);
+        // btnCloseModalMobile.addEventListener('click', handleModalSwitch);
+
+        // переменная для закрытия модального окна по кнопке Send
+        const btnSendModal = document.querySelector('#modal-1-send');
+        btnSendModal.addEventListener('click', handleModalSwitch);
+
+
     </script>
     
 
