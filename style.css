@@ -190,6 +190,14 @@ body {
   font-style: normal;
 }
 
+.modal-box__button_cancel {
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 28px;
+  font-style: normal;
+}
+
 .none-decoration-white, .footer__data_phone, .footer__data_Email {
   text-decoration: none;
   color: #fff;
@@ -836,32 +844,47 @@ q {
 }
 .page--scroll-locked {
   overflow: hidden;
-  background-color: lightgray;
 }
 
 .modal {
+  top: 0;
+  width: 100%;
+  height: 100vh;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  max-width: 480px;
-  transform: translate(-50%, -60%);
-  background-color: #fff;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  border: 2px solid black;
+  border: none;
 }
 .modal--closed {
   display: none;
 }
 
 .modal__box {
+  position: absolute;
+  max-width: 480px;
   background-color: #fff;
   padding: 20px;
+  border: 2px solid black;
   border-radius: 10px;
   max-width: 480px;
-  width: 100%;
+}
+
+.modal__box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  transform: rotate(2deg);
+  z-index: -1;
 }
 
 .modal-box__header {

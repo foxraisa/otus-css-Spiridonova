@@ -7,6 +7,7 @@ const handleModalSwitch = () => {
   console.log('handleModalSwitch invoked');
   document.querySelector('#modal-1').classList.toggle('modal--closed');
   document.querySelector('body.page').classList.toggle('page--scroll-locked');
+
 }
 
 //const body = document.querySelector('body.page'); - переменная добавлена прямо в handleModalSwitch

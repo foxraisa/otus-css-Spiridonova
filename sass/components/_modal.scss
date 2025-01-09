@@ -1,41 +1,37 @@
 /* Модальное окно для отправки комментария */
 
-// План для работы 
-// переписать иконки на специальный шрифт по дз
-// Нарисовать смещенный бордер на замену черному 
-// поправить затемнение фона на заднем плане - проверить значения 
+//  рамку сделала как проговаривали на консультации по дз, но у меня она все равно растягивается на весь экран
+//  не смотра на то, что данные применила к блоку модального окна, обратившись к нему по наименованию класса modal__box
+
+// переписать иконки на специальный шрифт по дз 
+//  сделать реактцию кнопок Отмена и Отправить на наведение
 //  прописать стили для мобилки менее 500 px
 
-// ? как поправить фон затемнение 
-// ? как сделать рамку 
 
 .page {
   
   scrollbar-gutter: stable;
   
   &--scroll-locked {
-    overflow: hidden;
-    background-color: lightgray;
-    // background-color: #817e7e(0,0,0,60%); 
-    
+    overflow: hidden; 
+
   }
+
 }
 
 .modal {
+  top: 0;
+  width: 100%;
+  height: 100vh;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  max-width: 480px;
-  // max-height: 600px;
+  
+  background: rgba(0,0,0,0.5);
 
-  transform: translate(-50%, -60%);
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-radius: 10px;
-  border: 2px solid black;
+  border: none;
   
   &--closed {
     display: none;
@@ -43,14 +39,35 @@
 }
 
 .modal__box {
+  position: absolute;
+  max-width: 480px;
   background-color: #fff;
   padding: 20px;
+
+  border: 2px solid black;
   border-radius: 10px;
   max-width: 480px;
-  // max-height: 600px;
-  width: 100%;
 
 }
+
+
+.modal__box::before {
+  content: "";
+  position: absolute;     
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  transform: rotate(2deg);
+  z-index: -1;
+}
+
+
 
 .modal-box__header {
   margin-bottom: 25px;
@@ -141,20 +158,6 @@
   border: none;
   background-color: #fff;
 }
-
-
-
-// .modal::after {
-//   content: "";
-//   max-width: 480px;
-//   max-height: 600px;
-//   border: 2px solid rgb(29, 26, 26);
-//   border-radius: 10px;
-//   transform-origin: top right bottom left;
-//   transform: modal(-15.6deg);
-
-
-// }
 
 
 

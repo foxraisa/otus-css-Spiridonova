@@ -232,6 +232,9 @@ body {
   
 }
 
+.modal-box__button_cancel {
+  @include font_mob (500,  'Roboto', 18px, 28px);
+}
 
 
 
