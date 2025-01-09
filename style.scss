@@ -5,11 +5,11 @@
     box-sizing: border-box;
   }
 
-  /* импорт шрифтов */
-  @import "sass/base/typography";
-
   // импорт миксинов 
   @import "sass/abstracts/mixins.scss";
+ 
+  /* импорт шрифтов */
+  @import "sass/base/typography";
 
   //  импорт переменных 
   @import "sass/abstracts/variables.scss";

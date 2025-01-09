@@ -8,3 +8,18 @@
     line-height: $lh;
     font-style: normal;
 };
+
+
+// миксин для модального окна для инпутов 
+
+@mixin input {
+  width: 100%;
+  min-height: 42px;
+  margin-bottom: 30px;
+
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+
+  
+}
