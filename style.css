@@ -255,7 +255,8 @@ body {
 
 .button__item:hover {
   text-decoration: underline;
-  background-color: grey;
+  background-color: rgb(232, 222, 222);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -288,9 +289,10 @@ body {
   .button__item_comment {
     padding-top: 10px;
   }
-  .list-mob__item:hover {
+  .button__item:hover {
     text-decoration: underline;
-    background-color: grey;
+    background-color: rgb(232, 222, 222);
+    cursor: pointer;
   }
 }
 /* импорт cover-container или иначе можно назвать обложки лендинга  */
@@ -979,4 +981,14 @@ q {
   text-decoration: none;
   border: none;
   background-color: #fff;
+}
+
+.modal-box__button_cancel:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-box__button_send:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

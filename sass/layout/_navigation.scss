@@ -51,8 +51,10 @@
 
   .button__item:hover {
     text-decoration: underline;
-    background-color: grey;
+    background-color: rgb(232, 222, 222);
+    cursor: pointer;
   }
+
   
   @media screen and (max-width: 768px) {
     /* верстка мобильная*/
@@ -97,9 +99,10 @@
       padding-top: 10px;
     }
 
-    .list-mob__item:hover {
+    .button__item:hover {
       text-decoration: underline;
-      background-color: grey;
+      background-color: rgb(232, 222, 222);
+      cursor: pointer;
     }
   
     
