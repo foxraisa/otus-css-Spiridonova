@@ -150,6 +150,62 @@ body {
   color: #fff;
 }
 
+.modal-box__header {
+  font-weight: 700;
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.modal-box__text {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+}
+
+.input-name__input {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+}
+
+.input-email__input {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+}
+
+.input-comment__input {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+}
+
+.modal-box__button_cancel {
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.modal-box__button_send {
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 28px;
+  font-style: normal;
+}
+
 .none-decoration-white, .footer__data_phone, .footer__data_Email {
   text-decoration: none;
   color: #fff;
@@ -186,10 +242,29 @@ body {
 .button__item {
   text-decoration: none;
   color: #000;
+  background: none;
+  border: none;
 }
 
 .list-mob {
   display: none;
+}
+
+.button__item_comment {
+  text-decoration: none;
+  border: none;
+}
+
+#modal-1-trigger {
+  max-width: 60px;
+  max-height: 60px;
+  background-color: none;
+}
+
+.button__item:hover {
+  text-decoration: underline;
+  background-color: rgb(232, 222, 222);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -219,8 +294,19 @@ body {
     text-decoration: none;
     color: #000;
   }
-  .button__item_comment {
+  #modal-1-trigger-mobile {
+    background-color: white;
+    border: none;
+  }
+  .list-mob__item_comment {
     padding-top: 10px;
+    text-decoration: none;
+    border: none;
+  }
+  .list-mob__item:hover {
+    text-decoration: underline;
+    background-color: rgb(232, 222, 222);
+    cursor: pointer;
   }
 }
 /* импорт cover-container или иначе можно назвать обложки лендинга  */
@@ -777,25 +863,193 @@ q {
 }
 
 .modal {
-  position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(69, 90, 100, 0.5882352941);
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 .modal--closed {
   display: none;
 }
 
 .modal__box {
+  position: absolute;
+  max-width: 480px;
   background-color: #fff;
-  padding: 16px;
-  border-radius: 8px;
-  max-width: 600px;
-  max-height: 800px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.modal__box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  transform: rotate(2deg);
+  z-index: -1;
+}
+
+.modal-box__header {
+  margin-bottom: 25px;
+}
+
+.modal-box__text {
+  margin-bottom: 25px;
+}
+
+.input-name__text {
+  margin-bottom: 10px;
+}
+
+.input-name__input {
   width: 100%;
+  min-height: 42px;
+  margin-bottom: 30px;
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-image: url("img/icon-name.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.input-name__input:focus {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+.input-email__input {
+  width: 100%;
+  min-height: 42px;
+  margin-bottom: 30px;
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-image: url("img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.input-email__input:focus {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+.input-comment__input {
+  width: 100%;
+  min-height: 42px;
+  margin-bottom: 30px;
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  min-height: 135px;
+  text-align: start;
+  background-image: url("img/icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 6px;
+  resize: none;
+}
+
+.input-comment__input:focus {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+.modal-box__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modal-box__button_cancel {
+  text-align: center;
+  width: 190px;
+  height: 60px;
+  text-decoration: none;
+  border: none;
+  order: 2px solid black;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.modal-box__button_send {
+  text-align: center;
+  width: 190px;
+  height: 60px;
+  text-decoration: none;
+  border: none;
+  order: 2px solid black;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+
+.modal-box__button_cancel:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-box__button_send:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  /* верстка мобильная*/
+  .modal__box {
+    max-width: 350px;
+    padding: 15px;
+  }
+  .modal-box__header {
+    margin-bottom: 15px;
+  }
+  .modal-box__text {
+    margin-bottom: 15px;
+  }
+  .input-name__input {
+    width: 100%;
+    min-height: 32px;
+    margin-bottom: 15px;
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .input-email__input {
+    width: 100%;
+    min-height: 32px;
+    margin-bottom: 15px;
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .input-comment__input {
+    width: 100%;
+    min-height: 32px;
+    margin-bottom: 15px;
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .modal-box__button_cancel {
+    width: 120px;
+    height: 40px;
+  }
+  .modal-box__button_send {
+    width: 120px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

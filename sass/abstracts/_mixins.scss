@@ -8,3 +8,50 @@
     line-height: $lh;
     font-style: normal;
 };
+
+
+// миксин для модального окна для инпутов 
+
+@mixin input {
+  width: 100%;
+  min-height: 42px;
+  margin-bottom: 30px;
+
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+
+  
+}
+
+
+// миксин для модального окна для инпутов в мобильной верстке 
+
+@mixin input-mob {
+  width: 100%;
+  min-height: 32px;
+  margin-bottom: 15px;
+
+  padding: 3px 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}
+
+// стили для кнопок в футере модального окна для десктопной и мобильной версий 
+
+@mixin button__footer {
+  text-align: center;
+  width: 190px;
+  height: 60px;
+  text-decoration:none;
+  border: none;
+  order: 2px solid black;
+  border-radius: 8px;
+}
+
+@mixin button__footer_mob {
+  width: 120px;
+  height: 40px;
+}
+

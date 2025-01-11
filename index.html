@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
   <script src="modal.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title> Mod studio </title>
 </head>
 
@@ -45,8 +46,8 @@
             <a class="list-mob__item" href="#">D</a>
             <a class="list-mob__item" href="#">T</a>
             <a class="list-mob__item" href="#">S</a>
-            <button class="button__item" id="modal-1-trigger-mobile" type="button"> 
-                <img class="button__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
+            <button class="list-mob__item" id="modal-1-trigger-mobile" type="button"> 
+                <img class="list-mob__item_comment" src="img/speech-bubbles-comment-option_icon-icons.com_73399.svg" alt="comment" width="34px" height="34px">
             </button>
         </div>
 
@@ -331,36 +332,36 @@
             <p class="modal-box__text"> Do you have any questions? Have something to say?
                 Don't be shy, write to us: </p>
         
-            <label class="input-name modal-box__input-name">
+            <label class="input-name modal-box__input_name">
                 <p class="input-name__text"> Name:</p>
-                <input 
+                <input class="input-name__input"
                     type="text" 
                     name="3+ Characters" 
                     placeholder="3+ Characters">
-                <img src="img/icon-name.svg" alt="icon name">
             </label>
 
-            <label class="input-email modal-box__input-email">
+            <label class="input-email modal-box__input_email">
                 <p class="input-email__text"> E-mail:</p>
-                <input 
+                <input class="input-email__input"
                     type="email" 
                     name="name@email.com"
                     placeholder="name@email.com">
-                <img src="img/icon-email.svg" alt="icon email">
             </label>
 
-            <label class="input-comment modal-box__input-comment">
+<!-- Для удобства для последнего поля ввода текста использован другой тег -->
+            <label class="input-comment modal-box__input_comment">
                 <p class="input-comment__text">  Comment:</p>
-                <input 
-                    type="text" 
-                    name="Some text..."
-                    placeholder="Some text...">
-                <img src="img/icon-comment.svg" alt="icon comment">
+                
+                <textarea class="input-comment__input" 
+                     rows="4" 
+                    placeholder="Some text..." ></textarea>
+                    
+
             </label>
 
             <footer class="modal-box__button">
-                <button class="modal__close-btn" id="modal-1-close">Cancel</button>
-                <button class="modal__close-btn" id="modal-1-send">+ Send</button>
+                <button class="modal-box__button_cancel" id="modal-1-close">Cancel</button>
+                <button class="modal-box__button_send" id="modal-1-send">+ Send</button>
             </footer>
 
          </form>
