@@ -39,7 +39,6 @@
 
   .button__item_comment {
     text-decoration:none;
-    // background: none;
     border: none;
   }
 
@@ -95,11 +94,19 @@
     
     }
 
-    .button__item_comment {
+    #modal-1-trigger-mobile {
+      background-color: white;
+      border: none;
+    }
+  
+
+    .list-mob__item_comment {
       padding-top: 10px;
+      text-decoration:none;
+      border: none;
     }
 
-    .button__item:hover {
+    .list-mob__item:hover {
       text-decoration: underline;
       background-color: rgb(232, 222, 222);
       cursor: pointer;
