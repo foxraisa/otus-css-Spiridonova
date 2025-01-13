@@ -21,7 +21,6 @@
   border: 1px solid black;
   border-radius: 8px;
 
-  
 }
 
 
@@ -52,5 +51,23 @@
 @mixin button__footer_mob {
   width: 120px;
   height: 40px;
+}
+
+@mixin button__hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.2)
+}
+
+
+
+// стили для навигации при наведении 
+
+@mixin hover__navigation {
+  text-decoration: underline;
+  background-color: rgb(232, 222, 222);
+  transform: scale(1.2);
+  cursor: pointer;
+  
 }
 

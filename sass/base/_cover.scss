@@ -47,7 +47,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -110%);
+      transform: translate(-50%, -100%);
   
       background-color: #fff;
       width: 100%;
@@ -63,27 +63,14 @@
     }
   
     .text__heading {
-
       @include font_mob (400,  'Playfair Display', 70px, 93px);
-
-      margin-top: 20%;
-      // font-family: 'Playfair Display';
-      // font-weight: 400;
-      // font-size: 70px;
-      // line-height: 93px;
-  
+      margin-top: 25%;
+    
     }
   
     .text__subtitle {
-
       @include font_mob (500,  'Roboto', 18px, 21px);
-
-      // font-family: 'Roboto';
-      // font-style: normal;
-      // font-weight: 500;
-      // font-size: 18px;
-      // line-height: 21px;
-      /* text-align: center; */
+      text-align: center; 
   
     }
   

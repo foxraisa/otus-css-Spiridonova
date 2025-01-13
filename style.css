@@ -264,6 +264,7 @@ body {
 .button__item:hover {
   text-decoration: underline;
   background-color: rgb(232, 222, 222);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -306,6 +307,13 @@ body {
   .list-mob__item:hover {
     text-decoration: underline;
     background-color: rgb(232, 222, 222);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .list-mob__item_comment:hover {
+    text-decoration: underline;
+    background-color: rgb(232, 222, 222);
+    transform: scale(1.2);
     cursor: pointer;
   }
 }
@@ -350,7 +358,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -110%);
+    transform: translate(-50%, -100%);
     background-color: #fff;
     width: 100%;
     height: 50%;
@@ -367,7 +375,7 @@ body {
     font-size: 70px;
     line-height: 93px;
     font-style: normal;
-    margin-top: 20%;
+    margin-top: 25%;
   }
   .text__subtitle {
     font-weight: 500;
@@ -375,7 +383,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-style: normal;
-    /* text-align: center; */
+    text-align: center;
   }
 }
 /*  импорт стилей biography-container */
@@ -676,15 +684,15 @@ q {
     margin: 0 auto 15%;
   }
   .testimonials-container__header {
-    order: 4;
-    transform: none;
-    width: 100%;
-    height: 50px;
     font-weight: 700;
     font-family: "Roboto";
     font-size: 18px;
     line-height: 21px;
     font-style: normal;
+    order: 4;
+    transform: none;
+    width: 100%;
+    height: 50px;
     text-align: end;
   }
   .box__img {
@@ -739,7 +747,6 @@ q {
   grid-template-columns: repeat(4, 1fr);
   gap: 3%;
   height: 600px;
-  /* width: 1440px; */
   padding: 10px;
   overflow-x: scroll;
 }
@@ -747,7 +754,6 @@ q {
 .navigation {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: start;
   max-width: 218px;
   margin: 0 auto;
@@ -759,6 +765,20 @@ q {
 
 .list-column__navigation {
   list-style: none;
+}
+
+.list-column__header:hover {
+  text-decoration: underline;
+  background-color: rgb(232, 222, 222);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.navigation__item:hover {
+  text-decoration: underline;
+  background-color: rgb(232, 222, 222);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

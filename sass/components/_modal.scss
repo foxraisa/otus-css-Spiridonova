@@ -108,7 +108,6 @@
 
   background-image: url("img/icon-comment.svg");
   background-repeat: no-repeat;
-  // background-position: 95%;
   background-position-x: 95%;
   background-position-y: 6px;
 
@@ -143,15 +142,11 @@
 }
 
 .modal-box__button_cancel:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  transform: scale(1.2);
+  @include button__hover;
 }
 
 .modal-box__button_send:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  transform: scale(1.2);
+  @include button__hover;
 }
 
 @media screen and (max-width: 600px) {
