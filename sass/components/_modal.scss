@@ -133,6 +133,7 @@
   @include button__footer;
   background-color: #fff;
   
+  
 }
 
 .modal-box__button_send {
@@ -144,11 +145,13 @@
 .modal-box__button_cancel:hover {
   text-decoration: underline;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .modal-box__button_send:hover {
   text-decoration: underline;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 600px) {
