@@ -980,8 +980,7 @@ q {
   width: 190px;
   height: 60px;
   text-decoration: none;
-  border: none;
-  order: 2px solid black;
+  border: 2px solid black;
   border-radius: 8px;
   background-color: #fff;
 }
@@ -991,8 +990,7 @@ q {
   width: 190px;
   height: 60px;
   text-decoration: none;
-  border: none;
-  order: 2px solid black;
+  border: 2px solid black;
   border-radius: 8px;
   background-color: black;
   color: white;
@@ -1001,11 +999,13 @@ q {
 .modal-box__button_cancel:hover {
   text-decoration: underline;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .modal-box__button_send:hover {
   text-decoration: underline;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 600px) {
