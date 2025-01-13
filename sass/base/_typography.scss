@@ -175,50 +175,26 @@ body {
 .footer__data_phone {
   @extend .none-decoration-white;
         
-    // text-decoration:none;
-    // color: #fff;
 }
 
 .footer__data_Email {
   @extend .none-decoration-white;
-
-    // text-decoration:none;
-    //  color: #fff;
       
 }
 
 .modal-box__header {
-
   @include font_mob (700,  'Roboto', 24px, 28px);
-
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 24px;
-  // line-height: 28px;
   
 }
 
 .modal-box__text {
   @include font_mob (400,  'Roboto', 18px, 21px);
 
-// font-family: 'Roboto';
-// font-style: normal;
-// font-weight: 400;
-// font-size: 18px;
-// line-height: 21px;
-
 }
 
 
 .input-name__input {
   @include font_mob (400,  'Roboto', 16px, 19px);
-
-// font-family: 'Roboto';
-// font-style: normal;
-// font-weight: 400;
-// font-size: 16px;
-// line-height: 19px;
 
 }
   

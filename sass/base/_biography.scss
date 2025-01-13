@@ -29,8 +29,6 @@
   }
   
   .biography-container__text {
-    // width: 34%;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,47 +118,25 @@
       order: 4;
       margin-bottom: 5%;
       max-width: 450px;
-
-      // font-family: 'Playfair Display';
-      // font-weight: 400;
-      // font-size: 64px;
-      // line-height: 85px;
   
     }
   
     .biography-text__position {
-
       @include font_mob (500,  'Roboto', 18px, 21px);
 
-      // font-family: 'Roboto';
-      // font-weight: 500;
-      // font-size: 18px;
-      // line-height: 21px;
     }
   
     .biography-text__skills {
-
       @include font_mob (500,  'Roboto', 18px, 21px);
-
-      // font-family: 'Roboto';
-      // font-weight: 500;
-      // font-size: 18px;
-      // line-height: 21px;
-  
       margin-bottom: 5%;
+
     }
   
     .biography-text__quote {
-
       @include font_mob (300,  'Bitter', 30px, 36px);
-
-      // font-family: 'Bitter';
-      // font-weight: 300;
-      // font-size: 30px;
-      // line-height: 36px;
-  
       max-width: 417px;
       margin-bottom: 5%;
+
     }
   
 

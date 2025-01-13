@@ -64,8 +64,6 @@ q {
 .list-url__item_link {
   @extend .none-decoration-black;
   
-  // text-decoration:none;
-  // color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -82,21 +80,14 @@ q {
   }
 
   .testimonials-container__header {
-    order: 4;
-    transform: none;
-
-    width: 100%;
-    height: 50px;
-
     @include font_mob (700,  'Roboto', 18px, 21px);
 
-    // font-family: 'Roboto';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 18px;
-    // line-height: 21px;
-
+    order: 4;
+    transform: none;
+    width: 100%;
+    height: 50px;
     text-align: end;
+
   }
 
   .box__img {
@@ -115,12 +106,6 @@ q {
     text-align: center;
 
     @include font_mob (300,  'Bitter', 30px, 36px);
-
-    // font-family: 'Bitter';
-    // font-style: normal;
-    // font-weight: 300;
-    // font-size: 30px;
-    // line-height: 36px;
 
   }
 

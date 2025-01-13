@@ -49,9 +49,7 @@
   }
 
   .button__item:hover {
-    text-decoration: underline;
-    background-color: rgb(232, 222, 222);
-    cursor: pointer;
+    @include hover__navigation;
   }
 
   
@@ -83,12 +81,6 @@
     .list-mob__item {
 
       @include font_mob (400,  'Bitter', 40px, 48px);
-
-      // font-family: 'Bitter', serif;
-      // font-weight: 400;
-      // font-size: 40px;
-      // line-height: 48px;
-      
       text-decoration: none;
       color: #000;
     
@@ -107,9 +99,11 @@
     }
 
     .list-mob__item:hover {
-      text-decoration: underline;
-      background-color: rgb(232, 222, 222);
-      cursor: pointer;
+      @include hover__navigation;
+    }
+    
+    .list-mob__item_comment:hover {
+      @include hover__navigation;
     }
   
     
