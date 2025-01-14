@@ -109,6 +109,11 @@ body {
   line-height: 38px;
 }
 
+.testimonials-container__header {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .strong-points-container__header {
   font-weight: 700;
   font-size: 24px;
@@ -631,7 +636,7 @@ body {
   grid-row: 1/2;
   align-self: start;
   width: 180px;
-  height: 160px;
+  height: 120px;
   transform: rotate(-90deg);
 }
 
