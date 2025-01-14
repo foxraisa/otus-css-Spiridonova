@@ -78,7 +78,7 @@ phone и Email явялется модификатором элемента data
 
 Так миксин font_mob содержит аргументы, благодаря которым прописывать стили шрифтов стало проще. Использовано в основном для мобильной верстки. Возможно далее будет модифицировано и использовано для шрифтов в файле _typography.scss.
 
-##### _navigation.scss
+#### _navigation.scss
 Например в _navigation.scss для класса .list-mob__item прописано @include font_mob (400,  'Bitter', 40px, 48px)
 
 Это можно было записать как: 
@@ -92,7 +92,7 @@ line-height: 48px;
 В этом же файле использован миксин hover__navigation для определения стилей при наведении курсора. 
 
 
-##### _cover.scss
+#### _cover.scss
 В этом файле использовала миксин font_mob в мобильной верстке для шрифтов.
 
 Для класса .text__heading я указала  @include font_mob (400,  'Playfair Display', 70px, 93px)
@@ -113,7 +113,7 @@ font-size: 18px;
 line-height: 21px;
 
 
-##### _biography.scss
+#### _biography.scss
 В этом файле использовала миксин font_mob в мобильной верстке для шрифтов.
 
 Для класса .biography-text__name я указала @include font_mob (400,  'Playfair Display', 64px, 85px).
@@ -143,11 +143,11 @@ font-size: 30px;
 line-height: 36px;
 
 
-##### _designers.scss
+#### _designers.scss
 На данном этапе миксины не использовала 
 
 
-##### _testimonials.scss
+#### _testimonials.scss
 В этом файле использова миксин font_mob в мобильной верстке для шрифтов. А так же переменная none-decoration-black.
 
 Переменная использовала для класса .list-url__item_link: 
@@ -176,7 +176,7 @@ font-size: 30px;
 line-height: 36px;
 
 
-###### _strong-points.scss
+#### _strong-points.scss
 Для класса .strong-points-container__header я указала @include font_mob (700,  'Roboto', 18px, 21px);
 
 Это можно было написать как: 
@@ -213,7 +213,7 @@ transform: scale(1.2);
 cursor: pointer;
 
 
-##### _typography.scss
+#### _typography.scss
 Для классов .footer__data_phone и .footer__data_Email использована переменная @extend .none-decoration-white;
 
 В данной переменной содержится код: 
@@ -251,7 +251,7 @@ line-height: 19px;
 Для других классов также использован миксин @mixin font_mob.
 
 
-##### _modal.scss
+#### _modal.scss
 Для классов .input-name__input, .input-email__input и .input-comment__input использован  миксин @include input;
 
 В этом миксине находится код: 
