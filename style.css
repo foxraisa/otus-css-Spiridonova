@@ -636,7 +636,7 @@ body {
   grid-row: 1/2;
   align-self: start;
   width: 180px;
-  height: 160px;
+  height: 120px;
   transform: rotate(-90deg);
 }
 
