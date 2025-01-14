@@ -70,6 +70,9 @@ phone и Email явялется модификатором элемента data
 
 Отдельно создан файл style.scss, которая объединяет все стили через @import
 
+Ссылка на ресурс 
+    https://sass-guidelin.es/ru/#section-49
+
 ### Переменные и Миксины
 Переменные созданы для примера, использованы в файле typigraphy для footer и в файле testimonials для list-url__item_link.
 Все переменные расположены в папке _variables.scss.

@@ -109,6 +109,11 @@ body {
   line-height: 38px;
 }
 
+.testimonials-container__header {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .strong-points-container__header {
   font-weight: 700;
   font-size: 24px;
