@@ -6,42 +6,42 @@
   }
 
   // импорт миксинов 
-  @import "sass/abstracts/mixins.scss";
+  @import "src/sass/abstracts/mixins.scss";
  
   /* импорт шрифтов */
-  @import "sass/base/typography";
+  @import "src/sass/base/typography";
 
   //  импорт переменных 
   @import "sass/abstracts/variables.scss";
 
   /*  импорт меню или по другому можно назвать навигация по лендингу  */
-  @import "sass/layout/navigation.scss";
+  @import "src/sass/layout/navigation.scss";
   
    /* импорт cover-container или иначе можно назвать обложки лендинга  */
-  @import "sass/base/cover.scss";
+  @import "src/sass/base/cover.scss";
   
   
   /*  импорт стилей biography-container */
-  @import "sass/base/biography.scss";
+  @import "src/sass/base/biography.scss";
 
   
   /*  импорт стилей designers-container */
-  @import "sass/base/designers.scss";
+  @import "src/sass/base/designers.scss";
   
 
   /*  импорт стилей testimonials-container */
-  @import "sass/base/testimonials.scss";
+  @import "src/sass/base/testimonials.scss";
   
 
   /*  импорт стилей strong-points-container */
-  @import "sass/base/strongPoints.scss";
+  @import "src/sass/base/strongPoints.scss";
 
   
   /*  импорт стилей footer */
-  @import "sass/layout/footer.scss";
+  @import "src/sass/layout/footer.scss";
   
   
   /*  импорт стилей modal-window */
-  @import "sass/components/modal.scss";
+  @import "src/sass/components/modal.scss";
   
   
