@@ -1,0 +1,33 @@
+{
+    "name": "otus-css-spiridonova",
+    "version": "2.0.0",
+    "description": "Правила пользования",
+    "main": "index.js",
+    "scripts": {
+      "build-webpack": "webpack -c webpack.config.js",
+      "start-dev": "webpack serve",
+      "build-prod": "webpack -c webpack.config.prod.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "http-server": "^14.1.1",
+      "lodash": "^4.17.21",
+      "moment": "^2.29.4",
+      "prettier": "^2.8.8"
+    },
+    "devDependencies": {
+      "babel-loader": "^8.0.6",
+      "@babel/preset-env": "^7.4.3",
+      "css-loader": "^6.8.1",
+      "css-minimizer-webpack-plugin": "^5.0.1",
+      "html-loader": "^4.2.0",
+      "html-webpack-plugin": "^5.5.3",
+      "mini-css-extract-plugin": "^2.7.6",
+      "sass-loader": "^13.3.2",
+      "style-loader": "^3.3.3",
+      "webpack": "^5.88.1",
+      "webpack-cli": "^5.1.4",
+      "webpack-dev-server": "^4.15.1"
+    }
+  }
